@@ -40,4 +40,29 @@
     display: flex;
     justify-content: center;
 }
+.nav-filtro-fixo{
+    border: solid red 1px;
+    margin-top: 10px;
+}
+.ul-filtro-fixo{
+    display: flex;
+    justify-content: space-around;
+    
+}
 
+.ul-filtro-fixo li{
+    width: 150PX;
+    height: 50PX;
+    border: solid red 1px;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ul-filtro-fixo li a{
+    text-decoration: none;
+    color: black;
+}
+ 
