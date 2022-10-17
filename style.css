@@ -170,10 +170,52 @@ body{
 
     .os-mais-vendidos ul li{
         width: 300px;
-        height: 250px;
+        height: 230px;
         margin: 10px;
         list-style: none;
         }
+
+        .provasocial{
+            width: 90%;
+            height: 350px;
+            margin: 15px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .foto{
+            width: 130px;
+            height: 65px;
+            border-radius: 60%;
+            padding: 20px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            padding-left: 80px;
+            color:  rgb(208, 221, 205);
+            
+        }
+        .border{
+            border: right 1px;
+            height: 176px;
+            justify-content: center;
+            width: 0;
+        }
+        .elogio{
+            width: 400px;
+            height: 100px;
+            text-transform: uppercase;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:  rgb(208, 221, 205);
+        }
+
+       
 
 
  
