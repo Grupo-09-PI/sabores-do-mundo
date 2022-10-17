@@ -215,6 +215,26 @@ body{
             color:  rgb(208, 221, 205);
         }
 
+        .esteira{
+            text-transform: uppercase;
+            text-align: center;
+            color: rgb(208, 221, 205);
+        }
+
+        .esteira-logos{
+            width: 1450px;
+            height: 150px;
+            display: flex;
+            
+        }
+
+        .esteira-logos li{
+            width: 200px;
+            height: 100px;
+            list-style: none;
+            margin: 20px;
+        }
+
        
 
 
