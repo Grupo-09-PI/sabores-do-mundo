@@ -1,9 +1,9 @@
-   *{
-    border: solid rgb(208, 221, 205) 1px;
+   *    {
+    border: solid rgb(126, 137, 123) 1px;
    }
 
 body{
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(5, 8, 0);
     }
 
 .header{
@@ -235,7 +235,51 @@ body{
             margin: 20px;
         }
 
-       
+        .promoção-da-semana{
+            width: 1450px;
+            height: 400px;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
 
+        .promoção-da-semana1{
+             width: 450px;
+             height: 250px;
+        }
+
+        .promoção-da-semana2{
+             width: 900px;
+             height: 400px;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;
+        }
+
+        .promoção-da-semana2-interno{
+            width: 350px;
+            height: 170px;
+            margin: 10px;
+            color: white;
+            display: flex;
+        }
+        
+    
+    .promoção-da-semana2-interno1{
+        width: 150px;
+        height: 170px;
+    }
+    
+    .informações-do-produto{
+        width: 150px;
+        height: 110px;
+        margin: 30px;
+        justify-items: flex-start;
+    }
+
+   
+        
 
  
