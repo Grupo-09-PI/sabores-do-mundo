@@ -144,48 +144,91 @@
     text-transform: uppercase;
 }
  
-
-body {
-    font-size: 16px;
-}
-
-#menu{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#aviso {
-    font-size: 12px;
-    text-align: center;
-    border: solid 2px black;
-    width: 80% ;
-    margin-bottom: 10px;
-}
-
-#logo {
-    height: 30px;
-}
-
-#iconeCarrinho {
-    height: 30px ;
+.mainProduto{
+    margin-top: 35px;
 
 }
 
-#minhaConta{
-    border: solid 2px black;
-
+#categoria{
+    margin-left: 10px;
+    padding: 0px;
+    width: 30% ;
+    border: solid 3px black;
+    
 }
 
-#header {
-    padding: 10px;
-    width: 90%;
-    border: solid 2px black;
-    border-radius: 10px;
+#categoria p{
+    margin: 5px 10px;
+    padding: 0px;
+}
+
+#descricaoMain{
     display: flex;
 }
 
-#iconeCarrinho{
-    align-items: flex-start;
+#descricaoMain >img:first-child{
+    width: 300px;
+    height: 300px;
+    margin-top: 10vh;
+
 }
+
+#descricaoProduto{
+    width: 90vw;
+    margin-left: 15px;
+}
+
+#nomeDoProduto{
+    border: solid 3px black;
+    width: 85%;
+    padding-bottom: 0px;
+
+}
+
+#nomeDoProduto h1{
+    margin: 20px 10px ;
+}
+
+#sku{
+    border: solid 3px black;
+    border-top: none;
+    width: 20%;
+    /* margin-top: 10px; */
+    position: relative;
+    top: -0.2rem;
+}
+
+#sku p{
+    margin: 3px;
+
+}
+
+#preco{
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#preco div{
+    border: solid 3px black;
+    padding: 0px 1rem;
+}
+
+#quantidade{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#quantidade div{
+    margin-top: 10px;
+    border: solid 3px black;
+}
+
+#comprar{
+    margin-top: 10px;
+    padding: 0 3rem;
+    border-radius: 10%;
+}
+
