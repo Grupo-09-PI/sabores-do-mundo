@@ -1,323 +1,334 @@
-   *    {
-    border: solid rgb(126, 137, 123) 1px;
-   }
-
-body{
-    background-color: rgb(5, 8, 0);
-    }
-
-.header{
-    
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    
+body * {
+    font-family: 'Fira Sans', sans-serif;
 }
 
-.pesquisa{
-    width: 500px;
-    height: 40px;
-    color:rgb(208, 221, 205) ;
+header.aviso-header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    
-}
-
-
-.login{
-    width: 250px;
-    height: 40px;
-    color: rgb(208, 221, 205);
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-
-    
-}
-.conta{
-    
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.sacola{
-    
-    width: 100px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    text-transform: uppercase;
-}
- .banner{
-    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     
-    height: 250px;
- }
-.nav-filtro-fixo{
-    
-    width: 1400px;
-    margin: 20px auto;
-   
-    
 }
-.ul-filtro-fixo{
+
+header.aviso-header > h4.frase-motion{
     display: flex;
-    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from{
+        
+        margin-left: 60%;
+        width: 40%;
+
+    }
+
+    to {
+        margin-left: 10%;
+        width: 40%;
+    }
+}
+
+header.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0rem 0rem .2rem .2rem gray;
+    background-color: white;    
+}
+
+header.nav > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
     
 }
 
-.ul-filtro-fixo li{
-    width: 150PX;
-    height: 50PX;
-    
-    list-style: none;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header.nav > .logo-header img {
+    width: 18rem;
     
     
 }
-.ul-filtro-fixo li a{
+
+header.nav > .divBusca img {  
+    width: 2rem;
+
+}
+
+header.nav > .divBusca > input {
+    flex-grow: 1;
+    
+}
+
+header.nav > .divBusca > input:focus{
+    outline: none;
+    border:none;
+}
+
+header.nav > .divBusca {
+    display: flex;
+    flex-grow: 1;
+    max-width: 35rem;
+    align-items: center;
+    text-transform: uppercase;
+    background-color:#f7f7f7;
+    border:solid 1px;
+    border-radius: 15px;
+    height: 2.5rem;
+  }
+
+header.nav > nav > .divCarrinho img {  
+    width: 2.5rem;
+
+}
+
+  #txtBusca{
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+
+
+  a.btnMinhaConta {
+    font-size: 2rem;
+    border: none;
+    background-color: #143CDB;
+    color: white;
+    padding: 0.5rem;
     text-decoration: none;
-    color: rgb(208, 221, 205);
+    
+  }
+
+  header.nav > nav > .divMinhaConta img {  
+    width: 2.5rem;
 
 }
 
-.caixa-de-produtos{
-    
-    margin: 20px auto;
-    height: 800px;
-    width: 1450px;
+  main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-}
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding: .5rem 0;
+  }
 
-.produtos{
-    
-    width: 340px;
-    height: 360px;
-    margin-top: 20px;
+  main > section {
     display: flex;
-    flex-direction: column-reverse;
+    gap: 1rem;
     
-}
+  }
 
-.descricao-produto-footer{
-    
-    width: 100%;
-    height: 165px;
+  main > section > figure.banner-promo {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-    
-   
-    
-}
+    margin: 0 auto;
+  }
 
-.descricao-produto-footer-interno{
-     width: 280px;
-     height: 40px;
-     
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     margin-bottom: 10px;
-}
+  main > section > figure.banner-promo img {
+    width: 80rem;
+  }
 
-.carrinho{
-    width: 120px;
-    height: 20px;
-    color: rgb(208, 221, 205) ;
-    text-align: center;
-    text-transform: uppercase;
-}
 
-.comprar{
-    width: 120px;
-    height: 20px;
-    color: rgb(208, 221, 205) ;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.os-mais-vendidos{
-     width: 100%;
-     height: 300px;
-     text-transform: uppercase;
-     text-align: center;
-     padding-top: 10px;
-     color: rgb(208, 221, 205);
-     }
-
-.os-mais-vendidos ul{
+  main > section.filtro-fixo {
     display: flex;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    width: 166vh;
     justify-content: space-around;
-    }
+  }
 
-    .os-mais-vendidos ul li{
-        width: 300px;
-        height: 230px;
-        margin: 10px;
-        list-style: none;
-        }
 
-        .provasocial{
-            width: 90%;
-            height: 350px;
-            margin: 15px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-            align-items: center;
-        }
+  ul li {
+    list-style: none;
 
-        .foto{
-            width: 130px;
-            height: 65px;
-            border-radius: 60%;
-            padding: 20px;
-            text-transform: uppercase;
-            display: flex;
-            align-items: center;
-            padding-left: 80px;
-            color:  rgb(208, 221, 205);
-            
-        }
-        .border{
-            border: right 1px;
-            height: 176px;
-            justify-content: center;
-            width: 0;
-        }
-        .elogio{
-            width: 400px;
-            height: 100px;
-            text-transform: uppercase;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color:  rgb(208, 221, 205);
-        }
+  }
 
-        .esteira{
-            text-transform: uppercase;
-            text-align: center;
-            color: rgb(208, 221, 205);
-        }
+  ul li a {
+    list-style: none;
+    font-size: 1.5rem;
+    text-shadow: 0rem .1rem 0rem .1rem gray;
+    color: orangered;
+    text-decoration: none;
+  }
 
-        .esteira-logos{
-            width: 1450px;
-            height: 150px;
-            display: flex;
-            
-        }
+  ul li a:hover {
+    color: orange;
+    transition: 0.4s;
+  }
 
-        .esteira-logos li{
-            width: 200px;
-            height: 100px;
-            list-style: none;
-            margin: 20px;
-        }
 
-        .promoção-da-semana{
-            width: 1450px;
-            height: 400px;
-            margin: 10px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-around;
-        }
 
-        .promoção-da-semana1{
-             width: 450px;
-             height: 250px;
-        }
 
-        .promoção-da-semana2{
-             width: 900px;
-             height: 400px;
-             display: flex;
-             flex-wrap: wrap;
-             justify-content: space-around;
-        }
 
-        .promoção-da-semana2-interno{
-            width: 350px;
-            height: 170px;
-            margin: 10px;
-            color: white;
-            display: flex;
-        }
-        
-    
-    .promoção-da-semana2-interno1{
-        width: 150px;
-        height: 170px;
-    }
-    
-    .informações-do-produto{
-        width: 150px;
-        height: 110px;
-        margin: 30px;
-        justify-items: flex-start;
-    }
 
-    .desconto{
-        margin-top: 20px;
-        width: 100%;
-        height: 60px;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        
-        }
 
-        .desconto input{
-            width: 350px;
-            height: 30px;
-            margin-right: 30px;
-        }
-        .desconto button{
-            height: 34px;
-            margin-right: 200px;
-        }
 
-        .footer{
-            margin-top: 20px;
-            width: 100%;
-            height: 500px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
 
-        }
 
-        .footer-interno{
-        
-            width: 22%;
-            height: 400px;
-        }
 
-    
 
-   
-        
 
- 
+
+
+
+
+
+  footer {
+    box-shadow: 0rem 0rem .2rem .2rem gray;
+  }
+
+  footer > div.div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap:1rem;
+    text-decoration: none;
+  }
+
+  footer > div > div.div-institucional {
+    display: flex;
+    flex-direction: row;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.institucional {
+    flex-direction: column;
+    padding: 1.5rem;
+       
+  }
+
+  footer > div > div.div-atendimento {
+    display: flex;
+    flex-direction: row;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.atendimento {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  div.div-atendimento > section.atendimento img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  div.contatos-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+  }
+
+
+  .institucional a {
+    text-decoration: none;
+    color: black;
+  }
+  .contatos-footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .rede-sociais a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .institucional a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  .contatos-footer a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  .rede-sociais a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  div.down-div {
+    border-top: .1rem solid black;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  footer > div > div.div-rede-sociais {
+    display: flex;
+    color: orangered;
+    flex-direction: row;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+    gap: 2rem;
+  }
+
+
+  footer > div > div > section.rede-sociais {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  div.div-rede-sociais > section.rede-sociais img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  div.redeSocial-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+  }
+
+  footer > div > div.div-formas-pagamento {
+    display: flex;
+    flex-direction: column;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.formas-pagamento {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .imagem-formas-pagamento img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 25rem;
+  
+  }

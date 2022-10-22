@@ -1,0 +1,88 @@
+[33mcommit 66881a926b8ec7653eb24c641f1787cb5e7f739e[m[33m ([m[1;36mHEAD -> [m[1;32mguilherme[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Guilherme Januario <guiijanuario@gmail.com>
+Date:   Sat Oct 22 01:07:50 2022 -0300
+
+    Subindo Header, Footer e imagens
+    
+    Subindo banner e barra de filtro fixa
+
+[33mcommit 78858da6066f6734e0ca496d44008e593afd216b[m
+Merge: a3c17e0 f997efb
+Author: Guilherme Januário <111132436+guijanuario@users.noreply.github.com>
+Date:   Sat Oct 15 13:11:03 2022 -0300
+
+    Merge pull request #1 from Grupo-09-PI/wellington
+    
+    Wellington
+
+[33mcommit f997efbd763918530441127272df8cfe0210d26b[m
+Author: wellington carlos <wellingtoncarlos70@gmail.com>
+Date:   Sat Oct 15 03:24:14 2022 -0300
+
+    finalizando os 8 cards com opção de por no carrinho ou comprar
+
+[33mcommit a569a488b72184022b23edad4f434dec4697ebd9[m
+Author: wellington carlos <wellingtoncarlos70@gmail.com>
+Date:   Sat Oct 15 01:23:28 2022 -0300
+
+    adicionando o banner  que havia esquecido com imagem de exemplo
+
+[33mcommit 02c773ba55d67b7fd0e17682f480f0968fde0520[m
+Author: wellington carlos <wellingtoncarlos70@gmail.com>
+Date:   Sat Oct 15 00:50:22 2022 -0300
+
+    finalizando filtro-fixo
+
+[33mcommit 04cf06328e2be2de2b91fd8d5f6f5c06717a7dd5[m
+Author: wellington carlos <wellingtoncarlos70@gmail.com>
+Date:   Fri Oct 14 23:53:20 2022 -0300
+
+    finalizando o header
+
+[33mcommit 6bf4102282d863a6da3b5b54e7ee9052f9fdcb26[m
+Author: wellington carlos <wellingtoncarlos70@gmail.com>
+Date:   Fri Oct 14 21:44:59 2022 -0300
+
+    primeiro commit
+    
+    subindo pasta imagens
+
+[33mcommit a3c17e00c479161c229a975ed49fee20e2228134[m[33m ([m[1;31morigin/Maryelen[m[33m)[m
+Author: Maryelen Amaral <maryelenu.u@gmail.com>
+Date:   Sun Oct 9 17:04:15 2022 -0300
+
+    adicionando style.css
+
+[33mcommit 979e9c41c3044c913a2241d33ae6b636cef8b963[m
+Author: Guilherme Januario <guiijanuario@gmail.com>
+Date:   Sun Oct 9 16:51:44 2022 -0300
+
+    Resolvendo os conflitos
+
+[33mcommit 4cc8f2315f421f9eb90db6e483ff7931380f9098[m
+Author: Guilherme Januario <guiijanuario@gmail.com>
+Date:   Sun Oct 9 16:49:17 2022 -0300
+
+    Revert "Subindo index.html"
+    
+    This reverts commit 7d553dbc777d9aa52efe9e0f2fb144d574021818.
+
+[33mcommit 374299260923df354bfc3b3ebc231e2f7cf351b2[m
+Author: Guilherme Januario <guiijanuario@gmail.com>
+Date:   Sun Oct 9 16:46:27 2022 -0300
+
+    Revert "Primeiro Commit - Subindo README.md"
+    
+    This reverts commit 855cd5b45348038c29559932bea9ea0261098c56.
+
+[33mcommit 7d553dbc777d9aa52efe9e0f2fb144d574021818[m[33m ([m[1;31morigin/guilherme[m[33m)[m
+Author: Guilherme Januario <guiijanuario@gmail.com>
+Date:   Sun Oct 9 16:36:09 2022 -0300
+
+    Subindo index.html
+
+[33mcommit 855cd5b45348038c29559932bea9ea0261098c56[m
+Author: Guilherme Januario <guiijanuario@gmail.com>
+Date:   Sun Oct 9 16:32:38 2022 -0300
+
+    Primeiro Commit - Subindo README.md
