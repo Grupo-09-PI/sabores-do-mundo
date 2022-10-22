@@ -6,45 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    
     <title>Sabores do Mundo</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="aviso-header">
+        <h5 class="frase-motion"> Parcele sua compra em até 6 x sem juros, entrega gratuita para comprar até R$200,00 </h5>
+    </header>
 
-        <div class="logo">
-            <img src="imagens/logo.png" alt="imagem do globo terrestre" width="100px">
+    <header class="nav">   
+        <div class="logo-header" >
+            <img src="imagens/logo-sabores.png" alt="" class="logo">
         </div>
 
-        <div class="pesquisa">
-
-            <h3>Espaço para pesquisas</h3>
+        <div class="divBusca">
+            <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
+            <a href="#"><img src="imagens/lupa-.png" id="btnBusca" alt="Buscar"/></a>
         </div>
 
-        <div class="login">
-
-            <div class="conta">
-                <strong>minha conta</strong>
-
+        <nav>
+            <div class="divMinhaConta">
+                <a href="#"><img src="imagens/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
             </div>
-
-            <div class="sacola">
-                <strong>sacola</strong>
+            
+            <div class="divCarrinho">
+                <a href="#"><img src="imagens/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
             </div>
-
-        </div>
-
+        </nav>
     </header>
 
     <main class="mainProduto">
         <div id="categoria">
-            <p>CATEGORIA</p>
+            <p><a href="#">CATEGORIA</a> > JAPÃO</p>
         </div>
         <section id="descricaoMain">
                 <img src="./imagens/imagemkitkat.jpg" alt="produtoExemplo">
                 <div id="descricaoProduto">
                     <div id="nomeDoProduto">
-                        <h1>NOME DO PRODUTO</h1>
+                        <h1>CHOCOLATE KIT KAT CHEESECAKE STRAWBERRY - IMPORTADO DO JAPÃO</h1>
                     </div>
                     <div id="sku">
                         <p>SKU:</p>
@@ -52,10 +56,10 @@
 
                     <div id="preco">
                         <div>
-                            <p>DE:R$100,00</p>
+                            <p id="precopromocao">DE: $78,95</p>
                         </div>
                         <div>
-                            <p>R$100,00</p>
+                            <p>POR: R$54,45</p>
                         </div>
                     </div>
 
@@ -72,18 +76,22 @@
                         <p>COMPRAR</p>
                     </button>
 
-                    <p>Adicione a lista de desejos</p>
-
-                    <p>Veja o valor do frete</p>
-                    <div>
-                        <p>DIGITAR CEP</p>
+                    <div id="desejos">
+                        <img src="./imagens/iconecoracao-removebg-preview.png" alt="iconecoracao">
+                        <p>Adicione a lista de desejos</p>
                     </div>
 
-                    <div>
+                    <form id="cep">
+                        <label for="cep">Veja o valor do frete:</label> 
+                        <input class="cep" name="cep" placeholder="DIGITAR CEP" required pattern="\d{5}-\d{3}">
+                        <button type="submit">PESQUISAR </button>
+                    </form>
+
+                    <div id="compartilhe">
                         <p>COMPARTILHE: </p>
-                        <img src="./imagens/Vector.png" alt="iconefacebook">
-                        <img src="./imagens/Vector-1.png" alt="iconeinstagram">
-                        <img src="./imagens/Vector-2.png" alt="iconewhatsapp">
+                        <a href="#"><img src="imagens/facebook-icon-removebg-preview.png" alt="iconefacebook"></a>
+                        <a href="#"><img src="./imagens/instagram-icon-removebg-preview.png" alt="iconeinstagram"></a>
+                        <a href="#"><img src="./imagens/linkedin-icon-removebg-preview.png" alt="iconelinkedin"></a>
                     </div>
                 </div>    
         </section>
