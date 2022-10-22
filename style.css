@@ -198,6 +198,7 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 0;
     border: 0.1rem solid rgba(128, 128, 128, 0.507);
   }
 
@@ -230,6 +231,10 @@ header.nav > nav > .divCarrinho img {
     flex-direction: column;
     width: 20rem;
     padding: 1rem;
+  }
+
+  div.descricao-produto-home p {
+    margin-bottom: 2rem;
   }
 
   div.price-produto-listagem-produto {
@@ -279,9 +284,18 @@ header.nav > nav > .divCarrinho img {
   }
 
  
+  .pagina-empresa {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 
-
-
+  .texto-empresa {
+    text-justify: distribute;
+  }
 
 
 
