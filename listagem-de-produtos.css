@@ -1,0 +1,26 @@
+body *{
+    font-family: Verdana;
+}
+main{
+    display: flex;
+}
+aside{
+display:flex;
+flex-direction: column;
+
+}
+aside > input{border-radius: 10%;
+     width: 200px;
+    height: 50px;
+    text-align: center;}
+.categoria{
+    background-color:#08195C;
+    color:white;
+}
+aside > div  > ul{
+    list-style: none;
+    line-height: 200%
+}
+.card > img{
+    width: 200px;
+}
