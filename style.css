@@ -198,7 +198,6 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 40rem; 
     border: 0.1rem solid rgba(128, 128, 128, 0.507);
   }
 
@@ -214,7 +213,12 @@ header.nav > nav > .divCarrinho img {
   div.titulo-produto {
     display: flex;
     flex-direction: column;
+    font-size:1.5rem;
     margin: 0 auto;
+  }
+
+  div.titulo-produto h5 {
+   margin: 0 auto;
   }
 
   div.div-up-produtos-home img {
