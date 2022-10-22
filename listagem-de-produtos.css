@@ -23,4 +23,8 @@ aside > div  > ul{
 }
 .card > img{
     width: 200px;
+    display: inline-block;
+} 
+.card1{
+    display: flex;
 }
