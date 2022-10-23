@@ -10,13 +10,15 @@ header.aviso-header {
     
 }
 
-header.aviso-header > h4.frase-motion{
+header.aviso-header > h5.frase-motion{
     display: flex;
-    background-color: rgb(255, 255, 255);
-    animation-duration: 4s;
+    background-color: white;
+    width: 90%;
+    animation-duration: 5s;
     animation-name: slidein;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    
 }
 
 @keyframes slidein {
@@ -28,7 +30,7 @@ header.aviso-header > h4.frase-motion{
     }
 
     to {
-        margin-left: 10%;
+        margin-left: 5%;
         width: 40%;
     }
 }
@@ -120,14 +122,17 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1.5rem;
     background-color: white;
-    padding: .5rem 0;
+    
+  }
+
+  main > section {
+    display: flex;    
   }
 
   main > section {
     display: flex;
-    gap: 1rem;
-    
   }
 
   main > section > figure.banner-promo {
@@ -135,59 +140,206 @@ header.nav > nav > .divCarrinho img {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    
   }
 
   main > section > figure.banner-promo img {
-    width: 80rem;
+    width: 77.5rem;
   }
 
 
   main > section.filtro-fixo {
     display: flex;
-  }
-
-  ul {
-    display: flex;
-    justify-content: center;
-    width: 166vh;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-
-  ul li {
-    list-style: none;
-
-  }
-
-  ul li a {
+  main > section.filtro-fixo > div.div-filtro-fixo a {
     list-style: none;
     font-size: 1.5rem;
     text-shadow: 0rem .1rem 0rem .1rem gray;
     color: orangered;
+    width: 20rem;
     text-decoration: none;
   }
 
-  ul li a:hover {
+  main > section.filtro-fixo > div.div-filtro-fixo a:hover {
     color: orange;
     transition: 0.4s;
   }
 
 
+  section.listagem-produtos-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    
+    
+  }
+
+ div.div-listagem-produtos-home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    border: 0.1rem solid rgba(128, 128, 128, 0.507);
+  }
+
+  div.div-listagem-produtos-home:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  }
 
 
+  div.div-up-produtos-home {
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
+  }
+
+  div.titulo-produto {
+    display: flex;
+    flex-direction: column;
+    font-size:1.5rem;
+    margin: 0 auto;
+  }
+
+  div.titulo-produto h5 {
+   margin: 0 auto;
+  }
+
+  div.div-up-produtos-home img {
+    width: 20rem;
+  }
+  
+  div.div-down-produtos-home {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 1rem;
+  }
+
+  div.descricao-produto-home p {
+    margin-bottom: 2rem;
+  }
+
+  div.price-produto-listagem-produto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  div.de-por-price {
+    color:red;
+    text-decoration: line-through;
+  }
 
 
+  div.cta-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
 
+  button.add-carrinho {
+    background-color: orange;
+    border: none;
+    width: 9.3rem;
+    height: 2rem;
+  }
 
+  button.comprar-agora {
+    background-color: greenyellow;
+    border: none;
+    width: 9.3rem;
+    height: 2rem;
+  }
 
+  div.cta-produtos > button h5 {
+    margin: 0;
+  }
 
+  button.add-carrinho:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  }
 
+  button.comprar-agora:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  }
 
+  .h2-os-mais-vendidos {
+   text-align: center;
+   margin-top: 1rem;
+   margin-bottom: 0;
+  }
 
+  section > div.conteiner-mais-vendidos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
 
+  div.up-lista-mais-vendidos {
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
+  }
 
+  div.up-lista-mais-vendidos img{
+    width: 15rem;
+  }
+ 
+  div.div-lista-mais-vendidos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 0.1rem solid rgba(128, 128, 128, 0.507);
+  }
 
+  div.div-lista-mais-vendidos:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  }
 
+  div.down-lista-mais-vendidos {
+    display: flex;
+    justify-content: center;
+  }
+
+  section.div-mais-vendidos > div.conteiner-mais-vendidos > div.div-lista-mais-vendidos > div.cta-produtos-mais-vendidos div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  div.cta-produtos-mais-vendidos > div > a img {
+    width: 2rem;
+  }
+
+  section > div.conteiner-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  section > div.conteiner-logos > div.logos-parceiros img {
+    width: 8rem;
+  }
+
+  .pagina-empresa {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 
   footer {
     box-shadow: 0rem 0rem .2rem .2rem gray;
