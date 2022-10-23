@@ -1,5 +1,19 @@
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+body {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
 body * {
     font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 header.aviso-header {
@@ -144,7 +158,7 @@ header.nav > nav > .divCarrinho img {
   }
 
   main > section > figure.banner-promo img {
-    width: 77.5rem;
+    max-width: 100%;
   }
 
 
@@ -200,7 +214,10 @@ header.nav > nav > .divCarrinho img {
   div.titulo-produto {
     display: flex;
     flex-direction: column;
-    font-size:1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size:1.3rem;
+    height: 3rem;
     margin: 0 auto;
   }
 
@@ -210,17 +227,19 @@ header.nav > nav > .divCarrinho img {
 
   div.div-up-produtos-home img {
     width: 20rem;
+    height: 20rem;
   }
   
   div.div-down-produtos-home {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 20rem;
     padding: 1rem;
   }
 
-  div.descricao-produto-home p {
-    margin-bottom: 2rem;
+  div.descricao-produto-home {
+    height: 9rem;
   }
 
   div.price-produto-listagem-produto {
@@ -239,7 +258,8 @@ header.nav > nav > .divCarrinho img {
   div.cta-produtos {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-self: flex-end;
+    cursor: pointer;
     
   }
 
@@ -481,6 +501,6 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 25rem;
+    width: 20rem;
   
   }
