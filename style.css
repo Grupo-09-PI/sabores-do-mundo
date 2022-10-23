@@ -122,14 +122,13 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1.5rem;
     background-color: white;
     
   }
 
   main > section {
-    display: flex;
-    gap: 1rem;
-    
+    display: flex;    
   }
 
   main > section {
@@ -156,19 +155,7 @@ header.nav > nav > .divCarrinho img {
     flex-wrap: wrap;
   }
 
-  main > section.filtro-fixo ul {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    width: 166vh;
-  }
-
-  main > section.filtro-fixo li {
-    list-style: none;
-
-  }
-
-  ul li a {
+  main > section.filtro-fixo > div.div-filtro-fixo a {
     list-style: none;
     font-size: 1.5rem;
     text-shadow: 0rem .1rem 0rem .1rem gray;
@@ -177,7 +164,7 @@ header.nav > nav > .divCarrinho img {
     text-decoration: none;
   }
 
-  ul li a:hover {
+  main > section.filtro-fixo > div.div-filtro-fixo a:hover {
     color: orange;
     transition: 0.4s;
   }
@@ -291,6 +278,7 @@ header.nav > nav > .divCarrinho img {
   section > div.conteiner-mais-vendidos {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 2rem;
     width: 100%;
   }
