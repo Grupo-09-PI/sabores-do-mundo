@@ -1,72 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="listagem-de-produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap">
+    <header class="aviso-header">
+        <h5 class="frase-motion"> Parcele sua compra em até 6 x sem juros, entrega gratuita para comprar até R$200,00
+        </h5>
+    </header>
+    <header class="nav">
+        <div class="logo-header">
+            <img src="imagens/logo.png" alt="" class="logo">
+        </div>
+
+        <div class="divBusca">
+            <input type="search" id="txtBusca" placeholder="Busque seu produto..." />
+            <a href="#"><img src="imagens/header:footer/lupa-.png" id="btnBusca" alt="Buscar" /></a>
+        </div>
+
+        <nav>
+            <div class="divMinhaConta">
+                <a href="#"><img src="imagens/header:footer/user-nav.png" id="btnMinhaConta" alt="minha-conta" /></a>
+            </div>
+
+            <div class="divCarrinho">
+                <a href="#"><img src="imagens/header:footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho" /></a>
+            </div>
+        </nav>
+    </header>
 </head>
+
+
 <body>
     <main>
-    <aside><input type="search" name="Busca" id="busca" placeholder="Busca">
-    <div class="categoria">
-        <h2>Categorias</h2> 
-    </div>
-<div class="menu">
-<ul>
-    <li>Temperos</li>
-    <li>Massas</li>
-    <li>Doces</li>
-    <li>Bebidas</li>
-    <li>Salgados</li>
-</ul>    
-</div> </aside>
-<section>
-    <div class="card1">
-    <div class="card">
-        <img src="/imagens/Produtos-Franca/mostarda.jpeg" alt="">
-        <h3>Mostarda Dijon</h3>
-        <h4>R$19,99</h4>
-    </div>
-    <div class="card"><img src="imagens/Produtos-Franca/macarrao frances.jpeg">
-    <h3>Macarrao Frances</h3>
-<h4>R$13,99</h4>
-</div>
-<div class="card">
-    <img src="/imagens/Produtos-Franca/Macarons.jpeg" alt="">
-<h3>Macarons Chocolate</h3>
-<h4>R$15,99</h4>
-</div>
-<div class="card">
-    <img src="/imagens/Produtos-Franca/limonada rosa.jpeg">
-    <h3>Limonada Efferve</h3>
-    <h4>R$39,99</h4>
-</div>  
-</div>     
-<div class="card1">
-    <div class="card">
-        <img src="/imagens/Produtos-Franca/mostarda.jpeg" alt="">
-        <h3>Mostarda Dijon</h3>
-        <h4>R$19,99</h4>
-    </div>
-    <div class="card"><img src="imagens/Produtos-Franca/macarrao frances.jpeg">
-    <h3>Macarrao Frances</h3>
-<h4>R$13,99</h4>
-</div>
-<div class="card">
-    <img src="/imagens/Produtos-Franca/Macarons.jpeg" alt="">
-<h3>Macarons Chocolate</h3>
-<h4>R$15,99</h4>
-</div>
-<div class="card">
-    <img src="/imagens/Produtos-Franca/limonada rosa.jpeg">
-    <h3>Limonada Efferve</h3>
-    <h4>R$39,99</h4>
-</div>  
-</div> 
-</section>
+            <div class="categoria">
+                <h2>Categorias</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>TEMPEROS</li>
+                    <li>MASSAS</li>
+                    <li>DOCES</li>
+                    <li>BEBIDAS</li>
+                    <li>SALGADOS</li>
+                </ul>
+            </div>
+        </aside>
+        <section class="produtos">
 
-</main>
+            <div class="linha">
+                <div class="card" >
+                    <img src="imagens/Produtos-Franca/mostarda.jpeg" alt="">
+                    <h3>Mostarda Dijon</h3>
+                    <p class="descricao">Delicada e cremosa, a Mostarda Dijon Beaufor é um produto versátil 
+                        que pode ser usada em aperitivos e entradas, receitas com carnes, legumes, peixes, saladas e risotos.  </p>
+                    <h4>R$19,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card"><img src="imagens/Produtos-Franca/macarrao frances.jpeg">
+                    <h3>Macarrão spaghetti 500g</h3>
+                    <p class="descricao">Ds produtos grano duro são feitos com um tipo diferente de trigo, 
+                        ideal para massas.</p>
+                         <p>O Spaghetti Cuisson combina com diversos tipos de molho, ao sugo, bolonhesa, 
+                        branco ou o que a criatividade permitir.</p>
+                    <h4>R$13,89</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Franca/Macarons.jpeg" alt="">
+                    <h3>Macarons Chocolate</h3>
+                    <p class="descricao">  Com os Macarons Sabor 
+                        Cappuccino da Le Tarti você vai se sentir em uma cafeteria de Paris. 
+                        São leves, crocantes e possuem 
+                        um recheio extremamente 
+                        cremoso.</p><p>Sinta o prazer desse doce gourmet a cada mordida! 
+                        </p>
+                    <h4>R$19,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Franca/limonada rosa.jpeg">
+                    <h3>Limonada Efferve</h3>
+                    <p class="descricao">A Água com Gás Saborizada de Limonada Rosa Effervé 750ml, 
+                        importada da França, possui um delicado sabor e traz um romântico tom cor de rosa,
+                         realçado pela belíssima garrafa EFFERVE. </p>
+                         <p>Perfeito para todo o tipo de celebrações.</p>
+                    <h4>R$35,10</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="card">
+                    <img src="imagens/Produtos-Portugal/azeite andorinha.jpeg" alt="">
+                    <h3>Azeite Andorinha</h3>
+                    <p class="descricao">É um azeite muito especial – delicioso e com propósito.</p> 
+                       <p></p> Seu aroma frutado é proveniente de azeitonas maduras e adocicadas, 
+                       colhidas em um lote selecionado para harmonizar e combinar com diversos pratos.  </p>
+                    <h4>R$31,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card"><img src="imagens/Produtos-Portugal/sardinhas portuguesas.jpeg">
+                    <h3>Sardinhas em conserva</h3>
+                    <p>As Sardinhas em Azeite Ramirez 125g é para todos que e apreciam sardinhas em conserva,
+                         mas que gostam de variar na forma de as consumir.</p>
+                    <h4>R$10,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Portugal/vinho ferreira porto.jpeg .jpeg" alt="">
+                    <h3>Vinho Português</h3>
+                    <p>Vinho do porto licoroso tinto doce, muito encorpado.</p>
+                </p>Ideal para acompanhar frutas silvestres e queijos. Graduação alcoólica 19,5% vol - 750ml.</p>
+                    <h4>R$149,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="card"><img src="imagens/Produtos-Japao/kitkatcheesecake.jpeg">
+                    <h3>Kit Kat cheesecake</h3>
+                    <p>Chocolate Kit Kat Cheesecake é uma guloseima que você não irá resistir.</p>
+                    <p> Com uma combinaçao de ingredientes de altíssima qualidade, 
+                        esse chocolate dá água na boca.</p>
+                    <h4>R$54,45</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Japao/lamen japao.jpeg .jpeg" alt="">
+                    <h3>Lamen Japonês</h3>
+                    <p>O lamen japonês instantâneo Sapporo sabor Yakisoba da marca
+                         japonesa Sunaoshi é ideal para quem busca praticidade e 
+                         qualidade no mesmo produto.</p>
+                    <h4>R$9,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Japao/saque.jpeg" alt="">
+                    <h3>Saque Japonês</h3>
+                    <p>Hakushika yamadanishiki Amayagi, produzido na região Hyogo( Japão) 
+                         produzido 100% com arroz Yamadanishiki que e o melhor para saquê.</p>
+                    <h4>R$181,79</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Japao/curry japao.jpeg .webp" alt="">
+                    <h3>Curry Japonês</h3>
+                    <p>Temperos Curry Vermont Karakuchi Hot
+                        Ideal para preparo de Curry Rice ou Karê. 
+                        Com Mel e Maçã para um sabor picante e adocicado!
+                        </p>
+                    <h4>R$31,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="card">
+                    <img src="imagens/Produtos-Coreia/jjajang men lamen coreano.jpeg" alt="">
+                    <h3>Jjajangmen Lamen Coreano</h3>
+ <p>O Jjajang men é um macarrão instantâneo no estilo lamen e com temperos à base de legumes,
+     soja preta e molho especial não apimentado.</p>
+     <p>Seu sabor é levemente adocicado, diferente dos tradicionais lamens coreanos apimentados.</p> 
+                    <h4>R$21,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card"><img src="imagens/Produtos-Coreia/soju bebida morango coreia.jpeg">
+                    <h3>Soju Bebida morango</h3>
+                    <p>O Soju é uma bebida destilada típica da Coréia produzida a partir de batata doce, arroz e cevada.</p>
+                    <p>Produzida pela Jinro uma das mais tradicionais empresas de bebidas Coreana.</p> 
+                       <p>Experimente a nova versão do Soju Jinro Strawberry com aroma de morango!</p>
+                    <h4>R$30,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Coreia/toppo morango coreano .jpeg" alt="">
+                    <h3>Toppo Biscoito Morango</h3>
+                    <p>Crocante por fora e deliciosamente recheado com morango e baunilha. Desfrute de momentos saborosos.</p>
+                    <h4>R$9,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+                <div class="card">
+                    <img src="imagens/Produtos-Coreia/Marshmallow coreia.jpeg .jpeg" alt="">
+                    <h3>Marshmallow Morango</h3>
+                    <p>Para quem está acostumado a comer deliciosos doces 
+                        japoneses e gostaria de experimentar algo novo e delicioso,
+                         o marshmallow é a opção que faltava.</p>
+                    <h4>R$9,99</h4>
+                    <button class="carrinho">Adicionar ao carrinho</button>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
+<footer>
+    <div class="div-footer">
+        <div class="div-institucional">
+            <section class="institucional">
+                <h3>Institucional</h3>
+                <div>
+                    <a href="empresa.html">
+                        <h5>Empresa</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Como comprar</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Segurança</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Envio</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Pagamento</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Troca e Devoluções</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Depoimentos de Clientes</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Política de Privacidade</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Termo de uso</h5>
+                    </a>
+                    <a href="#">
+                        <h5>Contato</h5>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="div-atendimento">
+            <section class="atendimento">
+                <h3>Atendimento</h3>
+                <div class="up-div">
+                    <div class="contatos-footer">
+                        <img src="imagens/header:footer/telefone-icon.png" alt="">
+                        <a href="#">
+                            <h5>Telefone</h5>
+                        </a>
+                    </div>
+                    <div class="contatos-footer">
+                        <img src="imagens/header:footer/whatsapp-icon.png" alt="">
+                        <a href="#">
+                            <h5>Whatsapp</h5>
+                        </a>
+                    </div>
+                    <div class="contatos-footer">
+                        <img src="imagens/header:footer/email-icon.png" alt="">
+                        <a href="#">
+                            <h5>E-mail</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="down-div">
+                    <p>Nosso horário de atendimento é de segunda a sexta feira das 09:00 até às 17:00 e Sábado das 08:00
+                        até as 12:00.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="div-rede-sociais">
+            <section class="rede-sociais">
+                <h3>Rede Sociais</h3>
+                <div class="up-div">
+                    <div class="redeSocial-footer">
+                        <img src="imagens/header:footer/facebook-icon.png" alt="">
+                        <a href="#">
+                            <h5>Facebook</h5>
+                        </a>
+                    </div>
+                    <div class="redeSocial-footer">
+                        <img src="imagens/header:footer/instagram-icon.png" alt="">
+                        <a href="#">
+                            <h5>Instagram</h5>
+                        </a>
+                    </div>
+                    <div class="redeSocial-footer">
+                        <img src="imagens/linkedin-icon.png" alt="">
+                        <a href="#">
+                            <h5>Linkedin</h5>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="div-formas-pagamento">
+            <section class="formas-pagamento">
+                <h3>Pagamento</h3>
+            </section>
+            <div>
+                <div class="imagem-formas-pagamento">
+                    <img src="imagens/header:footer/Credit-Card-Icons.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
 </html>

@@ -1,0 +1,109 @@
+.precoparcelado-table {
+    width: 200px;
+}
+
+.precoparcelado-table thead th {
+    border: solid 1px;
+    text-align: center;
+}
+
+.precoparcelado-table tbody td {
+    border: solid 1px;
+}
+
+.product-view .precoparcelado-parcels {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.products-grid .precoparcelado-parcels {
+  display: block;
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.products-grid .product-information .precoparcelado-parcels {
+  display: block;
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+body.cms-index-index .precoparcelado-parcels  {
+  display: block;
+  float: left;
+  width: 100%;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+/* -- */
+
+
+/*PARCELAMENTO*/
+.well-parcelamento-title { max-width: 550px; position: relative; font-size: 14px; text-transform: uppercase; font-weight: 700; background-color: white; padding: 0px 9px 9px 9px; color: #3D3D3D; cursor: pointer; padding-top: 7px; border-radius: 4px 4px 0px 0px; margin-bottom: 0; }
+.well-parcelamento-title.active i.fa.fa-chevron-down{ transform:rotate(180deg)}
+.well-parcelamento-title i:first-child{ color: #000}
+.well-parcelamento-title i.fa.fa-chevron-down{margin-top: -12px; top: 50%; position: absolute; right: 30px; font-size: 24px; -webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+.well-parcelamento-title .bandeiras-parcelamento{margin: 5px 30px 0 0;}
+.well-parcelamento-title .bandeiras-parcelamento ul.bandeiras{  margin: 0;}
+.well-parcelamento-title .bandeiras-parcelamento li {display: inline-block; width: 44px; padding: 0px; border: 1px solid #ccc; background: #fff; border-radius: 2px; }
+.well-parcelamento-title .bandeiras-parcelamento li.boleto{ display: none;}
+.well-parcelamento-title .bandeiras-parcelamento li img{width: 100%}
+
+.abre-parcelas {
+    text-align: center;
+	opacity: 0;
+	line-height: 11px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.abre-parcelas.active {
+    text-align: center;
+	opacity: 1;
+}
+.abre-parcelas span {
+	display: block;
+    position: relative;
+    font-size: 11px;
+	color: #898989;
+    font-weight: normal;
+	text-align: center;
+    text-transform: none;
+	top: 6px;
+}
+
+.well-parcelamento-title.false {cursor: default;}
+.well-parcelamento-title.false i.fa.fa-chevron-down {display: none;}
+
+.well-parcelamento { border-radius: 0; overflow: hidden; border: 1px solid #E3E3E3 !important; border-bottom: none !important; background: #fff!important;padding: 5px!important;max-height: 0px !important;opacity: 0; -webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;min-height: 0px; margin-bottom: 0px}
+.well-parcelamento .col-xs-12 span{ display: block; padding: 5px 5px 0; text-align: center;line-height: 12px;font-size: 11px; clear: both;}
+.well-parcelamento .col-xs-6 div{ padding: 5px; text-align: center;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.well-parcelamento .col-xs-6 div:nth-of-type(odd) { background: #F3F3F3; }
+.well-parcelamento .col-xs-6:first-child{ padding-right: 0px;}
+.well-parcelamento .col-xs-6:last-child{ padding-left: 0px;}
+.well-parcelamento.active{max-height: 250px !important;opacity: 1;margin-bottom: 10px}
+@media (min-width:768px) and (max-width:991px) {
+	.well-parcelamento.active{max-height: 450px !important;}
+}
+@media (max-width:767px) {
+	.well-parcelamento.active{max-height: 500px !important;}
+	.well-parcelamento .col-sm-6:first-child { padding-right: 15px; }
+	.well-parcelamento .col-sm-6:last-child {padding-left: 15px;}
+	.well-parcelamento-title i.fa.fa-chevron-down{ right: 12px;}
+}
+.well-parcelamento-title i.fa.fa-chevron-down{ transform:rotate(180deg)}
+.well-parcelamento-title.active i.fa.fa-chevron-down{ transform:rotate(0deg);}
+.well-parcelamento.active { overflow: hidden; max-height: 0px !important;max-width: 550px;opacity: 0; -webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;min-height: 0px; margin-bottom: 0px; padding-bottom: 0 !important; padding-top: 0 !important; border-bottom: none !important; border-top: none !important;}
+.well-parcelamento{max-width: 550px;max-height: 250px !important;opacity: 1;margin-bottom: 0;}
+
+.desconto_boleto .indicador_boleto span { text-align: center; }
