@@ -1,6 +1,20 @@
-body * {
-    font-family: 'Fira Sans', sans-serif;
-}
+html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  body {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body * {
+      font-family: 'Fira Sans', sans-serif;
+      box-sizing: border-box;
+  }
 
 header.aviso-header {
     display: flex;
@@ -147,7 +161,9 @@ header.nav > nav > .divCarrinho img {
 #descricaoMain{
     /* box-shadow: 0rem 0rem .2rem .2rem gray; */
     display: flex;
-    margin-left: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     /* background-color: aliceblue; */
 }
 
@@ -158,8 +174,14 @@ header.nav > nav > .divCarrinho img {
 
 }
 
+#imagemproduto img:hover{
+    width: 750px;
+    height: 750px;
+    transition: 0.5s;
+}
+
 #descricaoProduto{
-    position: absolute;
+    /* position: absolute; */
     left: 900px;
     box-shadow: 0rem 0rem .2rem .2rem gray;
     width: 40vw;
@@ -215,18 +237,61 @@ header.nav > nav > .divCarrinho img {
 #quantidade{
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+#quantidade input{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#quantidade p{
+    font-size: 20px;
 }
 
 #quantidade div{
     margin-top: 10px;
-    border: solid 3px black;
+    /* border: solid 3px black; */
+}
+
+#botoes{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 60px;
+    margin: 15px;
+    /* border:solid 1px black; */
 }
 
 #comprar{
-    margin-top: 10px;
-    padding: 0 3rem;
-    border-radius: 10%;
+    background-color: greenyellow;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#comprar:hover{
+    background-color: gray;
+    transition: .5s;
+}
+
+#adicionarcarrinho{
+    background-color: orange;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#adicionarcarrinho:hover{
+    background-color: gray;
+    transition: .5s;
 }
 
 #desejos{
@@ -258,10 +323,242 @@ header.nav > nav > .divCarrinho img {
 }
 
 #compartilhe{
+    margin-top: 10px;
+    /* border: solid 1px black; */
     width: 300px;
+}
+
+#compartilhe p{
+    font-size: 20px;
+    margin: 2px;
+    padding: 10px;
 }
 
 #compartilhe img{
     width: 50px;
 }
 
+#descricao{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    width:100%;
+    /* background-image: linear-gradient(to top, rgba(255,0,0,0), orange); */
+
+    /* border-top: solid 3px black; */
+}
+
+#descricao h3{
+    /* border-bottom: solid 3px black; */
+    font-size: 30px;
+    margin-left: 25px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0) 30%, orange 40%);
+    color: orange;
+}
+
+#descricao p{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 25px;
+    width: 300px;
+}
+
+#avaliacao{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    width:100;
+    /* border-top: solid 3px black; */
+    /* border-bottom: solid 3px black; */
+    /* background-image: linear-gradient(to bottom,rgba(255,0,0,0), orange); */
+
+}
+
+#avaliacao h3{
+    /* border-bottom: solid 3px black; */
+    font-size: 30px;
+    margin-left: 25px;
+    color: orange;
+    background-image: linear-gradient(to right, rgba(255,0,0,0) 30%, orange 40%);
+
+}
+
+#avaliacao p{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 25px;
+    width: 300px;
+}
+
+#talvezinteresse{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+
+}
+
+#talvezinteresse img:hover{
+    width: 350px;
+}
+
+#talvezinteresse h3{
+    margin-bottom: 25px;
+}
+
+.descricaovalor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+}
+
+.precointeresse{
+    color: orangered;
+    font-size: 25px;
+}
+
+
+footer {
+    box-shadow: 0rem 0rem .2rem .2rem gray;
+  }
+
+  footer > div.div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap:1rem;
+    text-decoration: none;
+  }
+
+  footer > div > div.div-institucional {
+    display: flex;
+    flex-direction: row;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.institucional {
+    flex-direction: column;
+    padding: 1.5rem;
+       
+  }
+
+  footer > div > div.div-atendimento {
+    display: flex;
+    flex-direction: row;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.atendimento {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  div.div-atendimento > section.atendimento img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  div.contatos-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+  }
+
+
+  .institucional a {
+    text-decoration: none;
+    color: black;
+  }
+  .contatos-footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .rede-sociais a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .institucional a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  .contatos-footer a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  .rede-sociais a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  div.down-div {
+    border-top: .1rem solid black;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  footer > div > div.div-rede-sociais {
+    display: flex;
+    color: orangered;
+    flex-direction: row;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+    gap: 2rem;
+  }
+
+
+  footer > div > div > section.rede-sociais {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  div.div-rede-sociais > section.rede-sociais img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  div.redeSocial-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+  }
+
+  footer > div > div.div-formas-pagamento {
+    display: flex;
+    flex-direction: column;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.formas-pagamento {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .imagem-formas-pagamento img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 25rem;
+  
+  }
