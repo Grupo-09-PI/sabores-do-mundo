@@ -1,20 +1,20 @@
 html {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-body {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-}
-
-body * {
-    font-family: 'Fira Sans', sans-serif;
-    box-sizing: border-box;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  body {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body * {
+      font-family: 'Fira Sans', sans-serif;
+      box-sizing: border-box;
+  }
 
 header.aviso-header {
     display: flex;
@@ -106,7 +106,7 @@ header.nav > nav > .divCarrinho img {
 
 }
 
-  #txtBusca{
+#txtBusca{
     background-color:transparent;
     padding-left:5px;
     font-style:italic;
@@ -131,246 +131,295 @@ header.nav > nav > .divCarrinho img {
     width: 2.5rem;
 
 }
+ 
+.mainProduto{
+    margin-top: 35px;
 
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1.5rem;
-    background-color: white;
+}
+
+#categoria{
+    color: orange;
+    margin-left: 10px;
+    padding: 0px;
+    width: 600PX;
+    text-align: left;
+    font-size: 26px;
+    /* border: solid 3px black; */
     
-  }
+}
 
-  main > section {
-    display: flex;    
-  }
+#categoria p a{
+    text-decoration: none;
+    color: orange;
+}
 
-  main > section {
+#categoria p{
+    margin: 5px 10px;
+    padding: 0px;
+}
+
+#descricaoMain{
+    /* box-shadow: 0rem 0rem .2rem .2rem gray; */
     display: flex;
-  }
-
-  main > section > figure.banner-promo {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    
-  }
+    gap: 1rem;
+    /* background-color: aliceblue; */
+}
 
-  main > section > figure.banner-promo img {
-    max-width: 100%;
-  }
+#descricaoMain >img:first-child{
+    width: 600px;
+    height: 600px;
+    margin-top: 10vh;
 
+}
 
-  main > section.filtro-fixo {
+#imagemproduto img:hover{
+    width: 750px;
+    height: 750px;
+    transition: 0.5s;
+}
+
+#descricaoProduto{
+    /* position: absolute; */
+    left: 900px;
+    box-shadow: 0rem 0rem .2rem .2rem gray;
+    width: 40vw;
+    margin-left: 15px;
+    padding: 15px;
+    background: rgb(249, 250, 246);
+}
+
+#nomeDoProduto{
+    /* border: solid 3px black; */
+    width: 85%;
+    padding-bottom: 0px;
+
+}
+
+#nomeDoProduto h1{
+    margin: 20px 10px ;
+    margin: 10px 0px;
+}
+
+#sku{
+    /* border: solid 3px black; */
+    border-top: none;
+    width: 20%;
+    /* margin-top: 10px; */
+    position: relative;
+    top: -0.2rem;
+}
+
+#sku p{
+    margin: 3px;
+
+}
+
+#preco{
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 10px;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+
+#precopromocao{
+    text-decoration-line: line-through;
+}
+
+#preco div{
+    /* border: solid 3px black; */
+    padding: 0px 1rem;
+}
+
+#quantidade{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+#quantidade input{
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+#quantidade p{
+    font-size: 20px;
+}
+
+#quantidade div{
+    margin-top: 10px;
+    /* border: solid 3px black; */
+}
+
+#botoes{
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+    width: 500px;
+    height: 60px;
+    margin: 15px;
+    /* border:solid 1px black; */
+}
 
-  main > section.filtro-fixo > div.div-filtro-fixo a {
-    list-style: none;
-    font-size: 1.5rem;
-    text-shadow: 0rem .1rem 0rem .1rem gray;
-    color: orangered;
-    width: 20rem;
-    text-decoration: none;
-  }
-
-  main > section.filtro-fixo > div.div-filtro-fixo a:hover {
-    color: orange;
-    transition: 0.4s;
-  }
-
-
-  section.listagem-produtos-home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0.5rem;
-    
-    
-  }
-
- div.div-listagem-produtos-home {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    border: 0.1rem solid rgba(128, 128, 128, 0.507);
-  }
-
-  div.div-listagem-produtos-home:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
-
-
-  div.div-up-produtos-home {
-    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
-  }
-
-  div.titulo-produto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size:1.3rem;
-    height: 3rem;
-    margin: 0 auto;
-  }
-
-  div.titulo-produto h5 {
-   margin: 0 auto;
-  }
-
-  div.div-up-produtos-home img {
-    width: 20rem;
-    height: 20rem;
-  }
-  
-  div.div-down-produtos-home {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20rem;
-    padding: 1rem;
-  }
-
-  div.descricao-produto-home {
-    height: 9rem;
-  }
-
-  div.price-produto-listagem-produto {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-
-  div.de-por-price {
-    color:red;
-    text-decoration: line-through;
-  }
-
-
-  div.cta-produtos {
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    cursor: pointer;
-    
-  }
-
-  button.add-carrinho {
-    background-color: orange;
-    border: none;
-    width: 9.3rem;
-    height: 2rem;
-  }
-
-  button.comprar-agora {
+#comprar{
     background-color: greenyellow;
+    width: 200px;
     border: none;
-    width: 9.3rem;
-    height: 2rem;
-  }
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
 
-  div.cta-produtos > button h5 {
-    margin: 0;
-  }
+#comprar:hover{
+    background-color: gray;
+    transition: .5s;
+}
 
-  button.add-carrinho:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
+#adicionarcarrinho{
+    background-color: orange;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-  button.comprar-agora:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
+#adicionarcarrinho:hover{
+    background-color: gray;
+    transition: .5s;
+}
 
-  .h2-os-mais-vendidos {
-   text-align: center;
-   margin-top: 1rem;
-   margin-bottom: 0;
-  }
-
-  section > div.conteiner-mais-vendidos {
+#desejos{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
 
-  div.up-lista-mais-vendidos {
-    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
-    height: 15.7rem;
-  }
+}
 
-  div.up-lista-mais-vendidos img{
-    width: 15rem;
-  }
- 
-  div.div-lista-mais-vendidos {
+#desejos img{
+    width: 50px;
+    height: 50px;
+}
+
+#cep{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    border: 0.1rem solid rgba(128, 128, 128, 0.507);
-  }
-
-  div.div-lista-mais-vendidos:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
-
-  div.down-lista-mais-vendidos {
-    display: flex;
-    justify-content: center;
-  }
-
-  section.div-mais-vendidos > div.conteiner-mais-vendidos > div.div-lista-mais-vendidos > div.cta-produtos-mais-vendidos div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-
-  div.down-lista-mais-vendidos h3 {
+    width: 200px;
     text-align: center;
-    margin: .5rem .5rem .5rem .5rem;
-  }
+    gap: 5px;
+}
 
-  div.cta-produtos-mais-vendidos > div > a img {
-    width: 2rem;
-  }
+#cep button{
+    width: 208px;
+}
 
-  section > div.conteiner-logos {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
+.cep{
+    text-align: center;
+    height: 25px;
+    width: 200px;
+}
 
-  section > div.conteiner-logos {
-    max-height: 20rem;
-  }
-  section > div.conteiner-logos > div.logos-parceiros img {
-    width: 8rem;
-  }
+#compartilhe{
+    margin-top: 10px;
+    /* border: solid 1px black; */
+    width: 300px;
+}
 
-  .pagina-empresa {
+#compartilhe p{
+    font-size: 20px;
+    margin: 2px;
+    padding: 10px;
+}
+
+#compartilhe img{
+    width: 50px;
+}
+
+#descricao{
     display: flex;
     flex-direction: column;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
+    /* border: solid 1px black; */
+    width:100%;
+    /* background-image: linear-gradient(to top, rgba(255,0,0,0), orange); */
 
-  footer {
+    /* border-top: solid 3px black; */
+}
+
+#descricao h3{
+    /* border-bottom: solid 3px black; */
+    font-size: 30px;
+    margin-left: 25px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0) 30%, orange 40%);
+    color: orange;
+}
+
+#descricao p{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 25px;
+    width: 300px;
+}
+
+#avaliacao{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 1px black; */
+    width:100;
+    /* border-top: solid 3px black; */
+    /* border-bottom: solid 3px black; */
+    /* background-image: linear-gradient(to bottom,rgba(255,0,0,0), orange); */
+
+}
+
+#avaliacao h3{
+    /* border-bottom: solid 3px black; */
+    font-size: 30px;
+    margin-left: 25px;
+    color: orange;
+    background-image: linear-gradient(to right, rgba(255,0,0,0) 30%, orange 40%);
+
+}
+
+#avaliacao p{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 25px;
+    width: 300px;
+}
+
+#talvezinteresse{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+
+}
+
+#talvezinteresse img:hover{
+    width: 350px;
+}
+
+#talvezinteresse h3{
+    margin-bottom: 25px;
+}
+
+.descricaovalor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    font-size: 20px;
+}
+
+.precointeresse{
+    color: orangered;
+    font-size: 25px;
+}
+
+
+footer {
     box-shadow: 0rem 0rem .2rem .2rem gray;
   }
 
@@ -510,11 +559,6 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 20rem;
+    width: 25rem;
   
-  }
-
-  p.copy {
-    text-align: center;
-    background-color: rgb(249, 250, 246);
   }
