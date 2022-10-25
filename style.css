@@ -2,11 +2,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 16px;
 }
 
 
 body {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -54,6 +55,7 @@ header.nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
     padding: 0 1rem;
     margin-bottom: 1rem;
     box-shadow: 0rem 0rem .2rem .2rem gray;
@@ -64,8 +66,7 @@ header.nav > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    
+    gap: 1rem;  
 }
 
 header.nav > .logo-header img {
@@ -349,6 +350,7 @@ header.nav > nav > .divCarrinho img {
   section > div.conteiner-logos {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 3rem;
     margin-bottom: 2rem;
     width: 100%;
@@ -372,6 +374,7 @@ header.nav > nav > .divCarrinho img {
 
   footer {
     box-shadow: 0rem 0rem .2rem .2rem gray;
+    width: 95%;
   }
 
   footer > div.div-footer {
@@ -510,7 +513,7 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 20rem;
+    width: 15rem;
   
   }
 
@@ -518,3 +521,34 @@ header.nav > nav > .divCarrinho img {
     text-align: center;
     background-color: rgb(249, 250, 246);
   }
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  
+  body {
+        max-width: 992px;
+  }
+
+  div.imagem-formas-pagamento img {
+    width: 10rem;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  main {
+    max-width: 90%;
+  }
+
+}
+
