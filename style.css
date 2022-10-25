@@ -1,5 +1,19 @@
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+body {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
 body * {
     font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 header.aviso-header {
@@ -122,14 +136,13 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1.5rem;
     background-color: white;
     
   }
 
   main > section {
-    display: flex;
-    gap: 1rem;
-    
+    display: flex;    
   }
 
   main > section {
@@ -145,7 +158,7 @@ header.nav > nav > .divCarrinho img {
   }
 
   main > section > figure.banner-promo img {
-    width: 77.5rem;
+    max-width: 100%;
   }
 
 
@@ -156,20 +169,7 @@ header.nav > nav > .divCarrinho img {
     flex-wrap: wrap;
   }
 
-  ul {
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    width: 166vh;
-  }
-
-
-  ul li {
-    list-style: none;
-
-  }
-
-  ul li a {
+  main > section.filtro-fixo > div.div-filtro-fixo a {
     list-style: none;
     font-size: 1.5rem;
     text-shadow: 0rem .1rem 0rem .1rem gray;
@@ -178,7 +178,7 @@ header.nav > nav > .divCarrinho img {
     text-decoration: none;
   }
 
-  ul li a:hover {
+  main > section.filtro-fixo > div.div-filtro-fixo a:hover {
     color: orange;
     transition: 0.4s;
   }
@@ -198,6 +198,7 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 0;
     border: 0.1rem solid rgba(128, 128, 128, 0.507);
   }
 
@@ -213,7 +214,10 @@ header.nav > nav > .divCarrinho img {
   div.titulo-produto {
     display: flex;
     flex-direction: column;
-    font-size:1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size:1.3rem;
+    height: 3rem;
     margin: 0 auto;
   }
 
@@ -223,13 +227,19 @@ header.nav > nav > .divCarrinho img {
 
   div.div-up-produtos-home img {
     width: 20rem;
+    height: 20rem;
   }
   
   div.div-down-produtos-home {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 20rem;
     padding: 1rem;
+  }
+
+  div.descricao-produto-home {
+    height: 9rem;
   }
 
   div.price-produto-listagem-produto {
@@ -248,7 +258,8 @@ header.nav > nav > .divCarrinho img {
   div.cta-produtos {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-self: flex-end;
+    cursor: pointer;
     
   }
 
@@ -278,22 +289,86 @@ header.nav > nav > .divCarrinho img {
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
   }
 
+  .h2-os-mais-vendidos {
+   text-align: center;
+   margin-top: 1rem;
+   margin-bottom: 0;
+  }
+
+  section > div.conteiner-mais-vendidos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  div.up-lista-mais-vendidos {
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
+    height: 15.7rem;
+  }
+
+  div.up-lista-mais-vendidos img{
+    width: 15rem;
+  }
  
+  div.div-lista-mais-vendidos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 0.1rem solid rgba(128, 128, 128, 0.507);
+  }
 
+  div.div-lista-mais-vendidos:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  }
 
+  div.down-lista-mais-vendidos {
+    display: flex;
+    justify-content: center;
+  }
 
+  section.div-mais-vendidos > div.conteiner-mais-vendidos > div.div-lista-mais-vendidos > div.cta-produtos-mais-vendidos div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
+  div.down-lista-mais-vendidos h3 {
+    text-align: center;
+    margin: .5rem .5rem .5rem .5rem;
+  }
 
+  div.cta-produtos-mais-vendidos > div > a img {
+    width: 2rem;
+  }
 
+  section > div.conteiner-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
 
+  section > div.conteiner-logos {
+    max-height: 20rem;
+  }
+  section > div.conteiner-logos > div.logos-parceiros img {
+    width: 8rem;
+  }
 
-
-
-
-
-
-
-
+  .pagina-empresa {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 
   footer {
     box-shadow: 0rem 0rem .2rem .2rem gray;
@@ -435,6 +510,11 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 25rem;
+    width: 20rem;
   
+  }
+
+  p.copy {
+    text-align: center;
+    background-color: rgb(249, 250, 246);
   }
