@@ -347,6 +347,53 @@ header.nav > nav > .divCarrinho img {
     width: 2rem;
   }
 
+  .provasocial{    
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, white 20% , rgb(250, 195, 101));
+    flex-wrap: wrap;
+    }
+
+.foto {
+    width: 100px;
+    padding: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    
+}
+.foto img {
+
+   width: 100%;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   
+   
+}
+.border {
+    border: solid right 1px;
+    height: 176px;
+    justify-content: center;
+    width: 0;
+}
+
+.elogio {
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
   section > div.conteiner-logos {
     display: flex;
     justify-content: center;
