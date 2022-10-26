@@ -338,9 +338,7 @@ header.nav > nav > .divCarrinho img {
     text-justify: distribute;
   }
 
-main{
-    display: flex;
-}
+
 aside{
 display:flex;
 flex-direction: column;

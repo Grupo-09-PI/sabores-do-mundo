@@ -2,11 +2,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 16px;
 }
 
 
 body {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -54,6 +55,7 @@ header.nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
     padding: 0 1rem;
     margin-bottom: 1rem;
     box-shadow: 0rem 0rem .2rem .2rem gray;
@@ -64,14 +66,13 @@ header.nav > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    
+    flex-wrap: wrap;
+    gap: 1rem;  
 }
 
 header.nav > .logo-header img {
-    width: 18rem;
-    
-    
+    width: 60%;
+        
 }
 
 header.nav > .divBusca img {  
@@ -92,7 +93,7 @@ header.nav > .divBusca > input:focus{
 header.nav > .divBusca {
     display: flex;
     flex-grow: 1;
-    max-width: 35rem;
+    max-width: 30%;
     align-items: center;
     text-transform: uppercase;
     background-color:#f7f7f7;
@@ -110,10 +111,10 @@ header.nav > nav > .divCarrinho img {
     background-color:transparent;
     padding-left:5px;
     font-style:italic;
-    font-size:18px;
+    font-size:100%;
     border:none;
-    height:32px;
-    width:260px;
+    height:100%;
+    width:100%;
   }
 
 
@@ -349,6 +350,7 @@ header.nav > nav > .divCarrinho img {
   section > div.conteiner-logos {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 3rem;
     margin-bottom: 2rem;
     width: 100%;
@@ -372,6 +374,7 @@ header.nav > nav > .divCarrinho img {
 
   footer {
     box-shadow: 0rem 0rem .2rem .2rem gray;
+    width: 95%;
   }
 
   footer > div.div-footer {
@@ -510,7 +513,7 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 20rem;
+    width: 15rem;
   
   }
 
@@ -518,3 +521,103 @@ header.nav > nav > .divCarrinho img {
     text-align: center;
     background-color: rgb(249, 250, 246);
   }
+
+@media (max-width: 768px) {
+
+  html {
+    font-size: 14px;
+  }
+  
+  body {
+        max-width: 992px;
+  }
+
+  div.imagem-formas-pagamento img {
+    width: 10rem;
+  }
+
+
+  div.txt-foto-produto h2{
+    font-size: 0.7rem;
+  }
+
+  div.txt-nome-produto h2{
+    font-size: 0.7rem;
+  }
+
+  div.txt-preco-unitario h2{
+    font-size: 0.7rem;
+  }
+
+  div.txt-quantidade-produto h2{
+    font-size: 0.7rem;
+  }
+
+  div.txt-subtotal h2{
+    font-size: 0.7rem;
+  }
+
+  div.txt-excluir h2{
+    font-size: 0.7rem;
+  }
+
+
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  
+  body {
+        max-width: 992px;
+  }
+
+  div.imagem-formas-pagamento img {
+    width: 10rem;
+  }
+
+
+  div.txt-foto-produto h2{
+    font-size: 1rem;
+  }
+
+  div.txt-nome-produto h2{
+    font-size: 1rem;
+  }
+
+  div.txt-preco-unitario h2{
+    font-size: 1rem;
+  }
+
+  div.txt-quantidade-produto h2{
+    font-size: 1rem;
+  }
+
+  div.txt-subtotal h2{
+    font-size: 1rem;
+  }
+
+  div.txt-excluir h2{
+    font-size: 1rem;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  main {
+    max-width: 90%;
+  }
+
+}
+
