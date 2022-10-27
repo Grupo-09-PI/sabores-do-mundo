@@ -13,8 +13,9 @@ body {
 }
 
 body * {
-    font-family: 'Fira Sans', sans-serif;
+    /*font-family: 'Fira Sans', sans-serif;*/
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 header.aviso-header {
@@ -58,8 +59,11 @@ header.nav {
     width: 95%;
     padding: 0 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0rem 0rem .2rem .2rem gray;
+    /*box-shadow: 0rem 0rem .2rem .2rem gray;*/
     background-color: white;    
+    box-shadow: 0px 1.3rem 2.5rem #2426721C;
+    position: sticky;
+    top: 0;
 }
 
 header.nav > nav {
@@ -146,10 +150,6 @@ header.nav > nav > .divCarrinho img {
     display: flex;    
   }
 
-  main > section {
-    display: flex;
-  }
-
   main > section > figure.banner-promo {
     display: flex;
     justify-content: center;
@@ -191,6 +191,7 @@ header.nav > nav > .divCarrinho img {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0.5rem;
+    gap: 0.5rem
     
     
   }
@@ -199,18 +200,21 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 0;
-    border: 0.1rem solid rgba(128, 128, 128, 0.507);
+    margin-bottom: 0.4rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 20px;
+    opacity: 1;
   }
 
-  div.div-listagem-produtos-home:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
+  /*div.div-listagem-produtos-home:hover {
+    /*box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;}*/
+  
 
 
-  div.div-up-produtos-home {
-    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
-  }
+  /*div.div-up-produtos-home {
+    /*border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507); }*/
+
 
   div.titulo-produto {
     display: flex;
@@ -260,22 +264,29 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
+    justify-content: space-between;
     cursor: pointer;
+    width: 100%;
+    height: 2rem;
     
   }
 
   button.add-carrinho {
     background-color: orange;
     border: none;
-    width: 9.3rem;
-    height: 2rem;
+   /* width: 9.3rem;
+    height: 2rem;*/
+    border-radius: 0.5rem;
+    width: 40%;
   }
 
   button.comprar-agora {
     background-color: greenyellow;
     border: none;
-    width: 9.3rem;
-    height: 2rem;
+    /*width: 9.3rem;
+    height: 2rem;*/
+    border-radius: 0.5rem;
+    width: 40%;
   }
 
   div.cta-produtos > button h5 {
@@ -300,12 +311,13 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 0.5rem;
     margin-bottom: 2rem;
     width: 100%;
   }
 
   div.up-lista-mais-vendidos {
-    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
+    /*border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);*/
     height: 15.7rem;
   }
 
@@ -317,12 +329,16 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: 0.1rem solid rgba(128, 128, 128, 0.507);
+    /*border: 0.1rem solid rgba(128, 128, 128, 0.507);*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1;
   }
 
-  div.div-lista-mais-vendidos:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
+  /*div.div-lista-mais-vendidos:hover {
+    /*box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;  }*/
+
 
   div.down-lista-mais-vendidos {
     display: flex;
@@ -420,7 +436,8 @@ header.nav > nav > .divCarrinho img {
   }
 
   footer {
-    box-shadow: 0rem 0rem .2rem .2rem gray;
+    /*box-shadow: 0rem 0rem .2rem .2rem gray;*/
+    box-shadow: 0px 1.3rem 2.5rem #2426721C;
     width: 95%;
   }
 
