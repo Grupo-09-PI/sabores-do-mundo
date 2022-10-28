@@ -2,19 +2,18 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 16px;
 }
 
 
 body {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
 
+
 body * {
     font-family: 'Fira Sans', sans-serif;
-    box-sizing: border-box;
 }
 
 header.aviso-header {
@@ -55,24 +54,28 @@ header.nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
     padding: 0 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0rem 0rem .2rem .2rem gray;
-    background-color: white;    
+    /*box-shadow: 0rem 0rem .2rem .2rem gray;*/
+    /*background-color: white;   */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1; 
 }
 
 header.nav > nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;  
+    gap: 2rem;
+    
 }
 
 header.nav > .logo-header img {
-    width: 60%;
-        
+    width: 18rem;
+    
+    
 }
 
 header.nav > .divBusca img {  
@@ -93,7 +96,7 @@ header.nav > .divBusca > input:focus{
 header.nav > .divBusca {
     display: flex;
     flex-grow: 1;
-    max-width: 30%;
+    max-width: 35rem;
     align-items: center;
     text-transform: uppercase;
     background-color:#f7f7f7;
@@ -111,10 +114,10 @@ header.nav > nav > .divCarrinho img {
     background-color:transparent;
     padding-left:5px;
     font-style:italic;
-    font-size:100%;
+    font-size:18px;
     border:none;
-    height:100%;
-    width:100%;
+    height:32px;
+    width:260px;
   }
 
 
@@ -137,13 +140,14 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
     background-color: white;
     
   }
 
   main > section {
-    display: flex;    
+    display: flex;
+    gap: 1rem;
+    
   }
 
   main > section {
@@ -159,7 +163,7 @@ header.nav > nav > .divCarrinho img {
   }
 
   main > section > figure.banner-promo img {
-    max-width: 100%;
+    width: 77.5rem;
   }
 
 
@@ -170,7 +174,28 @@ header.nav > nav > .divCarrinho img {
     flex-wrap: wrap;
   }
 
-  main > section.filtro-fixo > div.div-filtro-fixo a {
+  ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 166vh;
+  }
+
+
+  ul li {
+    list-style: none;
+
+  }
+
+  main > div.menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem; 
+  }
+
+  main > div.menu > div.div-filtro-fixo a {
     list-style: none;
     font-size: 1.5rem;
     text-shadow: 0rem .1rem 0rem .1rem gray;
@@ -179,7 +204,23 @@ header.nav > nav > .divCarrinho img {
     text-decoration: none;
   }
 
+  
+
   main > section.filtro-fixo > div.div-filtro-fixo a:hover {
+    color: orange;
+    transition: 0.4s;
+  }
+
+  ul li a {
+    list-style: none;
+    font-size: 1.5rem;
+    text-shadow: 0rem .1rem 0rem .1rem gray;
+    color: orangered;
+    width: 20rem;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
     color: orange;
     transition: 0.4s;
   }
@@ -193,6 +234,7 @@ header.nav > nav > .divCarrinho img {
     padding: 0.5rem;
     
     
+    
   }
 
  div.div-listagem-produtos-home {
@@ -200,25 +242,27 @@ header.nav > nav > .divCarrinho img {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 0;
-    border: 0.1rem solid rgba(128, 128, 128, 0.507);
+    /*border: 0.1rem solid rgba(128, 128, 128, 0.507);*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1;
   }
 
-  div.div-listagem-produtos-home:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
+  /*div.div-listagem-produtos-home:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;  }
+*/
 
 
-  div.div-up-produtos-home {
+  /*div.div-up-produtos-home {
     border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
   }
+*/
 
   div.titulo-produto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size:1.3rem;
-    height: 3rem;
+    font-size:1.5rem;
     margin: 0 auto;
   }
 
@@ -227,20 +271,21 @@ header.nav > nav > .divCarrinho img {
   }
 
   div.div-up-produtos-home img {
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+    height: 21rem;
   }
   
   div.div-down-produtos-home {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
     width: 20rem;
     padding: 1rem;
   }
 
-  div.descricao-produto-home {
-    height: 9rem;
+  div.descricao-produto-home p {
+    margin-bottom: 2rem;
+    height: 8rem;
   }
 
   div.price-produto-listagem-produto {
@@ -259,8 +304,7 @@ header.nav > nav > .divCarrinho img {
   div.cta-produtos {
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
-    cursor: pointer;
+    justify-content: space-between;
     
   }
 
@@ -290,126 +334,7 @@ header.nav > nav > .divCarrinho img {
     box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
   }
 
-  .h2-os-mais-vendidos {
-   text-align: center;
-   margin-top: 1rem;
-   margin-bottom: 0;
-  }
-
-  section > div.conteiner-mais-vendidos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-
-  div.up-lista-mais-vendidos {
-    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
-    height: 15.7rem;
-  }
-
-  div.up-lista-mais-vendidos img{
-    width: 15rem;
-  }
  
-  div.div-lista-mais-vendidos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: 0.1rem solid rgba(128, 128, 128, 0.507);
-  }
-
-  div.div-lista-mais-vendidos:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
-
-  div.down-lista-mais-vendidos {
-    display: flex;
-    justify-content: center;
-  }
-
-  section.div-mais-vendidos > div.conteiner-mais-vendidos > div.div-lista-mais-vendidos > div.cta-produtos-mais-vendidos div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-
-  div.down-lista-mais-vendidos h3 {
-    text-align: center;
-    margin: .5rem .5rem .5rem .5rem;
-  }
-
-  div.cta-produtos-mais-vendidos > div > a img {
-    width: 2rem;
-  }
-
-  .provasocial{    
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-image: linear-gradient(to bottom, white 20% , rgb(250, 195, 101));
-    flex-wrap: wrap;
-    }
-
-.foto {
-    width: 100px;
-    padding: 20px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    padding-left: 80px;
-    
-}
-.foto img {
-
-   width: 100%;
-   border-radius: 50%;
-   width: 100px;
-   height: 100px;
-   
-   
-}
-.border {
-    border: solid right 1px;
-    height: 176px;
-    justify-content: center;
-    width: 0;
-}
-
-.elogio {
-    width: 400px;
-    height: 100px;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-  section > div.conteiner-logos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-
-  section > div.conteiner-logos {
-    max-height: 20rem;
-  }
-  section > div.conteiner-logos > div.logos-parceiros img {
-    width: 8rem;
-  }
-
   .pagina-empresa {
     display: flex;
     flex-direction: column;
@@ -419,10 +344,86 @@ header.nav > nav > .divCarrinho img {
     margin-bottom: 5rem;
   }
 
-  footer {
-    box-shadow: 0rem 0rem .2rem .2rem gray;
-    width: 95%;
+  .texto-empresa {
+    text-justify: distribute;
   }
+
+
+aside > input{border-radius: 10%;
+     width: 200px;
+    height: 50px;
+    text-align: center;}
+
+
+.categoria{
+    /*background-color:#08195C;*/
+    background-color: orange;
+    color:white;
+    padding-left: 20px;
+    border-radius: 0.5rem;
+}
+
+.card > img{
+    width: 200px;
+    display: inline-block;
+    margin: 20px;
+} 
+
+.card{
+  border: 0.1rem solid grey; 
+}
+div.card h3{
+  text-align: center;
+}
+
+.linha{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.linha .card img:hover{
+  width: 250px;
+}
+
+.carrinho{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: orange;
+  border: none;
+  width: 9.3rem;
+  height: 2rem;
+}
+
+.carrinho:hover{
+  background-color: darkorange;
+}
+
+
+.comprar{
+  background-color: greenyellow;
+  border: none;
+  width: 9.3rem;
+  height: 2rem;
+}
+
+.comprar:hover{
+  background-color: darkgreen;
+}
+
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*footer {
+    box-shadow: 0rem 0rem .2rem .2rem gray;}*/
+  
 
   footer > div.div-footer {
     display: flex;
@@ -560,111 +561,6 @@ header.nav > nav > .divCarrinho img {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 15rem;
+    width: 25rem;
   
   }
-
-  p.copy {
-    text-align: center;
-    background-color: rgb(249, 250, 246);
-  }
-
-@media (max-width: 768px) {
-
-  html {
-    font-size: 14px;
-  }
-  
-  body {
-        max-width: 992px;
-  }
-
-  div.imagem-formas-pagamento img {
-    width: 10rem;
-  }
-
-
-  div.txt-foto-produto h2{
-    font-size: 0.7rem;
-  }
-
-  div.txt-nome-produto h2{
-    font-size: 0.7rem;
-  }
-
-  div.txt-preco-unitario h2{
-    font-size: 0.7rem;
-  }
-
-  div.txt-quantidade-produto h2{
-    font-size: 0.7rem;
-  }
-
-  div.txt-subtotal h2{
-    font-size: 0.7rem;
-  }
-
-  div.txt-excluir h2{
-    font-size: 0.7rem;
-  }
-
-
-
-}
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 769px) and (max-width: 992px) {
-  html {
-    font-size: 14px;
-  }
-  
-  body {
-        max-width: 992px;
-  }
-
-  div.imagem-formas-pagamento img {
-    width: 10rem;
-  }
-
-
-  div.txt-foto-produto h2{
-    font-size: 1rem;
-  }
-
-  div.txt-nome-produto h2{
-    font-size: 1rem;
-  }
-
-  div.txt-preco-unitario h2{
-    font-size: 1rem;
-  }
-
-  div.txt-quantidade-produto h2{
-    font-size: 1rem;
-  }
-
-  div.txt-subtotal h2{
-    font-size: 1rem;
-  }
-
-  div.txt-excluir h2{
-    font-size: 1rem;
-  }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  body {
-    max-width: 100%;
-    align-items: center;
-  }
-
-  main {
-    max-width: 90%;
-  }
-
-}
-
