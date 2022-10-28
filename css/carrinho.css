@@ -25,10 +25,14 @@ main > section.pipeline-compra > div.conteiner-checkbox > div.check-line img {
 }
 
 section.aviso {
-    border: 0.1rem solid black;
+    /*border: 0.1rem solid black;*/
     padding: 1rem;
     width: 100%;
     font-size: 1.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+    opacity: 1;
 }
 
 section.sub-titulo-carrinho {
@@ -106,13 +110,16 @@ div.tabela-itens-carrinho {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 0.5rem;
     text-align: center;
     align-items:center;
     margin-bottom: 0;
-    border-left: 0.1rem solid black;
+    /*border-left: 0.1rem solid black;
     border-right: 0.1rem solid black;
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1; 
 }
 
 #MeioCheck img {
@@ -126,15 +133,15 @@ div.tabela-itens-carrinho {
 }
 
 
-#first-produto {
+/*#first-produto {
     border-top: 0.1rem solid black;;
 }
+*/
 
 div.tabela-itens-carrinho > div.linha-de-produto {
     display: flex;
     text-align: center;
     align-items:center;
-
 }
 
 div.foto-produto {
