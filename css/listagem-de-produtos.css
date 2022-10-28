@@ -56,8 +56,12 @@ header.nav {
     align-items: center;
     padding: 0 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0rem 0rem .2rem .2rem gray;
-    background-color: white;    
+    /*box-shadow: 0rem 0rem .2rem .2rem gray;*/
+    /*background-color: white;   */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1; 
 }
 
 header.nav > nav {
@@ -230,6 +234,7 @@ header.nav > nav > .divCarrinho img {
     padding: 0.5rem;
     
     
+    
   }
 
  div.div-listagem-produtos-home {
@@ -237,17 +242,22 @@ header.nav > nav > .divCarrinho img {
     flex-direction: column;
     flex-wrap: wrap;
     margin-bottom: 0;
-    border: 0.1rem solid rgba(128, 128, 128, 0.507);
+    /*border: 0.1rem solid rgba(128, 128, 128, 0.507);*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1;
   }
 
-  div.div-listagem-produtos-home:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
-  }
+  /*div.div-listagem-produtos-home:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;  }
+*/
 
 
-  div.div-up-produtos-home {
+  /*div.div-up-produtos-home {
     border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
   }
+*/
 
   div.titulo-produto {
     display: flex;
@@ -339,24 +349,20 @@ header.nav > nav > .divCarrinho img {
   }
 
 
-aside{
-display:flex;
-flex-direction: column;
-
-}
 aside > input{border-radius: 10%;
      width: 200px;
     height: 50px;
     text-align: center;}
+
+
 .categoria{
-    background-color:#08195C;
+    /*background-color:#08195C;*/
+    background-color: orange;
     color:white;
     padding-left: 20px;
+    border-radius: 0.5rem;
 }
-aside > div  > ul{
-    list-style: none;
-    line-height: 200%
-}
+
 .card > img{
     width: 200px;
     display: inline-block;
@@ -374,6 +380,7 @@ div.card h3{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 0.5rem;
   justify-content: center;
   padding: 0.5rem;
 }
@@ -414,9 +421,9 @@ div.card h3{
 }
 
 
-footer {
-    box-shadow: 0rem 0rem .2rem .2rem gray;
-  }
+/*footer {
+    box-shadow: 0rem 0rem .2rem .2rem gray;}*/
+  
 
   footer > div.div-footer {
     display: flex;
