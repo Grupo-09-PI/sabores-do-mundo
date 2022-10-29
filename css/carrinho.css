@@ -1,0 +1,280 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+main > section.pipeline-compra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+main > section.pipeline-compra > div.conteiner-checkbox {
+    display: flex;
+    
+}
+
+main > section.pipeline-compra > div.conteiner-checkbox > div.check-line img {
+    width: 4rem;
+    align-self: center;
+    
+}
+
+section.aviso {
+    /*border: 0.1rem solid black;*/
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+    opacity: 1;
+}
+
+section.sub-titulo-carrinho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.sub-titulo-carrinho > div.botton-finalizar-compra {
+    display: flex;
+    
+}
+
+section.sub-titulo-carrinho > div.botton-finalizar-compra button {
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    background-color: greenyellow;
+    border: none;
+    padding: 0.8rem;
+    
+}
+
+section.sub-titulo-carrinho > div.botton-finalizar-compra button:hover {
+    background-color: rgba(172, 255, 47, 0.763);
+    transition: 1s;
+}
+
+section.cabecalho-carrinho {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    text-align: center;
+    align-items:center;
+    margin-bottom: 0;
+    
+}
+
+section.cabecalho-carrinho > div.txt-foto-produto{
+    width: 25%;
+}
+
+section.cabecalho-carrinho > div.txt-nome-produto{
+    width: 40%;
+
+}
+
+section.cabecalho-carrinho > div.txt-preco-unitario{
+    width: 10%;
+}
+
+section.cabecalho-carrinho > div.txt-quantidade-produto{
+    width: 10%;
+
+}
+
+section.cabecalho-carrinho > div.txt-quantidade-produto{
+    width: 15%;
+    
+}
+
+section.cabecalho-carrinho > div.txt-excluir{
+    width: 10%;
+}
+
+section.cabecalho-carrinho > div.txt-subtotal{
+    width: 10%;
+}
+
+section.todos-os-itens-carrinho {
+    display: flex;
+    flex-direction: column;
+}
+
+div.tabela-itens-carrinho {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    align-items:center;
+    margin-bottom: 0;
+    /*border-left: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1; 
+}
+
+#MeioCheck img {
+    margin-left: 3.3rem;
+
+}
+
+#Direita-Check img {
+    margin-left: 2.5rem;
+
+}
+
+
+/*#first-produto {
+    border-top: 0.1rem solid black;;
+}
+*/
+
+div.tabela-itens-carrinho > div.linha-de-produto {
+    display: flex;
+    text-align: center;
+    align-items:center;
+}
+
+div.foto-produto {
+    width: 25%;
+
+}
+
+div.nome-produto {
+    width: 40%;
+
+}
+
+div.preco-unitário {
+    width: 10%;
+    
+}
+
+div.quantidade-produto {
+    width: 15%;
+}
+
+div.subtotal {
+    width: 10%;
+}
+
+div.excluir {
+    width: 10%;
+}
+
+div.foto-produto img {
+    width: 40%;
+}
+
+div.excluir img {
+    width: 20%;
+}
+
+section.rodape-carrinho {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.continuar-compando button {
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: yellow;
+}
+
+
+div.atualizar-valores button {
+    border-radius: 1.5rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: coral;
+}
+
+section.frete-cupom-total {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+section.frete-cupom-total > div.txt-frete {
+    border-radius: 2.5rem;
+    width: 33%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+section.frete-cupom-total > div.txt-cupom {
+    border-radius: 2.5rem;
+    width: 33%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+section.frete-cupom-total > div.conteiner-subtotal {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 2.5rem;
+    width: 30%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+}
+
+section.frete-cupom-total > div.conteiner-subtotal > div.txt-subtotal {
+    text-align: end;
+}
+
+section.frete-cupom-total > div.conteiner-subtotal > div.soma-subtotal {
+    text-align: center;
+    padding-top: 0.4rem;
+    
+}
+
+div.txt-frete button {
+    background-color: rgba(100, 148, 237, 0.694);
+    border-radius: 1rem;
+    width: 30%;
+    height: 15%;
+    border: none;
+}
+
+div.txt-frete input {
+    width: 40%;
+    border-radius: 1rem;
+    
+}
+
+div.txt-cupom button {
+    background-color: rgba(100, 148, 237, 0.694);
+    border-radius: 1rem;
+    width: 30%;
+    height: 15%;
+    border: none;
+}
+
+div.txt-cupom input {
+    width: 40%;
+    border-radius: 1rem;
+}
+
+div.soma-subtotal button {
+    background-color: greenyellow;
+    border-radius: 1rem;
+    width: 100%;
+    height: 25%;
+    border: none;
+}
+
+

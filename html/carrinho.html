@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/sabor-icon.png">
+    <link rel="stylesheet" href="/css/carrinho.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <title>Sabor do Mundo</title>
+</head>
+<body>
+    <header class="aviso-header">
+        <h5 class="frase-motion"> Parcele sua compra em até 6 x sem juros, entrega gratuita para compras a cima de R$200,00 </h5>
+    </header>
+
+    <header class="nav">   
+        <div class="logo-header" >
+            <a href="../index.html"><img src="../imagens/logo-sabores.png" alt="" class="logo"></a>
+        </div>
+
+        <div class="divBusca">
+            <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
+            <a href="#"><img src="../imagens/header-footer/lupa-.png" id="btnBusca" alt="Buscar"/></a>
+        </div>
+
+        <nav>
+            <div class="divMinhaConta">
+                <a href="login.html"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+            </div>
+            
+            <div class="divCarrinho">
+                <a href="carrinho.html"><img src="../imagens/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pipeline-compra">
+            <div class="conteiner-checkbox">
+                <div class="check-line">
+                    <img src="/imagens/body-main/check.png" alt="" class="img-check">
+                    <h4 class="texto-check">CARRINHO</h4>
+                </div>
+                <div class="linha-tempo">
+                    <h1>-----------------------</h1>
+                </div>
+                <div class="check-line" id="MeioCheck">
+                    <img src="/imagens/body-main/no-check.png" alt="" class="img-check">
+                    <h4 class="texto-check">ENTREGA E PAGAMENTO</h4>
+                </div>
+                <div class="linha-tempo">
+                    <h1>-----------------------</h1>
+                </div>
+                <div class="check-line" id="Direita-Check">
+                    <img src="/imagens/body-main/no-check.png" alt="" class="img-check">
+                    <h4 class="texto-check">COMPRA FINALIZADA</h4>
+                </div>
+            </div>
+        </section>
+        <section class="aviso">
+            <li>Não se esqueça de Comfirmar os "Dados do seu endereço" antes de finalizar a compra</li>
+        </section>
+        <section class="sub-titulo-carrinho">
+            <div class="sub-titulo-texto">
+                <h2>Carrinho de Compras</h2>
+            </div>
+            <div class="botton-finalizar-compra">
+                <button class="finalizar-pedido">FINALIZAR PEDIDO</button>
+            </div>
+        </section>
+        <section class="cabecalho-carrinho">
+            <div class="txt-foto-produto">
+                <h2>FOTO PRODUTO</h2>
+            </div>
+            <div class="txt-nome-produto">
+                <h2>NOME PRODUTO</h2>
+            </div>
+            <div class="txt-preco-unitario">
+                <h2>PREÇO UNITÁRIO</h2>
+            </div>
+            <div class="txt-quantidade-produto">
+                <h2>QUANTIDADE</h2>
+            </div>
+            <div class="txt-subtotal">
+                <h2>SUBTOTAL</h2>
+            </div>
+            <div class="txt-excluir">
+                <h2>EXCLUIR</h2>
+            </div>     
+        </section>
+        <section class="todos-os-itens-carrinho">
+            <div class="tabela-itens-carrinho">
+                <div class="linha-de-produto" id="first-produto">
+                    <div class="foto-produto">
+                        <img src="/imagens/Produtos-Japao/kitkat-japao.jpg" alt="">
+                    </div>
+                    <div class="nome-produto">
+                        <h3>KitKat Cheesecake Strawberry</h3>
+                    </div>
+                    <div class="preco-unitário" >
+                        <h4>R$ 54,45</h4>
+                    </div>
+                    <div class="quantidade-produto">
+                        <h4>1</h4>
+                    </div>
+                    <div class="subtotal">
+                        <h4>R$ 54,45</h4>
+                    </div>
+                    <div class="excluir">
+                        <a href="#"><img src="/imagens/body-main/lixeira.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabela-itens-carrinho">
+                <div class="linha-de-produto">
+                    <div class="foto-produto">
+                        <img src="/imagens/Produtos-Franca/saque-yamadanishiki.jpg" alt="">
+                    </div>
+                    <div class="nome-produto">
+                        <h3>Saquê Yamadanishiki Honjozo Amayagi - 500ml</h3>
+                    </div>
+                    <div class="preco-unitário" >
+                        <h4>R$ 181,79</h4>
+                    </div>
+                    <div class="quantidade-produto">
+                        <h4>2</h4>
+                    </div>
+                    <div class="subtotal">
+                        <h4>R$ 363,58</h4>
+                    </div>
+                    <div class="excluir">
+                        <a href="#"><img src="/imagens/body-main/lixeira.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabela-itens-carrinho">
+                <div class="linha-de-produto">
+                    <div class="foto-produto">
+                        <img src="/imagens/Produtos-Coreia/marshmallow-recheado-sabor-morango.jpg" alt="">
+                    </div>
+                    <div class="nome-produto">
+                        <h3>Marshmallow Sabor Morango</h3>
+                    </div>
+                    <div class="preco-unitário" >
+                        <h4>R$ 20,20</h4>
+                    </div>
+                    <div class="quantidade-produto">
+                        <h4>3</h4>
+                    </div>
+                    <div class="subtotal">
+                        <h4>R$ 60,60</h4>
+                    </div>
+                    <div class="excluir">
+                        <a href="#"><img src="/imagens/body-main/lixeira.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabela-itens-carrinho">
+                <div class="linha-de-produto">
+                    <div class="foto-produto">
+                        <img src="/imagens/Produtos-Coreia/marshmallow-recheado-sabor-morango.jpg" alt="">
+                    </div>
+                    <div class="nome-produto">
+                        <h3>Marshmallow Sabor Morango</h3>
+                    </div>
+                    <div class="preco-unitário" >
+                        <h4>R$ 20,20</h4>
+                    </div>
+                    <div class="quantidade-produto">
+                        <h4>1</h4>
+                    </div>
+                    <div class="subtotal">
+                        <h4>R$ 20,20</h4>
+                    </div>
+                    <div class="excluir">
+                        <a href="#"><img src="/imagens/body-main/lixeira.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabela-itens-carrinho">
+                <div class="linha-de-produto">
+                    <div class="foto-produto">
+                        <img src="/imagens/Produtos-Coreia/marshmallow-recheado-sabor-morango.jpg" alt="">
+                    </div>
+                    <div class="nome-produto">
+                        <h3>Marshmallow Sabor Morango</h3>
+                    </div>
+                    <div class="preco-unitário" >
+                        <h4>R$ 20,20</h4>
+                    </div>
+                    <div class="quantidade-produto">
+                        <h4>1</h4>
+                    </div>
+                    <div class="subtotal">
+                        <h4>R$ 20,20</h4>
+                    </div>
+                    <div class="excluir">
+                        <a href="#"><img src="/imagens/body-main/lixeira.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabela-itens-carrinho">
+                <div class="linha-de-produto">
+                    <div class="foto-produto">
+                        <img src="/imagens/Produtos-Franca/Macarons.jpeg" alt="">
+                    </div>
+                    <div class="nome-produto">
+                        <h3>Macarons Chocolate</h3>
+                    </div>
+                    <div class="preco-unitário" >
+                        <h4>R$ 19,99</h4>
+                    </div>
+                    <div class="quantidade-produto">
+                        <h4>4</h4>
+                    </div>
+                    <div class="subtotal">
+                        <h4>R$ 79,96</h4>
+                    </div>
+                    <div class="excluir">
+                        <a href="#"><img src="/imagens/body-main/lixeira.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rodape-carrinho">
+            <div class="continuar-compando">
+                <button>CONTINUAR COMPRANDO</button>
+            </div>
+            <div class="atualizar-valores">
+                <button>ATUALIZAR VALORES</button>
+            </div>
+        </section>
+        <section class="frete-cupom-total">
+            <div class="txt-frete">
+                <h2>Calcular Frete</h2>
+                <h3>informe seu CEP para Calcular o valor da entrega.</h3>
+                <h2>CEP:</h2>
+                <input type="ranger">
+                <button>Calcular</button>
+            </div>
+            <div class="txt-cupom">
+                <h2>Cupom de Desconto</h2>
+                <h3>informe aqui seu cupom promocional.</h3>
+                <input type="ranger">
+                <button>Usar Cupom</button>
+            </div>
+            
+            <div class="conteiner-subtotal">
+                <div class="txt-subtotal">
+                    <h2>Subtotal</h2> 
+                    <h2>Valor Total</h2> 
+                </div>
+                <div class="soma-subtotal">
+                    <h3>R$ 00,00</h3>
+                    <h3>R$ 00,00</h3>
+                    <button>Finalizar Pedido</button>
+                </div>
+
+            </div>
+            <div class="cupom">
+                
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="div-footer">
+            <div class="div-institucional">
+                <section class="institucional"><h3>Institucional</h3>
+                    <div>
+                        <a href="html/empresa.html"><h5>Empresa</h5></a>
+                        <a href="#"><h5>Como comprar</h5></a>
+                        <a href="#"><h5>Segurança</h5></a>
+                        <a href="#"><h5>Envio</h5></a>
+                        <a href="#"><h5>Pagamento</h5></a>
+                        <a href="#"><h5>Troca e Devoluções</h5></a>
+                        <a href="#"><h5>Depoimentos de Clientes</h5></a>
+                        <a href="#"><h5>Política de Privacidade</h5></a>
+                        <a href="#"><h5>Termo de uso</h5></a>
+                        <a href="#"><h5>Contato</h5></a>
+                    </div>
+                </section>
+            </div>
+            <div class="div-atendimento">
+                <section class="atendimento"><h3>Atendimento</h3>
+                    <div class="up-div">
+                        <div class="contatos-footer">
+                            <img src="../imagens/header-footer/telefone-icon.png" alt="">
+                            <a href="#"><h5>Telefone</h5></a>
+                        </div>
+                        <div class="contatos-footer">
+                            <img src="../imagens/header-footer/whatsapp-icon.png" alt="">
+                            <a href="#"><h5>Whatsapp</h5></a>
+                        </div>
+                        <div class="contatos-footer">
+                            <img src="../imagens/header-footer/email-icon.png" alt="">
+                            <a href="#"><h5>E-mail</h5></a>
+                        </div>
+                    </div>
+                    <div class="down-div">
+                        <p>Nosso horário de atendimento é de segunda a sexta feira das 09:00 até às 17:00 e Sábado das 08:00 até as 12:00.</p>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="div-rede-sociais">
+                <section class="rede-sociais"><h3>Rede Sociais</h3>
+                    <div class="up-div">
+                        <div class="redeSocial-footer">
+                            <img src="../imagens/header-footer/facebook-icon-removebg-preview.png" alt="">
+                            <a href="#"><h5>Facebook</h5></a>
+                        </div>
+                        <div class="redeSocial-footer">
+                            <img src="../imagens/header-footer/instagram-icon-removebg-preview.png" alt="">
+                            <a href="#"><h5>Instagram</h5></a>
+                        </div>
+                        <div class="redeSocial-footer">
+                            <img src="../imagens/header-footer/linkedin-icon.png" alt="">
+                            <a href="#"><h5>Linkedin</h5></a>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="div-formas-pagamento">
+                <section class="formas-pagamento"><h3>Pagamento</h3>
+                    <div>
+                        <div class="imagem-formas-pagamento">
+                            <img src="../imagens/header-footer/Credit-Card-Icons.png" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>                           
+    </footer>
+    <p class="copy" >&copy; Copyright 2022, Sabores do mundo.</p>  
+    
+</body>
+</html>
