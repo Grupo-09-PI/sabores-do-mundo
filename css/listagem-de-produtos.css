@@ -1,0 +1,566 @@
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+body {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+body * {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header.aviso-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+header.aviso-header > h5.frase-motion{
+    display: flex;
+    background-color: white;
+    width: 90%;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes slidein {
+    from{
+        
+        margin-left: 60%;
+        width: 40%;
+
+    }
+
+    to {
+        margin-left: 5%;
+        width: 40%;
+    }
+}
+
+header.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    /*box-shadow: 0rem 0rem .2rem .2rem gray;*/
+    /*background-color: white;   */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1; 
+}
+
+header.nav > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+
+header.nav > .logo-header img {
+    width: 18rem;
+    
+    
+}
+
+header.nav > .divBusca img {  
+    width: 2rem;
+
+}
+
+header.nav > .divBusca > input {
+    flex-grow: 1;
+    
+}
+
+header.nav > .divBusca > input:focus{
+    outline: none;
+    border:none;
+}
+
+header.nav > .divBusca {
+    display: flex;
+    flex-grow: 1;
+    max-width: 35rem;
+    align-items: center;
+    text-transform: uppercase;
+    background-color:#f7f7f7;
+    border:solid 1px;
+    border-radius: 15px;
+    height: 2.5rem;
+  }
+
+header.nav > nav > .divCarrinho img {  
+    width: 2.5rem;
+
+}
+
+  #txtBusca{
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+  }
+
+
+  a.btnMinhaConta {
+    font-size: 2rem;
+    border: none;
+    background-color: #143CDB;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    
+  }
+
+  header.nav > nav > .divMinhaConta img {  
+    width: 2.5rem;
+
+}
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    
+  }
+
+  main > section {
+    display: flex;
+    gap: 1rem;
+    
+  }
+
+  main > section {
+    display: flex;
+  }
+
+  main > section > figure.banner-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+  }
+
+  main > section > figure.banner-promo img {
+    width: 77.5rem;
+  }
+
+
+  main > section.filtro-fixo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 166vh;
+  }
+
+
+  ul li {
+    list-style: none;
+
+  }
+
+  main > div.menu {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem; 
+  }
+
+  main > div.menu > div.div-filtro-fixo a {
+    list-style: none;
+    font-size: 1.5rem;
+    text-shadow: 0rem .1rem 0rem .1rem gray;
+    color: orangered;
+    width: 20rem;
+    text-decoration: none;
+  }
+
+  
+
+  main > section.filtro-fixo > div.div-filtro-fixo a:hover {
+    color: orange;
+    transition: 0.4s;
+  }
+
+  ul li a {
+    list-style: none;
+    font-size: 1.5rem;
+    text-shadow: 0rem .1rem 0rem .1rem gray;
+    color: orangered;
+    width: 20rem;
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    color: orange;
+    transition: 0.4s;
+  }
+
+
+  section.listagem-produtos-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    
+    
+    
+  }
+
+ div.div-listagem-produtos-home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    /*border: 0.1rem solid rgba(128, 128, 128, 0.507);*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1;
+  }
+
+  /*div.div-listagem-produtos-home:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;  }
+*/
+
+
+  /*div.div-up-produtos-home {
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507);
+  }
+*/
+
+  div.titulo-produto {
+    display: flex;
+    flex-direction: column;
+    font-size:1.5rem;
+    margin: 0 auto;
+  }
+
+  div.titulo-produto h5 {
+   margin: 0 auto;
+  }
+
+  div.div-up-produtos-home img {
+    width: 100%;
+    height: 21rem;
+  }
+  
+  div.div-down-produtos-home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    width: 20rem;
+    padding: 1rem;
+  }
+
+  div.descricao-produto-home p {
+    margin-bottom: 2rem;
+    height: 8rem;
+  }
+
+  div.price-produto-listagem-produto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  div.de-por-price {
+    color:red;
+    text-decoration: line-through;
+  }
+
+
+  div.cta-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  button.add-carrinho {
+    background-color: orange;
+    border: none;
+    width: 9.3rem;
+    height: 2rem;
+  }
+
+  button.comprar-agora {
+    background-color: greenyellow;
+    border: none;
+    width: 9.3rem;
+    height: 2rem;
+  }
+
+  div.cta-produtos > button h5 {
+    margin: 0;
+  }
+
+  button.add-carrinho:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  }
+
+  button.comprar-agora:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+  }
+
+ 
+  .pagina-empresa {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .texto-empresa {
+    text-justify: distribute;
+  }
+
+
+aside > input{border-radius: 10%;
+     width: 200px;
+    height: 50px;
+    text-align: center;}
+
+
+.categoria{
+    /*background-color:#08195C;*/
+    background-color: orange;
+    color:white;
+    padding-left: 20px;
+    border-radius: 0.5rem;
+}
+
+.card > img{
+    width: 200px;
+    display: inline-block;
+    margin: 20px;
+} 
+
+.card{
+  border: 0.1rem solid grey; 
+}
+div.card h3{
+  text-align: center;
+}
+
+.linha{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.linha .card img:hover{
+  width: 250px;
+}
+
+.carrinho{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: orange;
+  border: none;
+  width: 9.3rem;
+  height: 2rem;
+}
+
+.carrinho:hover{
+  background-color: darkorange;
+}
+
+
+.comprar{
+  background-color: greenyellow;
+  border: none;
+  width: 9.3rem;
+  height: 2rem;
+}
+
+.comprar:hover{
+  background-color: darkgreen;
+}
+
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*footer {
+    box-shadow: 0rem 0rem .2rem .2rem gray;}*/
+  
+
+  footer > div.div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap:1rem;
+    text-decoration: none;
+  }
+
+  footer > div > div.div-institucional {
+    display: flex;
+    flex-direction: row;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.institucional {
+    flex-direction: column;
+    padding: 1.5rem;
+       
+  }
+
+  footer > div > div.div-atendimento {
+    display: flex;
+    flex-direction: row;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.atendimento {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  div.div-atendimento > section.atendimento img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  div.contatos-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+  }
+
+
+  .institucional a {
+    text-decoration: none;
+    color: black;
+  }
+  .contatos-footer a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .rede-sociais a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .institucional a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  .contatos-footer a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  .rede-sociais a:hover {
+    text-transform: uppercase;
+    color: orange;
+    transition: 0.4s;
+  }
+
+  div.down-div {
+    border-top: .1rem solid black;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  footer > div > div.div-rede-sociais {
+    display: flex;
+    color: orangered;
+    flex-direction: row;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+    gap: 2rem;
+  }
+
+
+  footer > div > div > section.rede-sociais {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  div.div-rede-sociais > section.rede-sociais img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  div.redeSocial-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: .5rem;
+  }
+
+  footer > div > div.div-formas-pagamento {
+    display: flex;
+    flex-direction: column;
+    color: orangered;
+    background-color: rgb(249, 250, 246);
+    width: 25%;
+    height: 30rem;
+  }
+
+  footer > div > div > section.formas-pagamento {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .imagem-formas-pagamento img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 25rem;
+  
+  }
