@@ -48,16 +48,17 @@ section.sub-titulo-carrinho > div.botton-finalizar-compra {
 
 section.sub-titulo-carrinho > div.botton-finalizar-compra button {
     font-size: 1.2rem;
-    border-radius: 1.5rem;
-    background-color: greenyellow;
+    border-radius: 3rem;
     border: none;
+    background-color: rgb(255, 127, 80, 0.74);
     padding: 0.8rem;
     
 }
 
 section.sub-titulo-carrinho > div.botton-finalizar-compra button:hover {
-    background-color: rgba(172, 255, 47, 0.763);
-    transition: 1s;
+    background-color: rgba(255, 127, 80, 0.281);
+    transition: .3s;
+    cursor: pointer;
 }
 
 section.cabecalho-carrinho {
@@ -163,6 +164,18 @@ div.quantidade-produto {
     width: 15%;
 }
 
+div.quantidade-produto input {
+    width: 30%;
+    height: 2rem;
+
+    background-color:transparent;
+    font-style:italic;
+    font-size:18px;
+    border: 1px solid gray;  
+    border-radius: 0.2rem;     
+
+}
+
 div.subtotal {
     width: 10%;
 }
@@ -183,13 +196,20 @@ section.rodape-carrinho {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 2.5rem;
 }
 
 div.continuar-compando button {
     border-radius: 1.5rem;
     padding: 0.8rem;
     border: none;
-    background-color: yellow;
+    background-color: rgb(255, 127, 80, 0.74);
+}
+
+div.continuar-compando button:hover{
+    background-color: rgba(255, 127, 80, 0.281);
+    transition: .3s;
+    cursor: pointer;
 }
 
 
@@ -197,7 +217,12 @@ div.atualizar-valores button {
     border-radius: 1.5rem;
     padding: 0.8rem;
     border: none;
-    background-color: coral;
+    background-color: rgba(255, 127, 80, 0.74);
+}
+div.atualizar-valores button:hover{
+    background-color: rgba(255, 127, 80, 0.281);
+    transition: .3s;
+    cursor: pointer;
 }
 
 section.frete-cupom-total {
@@ -243,38 +268,59 @@ section.frete-cupom-total > div.conteiner-subtotal > div.soma-subtotal {
 }
 
 div.txt-frete button {
-    background-color: rgba(100, 148, 237, 0.694);
+    background-color: rgba(243, 233, 233);
     border-radius: 1rem;
-    width: 30%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     border: none;
+}
+
+div.txt-frete button:hover{
+    background-color: rgba(72, 102, 146, 0.404);
+    cursor: pointer;
+    transition: .3s;
 }
 
 div.txt-frete input {
     width: 40%;
     border-radius: 1rem;
+    height: 15%;
     
 }
 
 div.txt-cupom button {
-    background-color: rgba(100, 148, 237, 0.694);
+    background-color: rgba(243, 233, 233);
     border-radius: 1rem;
-    width: 30%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     border: none;
 }
+
+div.txt-cupom button:hover{
+    background-color: rgba(72, 102, 146, 0.404);
+    cursor: pointer;
+    transition: .3s;
+}
+
 
 div.txt-cupom input {
     width: 40%;
     border-radius: 1rem;
+    height: 15%;
 }
 
 div.soma-subtotal button {
-    background-color: greenyellow;
-    border-radius: 1rem;
+    background-color: rgba(255, 127, 80, 0.74);
+    border-radius: 3rem;
     width: 100%;
     height: 25%;
     border: none;
+}
+
+div.soma-subtotal button:hover {
+    background-color: rgba(255, 127, 80, 0.281);
+    transition: .3s;
+    cursor: pointer;
 }
 
 
