@@ -1,0 +1,11 @@
+main.main-painel-usuario {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    
+}
+
+div.header-vertical {
+    display: flex;
+    flex-direction: column;
+}
