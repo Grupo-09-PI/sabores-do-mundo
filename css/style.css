@@ -575,10 +575,15 @@ header.nav > nav > .divCarrinho img {
 
   .imagem-formas-pagamento img {
     display: flex;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
     width: 15rem;
   
+  }
+
+  .imagem-formas-pagamento {
+    display: flex;
+    justify-content: flex-start;
   }
 
   p.copy {
