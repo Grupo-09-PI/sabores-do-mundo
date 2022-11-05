@@ -44,6 +44,7 @@
     flex-wrap: wrap;
     justify-content: center;
     
+    
 
 }
 
@@ -110,6 +111,17 @@
         align-items: center;
     }
 
+    .card-arquivo{
+        width: 14%;
+        height: 40px;
+        border: 2px solid rgb(10, 43, 10);
+        border-radius: 5px;
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .add{
         width:20%;
         height: 28px;
@@ -118,6 +130,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
     }
 
     .descricao{
