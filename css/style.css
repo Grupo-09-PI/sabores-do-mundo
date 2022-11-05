@@ -207,13 +207,13 @@ header.nav > nav > .divCarrinho img {
     opacity: 1;
   }
 
-  /*div.div-listagem-produtos-home:hover {
-    /*box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;}*/
+  div.div-listagem-produtos-home:hover {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;}
   
 
 
-  /*div.div-up-produtos-home {
-    /*border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507); }*/
+  div.div-up-produtos-home {
+    border-bottom: 0.1rem solid rgba(128, 128, 128, 0.507); }
 
 
   div.titulo-produto {
@@ -575,10 +575,15 @@ header.nav > nav > .divCarrinho img {
 
   .imagem-formas-pagamento img {
     display: flex;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
     width: 15rem;
   
+  }
+
+  .imagem-formas-pagamento {
+    display: flex;
+    justify-content: flex-start;
   }
 
   p.copy {

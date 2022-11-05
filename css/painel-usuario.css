@@ -1,0 +1,162 @@
+div.conteiner-painel-pedidos {
+    display: flex;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+div.painel-vertical {
+    padding: 2rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1;
+}
+
+div.foto-cliente img {
+    border-radius: 100%;
+}
+
+div.foto-cliente h3 {
+    text-align: center;
+
+}
+
+div.nav-painel > div{
+    margin-bottom: 0.3rem;
+}
+
+div.nav-painel > div button {
+    width: 100%;
+}
+
+
+div.atendimento-painel {
+    margin-top: 5rem;
+}
+
+
+div.atendimento-painel p {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+div.txt-nro-pedido {
+    border: 0.3rem solid blue;
+}
+
+
+div.tabela-pedidos {
+    padding: 1.5rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1.4px;
+    opacity: 1;
+}
+
+div.cabecalho-pedido {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    gap: 3rem;
+   
+
+}
+
+div.cabecalho-pedido > div > h3 {
+    margin: 0 auto;
+}
+
+
+
+div.txt-nro-pedido {
+    width: 30%;
+    padding: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+    opacity: 1;
+}
+
+div.txt-data-compra {
+    width: 20%;
+    padding: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+    opacity: 1;
+}
+
+div.txt-status-pagamento {
+    width: 20%;
+    padding: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+    opacity: 1;
+}
+
+div.txt-andamento-compra {
+    width: 20%;
+    padding: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+    opacity: 1;
+}
+
+div.txt-nota-fiscal {
+    width: 10%;
+    padding: 1rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 1rem;
+    opacity: 1;
+}
+
+
+div.pedidos-clientes {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    gap: 3rem;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #0000001c;
+    border-radius: 1rem;
+    opacity: 1;
+}
+
+div.nro-pedido-cliente {
+    width: 30%;
+    padding: 1rem;
+
+}
+
+div.data-compra-cliente {
+    width: 20%;
+    padding: 1rem;
+
+
+}
+
+div.status-pagamento-cliente {
+    width: 20%;
+    padding: 1rem;
+
+}
+
+div.andamento-compra-cliente {
+    width: 20%;
+    padding: 1rem;
+
+}
+
+div.nota-fiscal-cliente {
+    width: 10%;
+    padding: 1rem;
+}
+
