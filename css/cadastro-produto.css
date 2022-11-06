@@ -2,47 +2,42 @@
     width: 100%;
     max-width: 1100px;
     height: auto;
-   
+    background: rgb(249, 250, 246);
     margin: 0 auto;
 }
-.header{
-    width: 95%;
-    height: 250px;
-    border: 2px solid rgb(10, 43, 10);
-    margin: 5px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-}
+
 
 .section{
     width: 95%;
     height: auto;
-   
+    box-shadow: 0px 20px 40px #2426721C;
     margin: 10px  auto;
 }
 
 .novo-produto{
     width: 95%;
     height: 85px;
-    border: 2px solid rgb(10, 43, 10);
+    text-transform: uppercase;
     margin: 5px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    box-shadow: 0px 20px 40px #2426721C;
+    color: rgb(222, 159, 22);
 }
 /* início do fomulário de cadastro*/
 /*================================*/ 
 .cadastrando{
     width: 95%;
     height: auto;
-    border: 2px solid rgb(10, 43, 10);
+    border: 2px  rgb(10, 43, 10);
     margin: 5px  auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-shadow: 0px 20px 40px #2426721C;
+    color: rgb(222, 159, 22);
     
     
 
@@ -53,95 +48,113 @@
    
     display: flex;
     margin-right: 23px;
+    box-shadow: 0px 20px 40px #2426721C;
+    color: rgb(222, 159, 22);
 }
 
 .card{
     width: 30%;
     height: 20px;
-    border: 2px solid rgb(10, 43, 10);
+    border: 2px  rgb(10, 43, 10);
     border-radius:5px;
     margin: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 20px 40px #2426721C;
+    color: rgb(222, 159, 22);
     }
 
     .card-medio-longo{
         width: 52%;
         height: 20px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 5px;
         margin: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
     .card-medio{
         width: 25%;
         height: 20px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 5px;
         margin: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
     .card-longo{
         width: 30%;
         height: 20px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 5px;
         margin: 0 9% 0 9%;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
 
     .card-intermediario{
         width: 14%;
         height: 40px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 5px;
         margin: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
     .card-arquivo{
         width: 14%;
         height: 40px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 5px;
         margin: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
     .add{
         width:20%;
         height: 28px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
     .descricao{
         width: 95%;
         height: 300px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 35px;
         margin-top: 10px ;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
     .status{
@@ -151,6 +164,8 @@
         align-items: center;
         margin-top: 20px;
         flex-wrap: wrap;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
         
         
 
@@ -159,50 +174,62 @@
     .no-momento{
         width: 59%;
         height: 20px;
-        border: 2px solid rgb(10, 43, 10);
+       font-size: 25px;
         border-radius: 5px;
         margin: 3px;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
 
     .atividade{
         width: 40%;
         height: 30px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 25px;
         margin: 3px;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
     
     .botao{
         width: 80%;
         display: flex;
         justify-content: space-around;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
+        margin-top: 50px;
 
     }
 
     .botoes{
         width: 25%;
         height: 35px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         border-radius: 30px;
         margin: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
+       
     }
 
     .rodape{
         width: 95%;
         height: 300px;
-        border: 2px solid rgb(10, 43, 10);
+        border: 2px  rgb(10, 43, 10);
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 30px;
         margin: 3px ;
+        box-shadow: 0px 20px 40px #2426721C;
+        color: rgb(222, 159, 22);
     }
