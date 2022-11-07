@@ -8,6 +8,7 @@
     <link rel="icon" href="../imagens/sabor-icon.png">
     <link rel="stylesheet" href="../css/produto.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modal-login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@
 
         <nav>
             <div class="divMinhaConta">
-                <a href="./login.html"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+                <a href="#"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
             </div>
             
             <div class="divCarrinho">
@@ -279,6 +280,38 @@
         </div>                           
     </footer>
     <p class="copy" >&copy; Copyright 2022, Sabores do mundo.</p>  
+    <div id="modal-login" class="modal-container">
+        <div class="modal div-login">
+            <button class="fechar">&times;</button>
+                <form>
+                    
+                    <div class="titulo-login">
+                        <h1> ACESSAR A CONTA</h1>
+                    </div>
+                    <div class="login-email-senha">
+                        <label for="email-cpf"></label>
+                        <input type="text" name="email-cpf" id="email-cpf" placeholder="E-mail ou CPF"> 
+
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha"> 
+                    </div>
+                    <div class="lembrar-senha">
+                        <input class="senha" type="checkbox" name="esquecer-a-senha">
+                        <label for="esquecer-a-senha">Lembrar senha</label>
+                    </div>
+                    <div class="botao-cadastro-e-login">
+                        <div class="botao-cadastro">
+                            <button>Cadastrar</button>
+                        </div>
+                        <div class="botao-login">
+                            <button type="submit">Login</button>      
+                        </div>
+                    </div>
+                                     
+                </form>
+        </div>
+    </div>
+    <script src="../javascript/modal-login.js"></script>
 </body>
 
 </html>
