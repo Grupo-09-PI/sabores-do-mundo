@@ -146,28 +146,20 @@ header.nav > nav > .divCarrinho img {
     
   }
 
-  main > section {
-    display: flex;    
-  }
-
   main > section > figure.banner-promo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     
-  }
-
-  main > section > figure.banner-promo img {
-    max-width: 100%;
-  }
-
+  }  
 
   main > section.filtro-fixo {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+
   }
 
   main > section.filtro-fixo > div.div-filtro-fixo a {

@@ -6,22 +6,20 @@ function iniciaModal(modalID) {
     modal.classList.add('mostrar')
 }
 
+function fechaModal(modalID){
+    modal.classList.remove('mostrar')
+}
+
 
 iconLogin.addEventListener('click', function(){
     iniciaModal('modal-login')
 })
 
-function fechaModal(modalID){
-    modal.classList.remove('mostrar')
-}
 
 fecharModalIcon.addEventListener('click', function(){
     fechaModal('modal-login')
 })
 
-modal.addEventListener('click', function(){
-    fechaModal('modal-login')
-})
 
 
 
