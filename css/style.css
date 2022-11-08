@@ -62,8 +62,6 @@ header.nav {
     /*box-shadow: 0rem 0rem .2rem .2rem gray;*/
     background-color: white;    
     box-shadow: 0px 1.3rem 2.5rem #2426721C;
-    position: sticky;
-    top: 0;
 }
 
 header.nav > nav {
@@ -199,6 +197,14 @@ header.nav > nav > .divCarrinho img {
     opacity: 1;
   }
 
+
+  div.div-listagem-produtos-home:hover {
+    transition: 1s;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.4);
+  }
+
+
+
   /*div.div-listagem-produtos-home:hover {
     /*box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;}*/
   
@@ -286,11 +292,11 @@ header.nav > nav > .divCarrinho img {
   }
 
   button.add-carrinho:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.4);
   }
 
   button.comprar-agora:hover {
-    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.4);
   }
 
   .h2-os-mais-vendidos {
@@ -306,6 +312,7 @@ header.nav > nav > .divCarrinho img {
     gap: 0.5rem;
     margin-bottom: 2rem;
     width: 100%;
+
   }
 
   div.up-lista-mais-vendidos {
@@ -327,6 +334,12 @@ header.nav > nav > .divCarrinho img {
     border-radius: 1.4px;
     opacity: 1;
   }
+
+  div.div-lista-mais-vendidos:hover{
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.4);
+    transition: 1.5s;
+  }
+
 
   /*div.div-lista-mais-vendidos:hover {
     /*box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem gray;  }*/
