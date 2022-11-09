@@ -14,19 +14,66 @@
     margin: 10px  auto;
 }
 
-.novo-produto{
-    width: 95%;
-    height: 85px;
-    text-transform: uppercase;
-    margin: 5px auto;
+
+
+.nav{
     display: flex;
-    justify-content: center;
+   
+     align-items: center;
+     justify-content: space-around;
+}
+
+.carrinho-conmpra{
+    display: flex;
+}
+
+
+.divBusca {
+    display: flex;
+    flex-grow: 1;
+    max-width: 30%;
     align-items: center;
-    font-size: 40px;
-    box-shadow: 0px 20px 40px #2426721C;
+    text-transform: uppercase;
+    background-color:#f7f7f7;
+    border:solid 1px;
+    border-radius: 15px;
+    height: 30px;
+    border: none;
     color: rgb(255, 83, 3);
     
+  }
+
+header.nav > nav > .divCarrinho img {  
+    width: 2.5rem;
+
 }
+
+  #txtBusca{
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:100%;
+    border:none;
+    height:100%;
+    width:100%;
+  }
+
+
+  a.btnMinhaConta {
+    font-size: 2rem;
+    border: none;
+    background-color: #143CDB;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    
+  }
+
+  header.nav > nav > .divMinhaConta img {  
+    width: 2.5rem;
+
+  }
+
 /* início do fomulário de cadastro*/
 /*================================*/ 
 .cadastrando{
@@ -59,7 +106,7 @@ input::file-selector-button{
 
 input:focus,
 textarea:focus,
-select:focus{
+select:focus,.divBusca{
     border: 1px solid  rgb(255, 83, 3);
     outline: none;
     
