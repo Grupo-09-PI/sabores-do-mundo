@@ -201,13 +201,7 @@ div.botao-login button {
   height: 60px;
 }
 
-div.botao-login button:hover{
-   color: black;
-   font-weight: 500;
-   background-color: rgba(72, 102, 146, 0.404);
-   opacity: 0.7;
-   border-radius: 100px;
-   cursor: pointer;}
+
 
 span :hover {
     color: white;
