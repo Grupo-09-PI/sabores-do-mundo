@@ -76,6 +76,13 @@ header.nav > nav > .divCarrinho img {
 
 /* início do fomulário de cadastro*/
 /*================================*/ 
+.titulo{
+    /* border: solid 1px black; */
+    width: 100% ;
+    color: rgb(255, 83, 3);
+    text-align: center;
+}
+
 .cadastrando{
     width: 95%;
     height: auto;
@@ -118,7 +125,6 @@ select:focus,.divBusca{
 
 .compactar{
     width: 25% ;
-   
     display: flex;
     margin-right: 23px;
     box-shadow: 0px 20px 40px #2426721C;
@@ -279,6 +285,8 @@ select:focus,.divBusca{
         justify-content: space-around;
         box-shadow: 0px 20px 40px #2426721C;
         color: rgb(255, 83, 3);
+        margin: 40px 0px;
+        margin-bottom: 100px;
 
     }
 
