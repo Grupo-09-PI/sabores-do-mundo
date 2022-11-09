@@ -11,41 +11,67 @@
 
 <body>
     <div class="cadastro-produtos">
-        <div class="header">
-            <p>cabeçalho</p>
-        </div>
+
 
         <section class="section">
 
-            <div class="novo-produto">
-                <p>novo produto</p>
-            </div>
+            <header class="nav">   
+                <div class="logo-header" >
+                    <a href="index.html"><img src="../imagens/logo-sabores.png" alt="logo globo terrestre" width="60%"></a>
+                </div>
+        
+                <div class="divBusca">
+                    <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
+                    <a href="#"><img src="../imagens/header-footer/lupa-.png" id="btnBusca" width="30rem"/></a>
+                </div>
+        
+                <nav class="carrinho-conmpra">
+                    <div class="divMinhaConta">
+                        <a href="#"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+                    </div>
+                    
+                    <div class="divCarrinho">
+                        <a href="/html/carrinho.html"><img src="../imagens/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+                    </div>
+                </nav>
+            </header>
             <div>
                 <form action="" class="cadastrando">
                     <div class="compactar">
-                        <input class="card" type="text" placeholder="código">
 
-                        <input class="card" type="text" placeholder="tipo">
+                       
+                        <input class="card" type="text" placeholder="código" required>
+                        
+                        <input class="card" type="text" placeholder="tipo" required>
                     </div>
 
-                    <input class="card-medio-longo" type="text" id="produto" placeholder="novo produto">
+                    <input class="card-medio-longo" type="text" id="produto" placeholder="novo produto" required>
 
 
 
-                    <select class="card-medio" name="categoria">
-                        <option value="suica">suiça</option>
+                    <select class="card-medio" name="categoria" required>
+                        <option value="suica" selected disabled style="display:none;">grupo</option>
+                        <option value="bebida">bebida</option>
+                        <option value="salgado">salgado</option>
+                        <option value="doces">doces</option>
+                        <option value="temperos">temperos</option>
+                        <option value="massas">massas</option>
                     </select>
 
-                    <input class="card-medio" type="text" id="produto" placeholder="marca">
+                    <input class="card-medio" type="text" id="produto" placeholder="marca" required>
 
-                    <select class="card-medio" name="categoria">
-                        <option value="suica">suiça</option>
-                    </select>
+                    <select class="card-medio" name="categoria" required>
+                        <option value="suica" selected disabled style="display:none;">categoria</option>
+                        <option value="américa-latina">américa-latina</option>
+                        <option value="Europa">Europa</option>
+                        <option value="asiatico">asiático</option>
+                        <option value="américa do norte">américa do Norte</option>
+                        <option value="áfrica">África</option>select>
 
 
-                    <input class="card-medio" type="number" id="produto" placeholder="estoque minnimo">
+                        <input class="card-medio" type="number" id="produto" placeholder="estoque minnimo" required>
 
-                    <input class="card-medio" type="text" id="produto" placeholder="estoque atual">
+                    <input class="card-medio" type="number" id="produto" placeholder="estoque atual">
 
                     <input class="card-medio" type="text" id="produto" placeholder="sku">
 
@@ -56,47 +82,43 @@
                     <input class="card-longo" type="text" id="produto" placeholder="custo do produto">
 
 
-                    <input class="card-arquivo" type="file">
 
 
 
 
-                    <div class="card-intermediario">
-                        <p>reservado</p>
+                    <div class="novo-produto">
+                        
                     </div>
+                   
 
 
-                    <div class="add"> adicionando</div>
-                    <div class="descricao">
-                        <p>descrição do produto</p>
-                    </div>
 
+                   <input type="file" class="add">
+                      <textarea  class="descricao"  name="descricao" id="" cols="30" rows="10"></textarea>
                     <div class="status">
                         <div class="no-momento">
                             <p>status</p>
                         </div>
-                        <div class="atividade">
-                            <p>ativo</p>
-                        </div>
-                        <div class="atividade">
-                            <p>inativo</p>
-                        </div>
-                    </div>
 
-                    <div class="botao">
-                        
-                          <input class="botoes" type="submit" value="salvar produto">
-                          
-                        <div class="botoes">
-                            <p>salvar rascunho</p>
+                            <bottom type="submit" class="atividade"> ativo</bottom>
+                            <bottom class="atividade"> inativo</bottom>
+
+
+
                         </div>
 
-                        <input class="botoes" type="reset" value="cancelar">
-                    </div>
+                        <div class="botao">
 
-                    <div class="rodape">
-                        <p>rodapé</p>
-                    </div>
+                            <input class="botoes" type="submit" value="salvar produto">
+
+                            <input type="submit" class="botoes" value="salvar">
+
+                            <input class="botoes" type="reset" value="cancelar">
+                        </div>
+
+                        <div class="rodape">
+                            <p>rodapé</p>
+                        </div>
 
 
 
@@ -107,6 +129,7 @@
 
 
     </div>
+    
 
 </body>
 

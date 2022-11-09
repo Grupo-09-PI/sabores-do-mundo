@@ -1,0 +1,42 @@
+.container-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+.container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+div.container-imagens img {
+    width: 100%;
+}
+
+#prev-button, #next-button {
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.slider {
+
+    position: absolute;
+    opacity: 0;
+    transition: opacity .2s;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+}
