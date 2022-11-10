@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagens/sabor-icon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal-login.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="./javascript/slider.js" defer></script>
+    <script src="./javascript/modal-login.js" defer></script>
     <title>Sabor do Mundo</title>
+    
 </head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6361aaa1b0d6371309ccc776/1ggqo5293';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
 <body>
     <header class="aviso-header">
         <h5 class="frase-motion"> Parcele sua compra em até 6 x sem juros, entrega gratuita para compras a cima de R$200,00 </h5>
@@ -28,7 +46,7 @@
 
         <nav>
             <div class="divMinhaConta">
-                <a href="/html/login.html"><img src="imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+                <a href="#"><img src="imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
             </div>
             
             <div class="divCarrinho">
@@ -37,10 +55,22 @@
         </nav>
     </header>
     <main>
-       <section class="banner">
-            <figure class="banner-promo" >
-                <img src="imagens/Produtos-Coreia/COMIDA COREANA.png" alt="">
-            </figure>
+       <section data-slide="slide" class="slide banner">
+            <div class="slide-items banner-promo">
+                <img src="./imagens/slider-home/Banner1.png" alt="Img 1">
+                <img src="./imagens/slider-home/Banner2.png" alt="Img 2">
+                <img src="./imagens/slider-home/Banner3.png" alt="Img 3">
+                <img src="./imagens/slider-home/Banner4.png" alt="Img 4">
+                <img src="./imagens/slider-home/Banner5.png" alt="Img 5">
+                <img src="./imagens/slider-home/Banner6.png" alt="Img 6">
+                <img src="./imagens/slider-home/Banner7.png" alt="Img 7">
+                <img src="./imagens/slider-home/Banner8.png" alt="Img 8">
+            </div>
+            <nav class="slide-nav">
+                <div class="slide-thumb"></div>
+                <button class="slide-prev" >Anterior</button>
+                <button class="slide-next" >Próximo</button>
+            </nav>
         </section> 
         <section class="filtro-fixo">
             <div class="div-filtro-fixo" >
@@ -372,20 +402,6 @@
                 </div>
                 <div class="div-lista-mais-vendidos">
                     <div class="up-lista-mais-vendidos">
-                        <img src="imagens/Produtos-Portugal/vinho ferreira porto.jpeg .jpeg" alt="">
-                    </div>
-                    <div class="down-lista-mais-vendidos">
-                        <h3 class="nome-produto-mais-vendido">Vinho Português</h3>
-                    </div>
-                    <div class="cta-produtos-mais-vendidos">
-                        <div>
-                            <a href="#"><img src="imagens/header-footer/carrinho-compras.png" alt=""></a>
-                            <h3>R$ 149,99</h3>
-                        </div>    
-                    </div>
-                </div>
-                <div class="div-lista-mais-vendidos">
-                    <div class="up-lista-mais-vendidos">
                         <img src="imagens/Produtos-Franca/Macarons.jpeg" alt="">
                     </div>
                     <div class="down-lista-mais-vendidos">
@@ -496,7 +512,7 @@
                 <section class="formas-pagamento"><h3>Pagamento</h3>
                     <div>
                         <div class="imagem-formas-pagamento">
-                            <img src="imagens/header-footer/Credit-Card-Icons.png" alt="">
+                            <img src="./imagens/header-footer/Credit-Card-Icons.png" alt="">
                         </div>
                     </div>
                 </section>
@@ -505,6 +521,37 @@
         </div>                           
     </footer>
     <p class="copy" >&copy; Copyright 2022, Sabores do mundo.</p>  
-</body>
 
+    <div id="modal-login" class="modal-container">
+        <div class="modal div-login">
+            <button class="fechar">&times;</button>
+                <form>
+                    
+                    <div class="titulo-login">
+                        <h1> ACESSAR A CONTA</h1>
+                    </div>
+                    <div class="login-email-senha">
+                        <label for="email-cpf"></label>
+                        <input type="text" name="email-cpf" id="email-cpf" placeholder="E-mail ou CPF"> 
+
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha"> 
+                    </div>
+                    <div class="lembrar-senha">
+                        <input class="senha" type="checkbox" name="esquecer-a-senha">
+                        <label for="esquecer-a-senha">Lembrar senha</label>
+                    </div>
+                    <div class="botao-cadastro-e-login">
+                        <div class="botao-cadastro">
+                            <button>Cadastrar</button>
+                        </div>
+                        <div class="botao-login">
+                            <button type="submit">Login</button>      
+                        </div>
+                    </div>
+                                     
+                </form>
+        </div>
+    </div>
+</body>
 </html>

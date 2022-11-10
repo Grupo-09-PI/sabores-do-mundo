@@ -135,9 +135,10 @@ div.container-login {
 
 div.div-login {
     display: flex;
+    justify-content: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    margin-left: 1rem;
+    
     /*box-shadow: .1rem .1rem .6rem .1rem gray;*/
     border-radius: 90px;
     padding: 50px 120px 80px 120px;
@@ -149,44 +150,58 @@ div.div-login {
     opacity: 1;
 }
 
+div.div-login h1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 
 div.div-login > form > div.login-email-senha input {  
-        background-color:transparent;
-        padding-left:5px;
-        font-style:italic;
-        font-size:18px;
-        border: 1px solid gray;  
-        border-radius: 1rem;     
-        height:32px;
-        width:260px;
+  background-color:transparent;
+  align-self: center;
+  margin-bottom: 1rem;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border: 1px solid gray;  
+  border-radius: 1rem;     
+  height:2.5rem;
+  width:100%;
 }
 
 div.login-email-senha {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    
 }
 
 
 div.lembrar-senha {
-    font-style:italic;
-    gap: 0.5rem;
-    margin-top: 0.6rem;
-    
+    margin-left: 0.5rem;
 }
 
 span{
     left: 280px;
 }
-
-div.lembrar-senha button {
-    color: black;
-    border-radius: 1rem;
-    margin-left: 2rem;
-    width: 6rem;
-    height: 27px;
-    
+div.botao-login{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
+
+div.botao-login button {
+  background-color: rgb(243, 233, 233);
+  font-size: 1.2rem;
+  border: none;
+  align-self: center;
+  color: black;
+  border-radius: 100px;
+  width: 50%;
+  height: 60px;
+}
+
+
 
 span :hover {
     color: white;
