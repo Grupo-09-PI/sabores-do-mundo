@@ -1,0 +1,19 @@
+.header-obrigado {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.etapas-compra-obrigado {
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+
+}
+
+.status-compra {
+    padding: 1rem;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
