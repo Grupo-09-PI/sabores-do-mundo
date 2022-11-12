@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,38 +18,41 @@
 
         <section class="section">
 
-            <header class="nav">   
-                <div class="logo-header" >
-                    <a href="index.html"><img src="../imagens/logo-sabores.png" alt="logo globo terrestre" width="60%"></a>
+            <header class="nav">
+                <div class="logo-header">
+                    <a href="index.html"><img src="../imagens/logo-sabores.png" alt="logo globo terrestre"
+                            width="60%"></a>
                 </div>
-        
+
                 <div class="divBusca">
-                    <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
-                    <a href="#"><img src="../imagens/header-footer/lupa-.png" id="btnBusca" width="30rem"/></a>
+                    <input  type="search" id="txtBusca" placeholder="Busque seu produto..." />
+                    <a href="#"><img src="../imagens/header-footer/lupa-.png" id="btnBusca" width="20rem" /></a>
                 </div>
-        
+
                 <nav class="carrinho-conmpra">
                     <div class="divMinhaConta">
-                        <a href="#"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+                        <a href="#"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta"
+                                alt="minha-conta" /></a>
                     </div>
-                    
+
                     <div class="divCarrinho">
-                        <a href="/html/carrinho.html"><img src="../imagens/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+                        <a href="/html/carrinho.html"><img src="../imagens/header-footer/carrinho-compras.png"
+                                id="btnCarrinho" alt="carrinho" /></a>
                     </div>
                 </nav>
             </header>
             <div>
 
-                <div class="titulo" >
-                    <h1>NOVO PRODUTO</h1>
+                <div class="titulo">
+                    <h1> CADASTRAR NOVO PRODUTO</h1>
                 </div>
 
-                <form action="" class="cadastrando">
-
+                <form  class="cadastrando">
+                   
                     <div class="compactar">
 
-                        <input class="card" type="text" placeholder="Código" required>                        
-                        <input class="card" type="text" placeholder="Tipo" required>
+                        <input class="card" name="codigo" type="text" placeholder="Código" required>
+                        <input class="card" name="tipo" type="text" placeholder="Tipo" required>
 
                     </div>
 
@@ -73,19 +79,23 @@
                     </select>
 
 
-                    <input class="card-medio" type="number" id="produto" placeholder="Estoque Minimo" required>
-                    <input class="card-medio" type="number" id="produto" placeholder="Estoque Atual">
-                    <input class="card-medio" type="text" id="produto" placeholder="SKU">
-                    <input class="card-longo" type="text" id="produto" placeholder="Preço">
-                    <input class="card-longo" type="text" id="produto" placeholder="Custo do Produto">
-
+                    <input class="card-medio" type="number" name="produto" placeholder="Estoque Minimo" required>
+                    <input class="card-medio" type="number" name="number" placeholder="Estoque Atual">
+                    <input class="card-medio" type="text" name="text" placeholder="SKU">
+                    <input class="card-longo" type="text" name="text-preco" placeholder="Preço">
+                    <input class="card-longo" type="text" name="text-custo" placeholder="Custo do Produto">
+                
 
                     <div class="novo-produto">
-                    </div>     
+                    </div>
 
                     <input type="file" class="add">
 
-                    <textarea  class="descricao"  name="descricao" id="" cols="30" rows="10"></textarea>
+                    <img class="plano-de-fundo" src="../imagens/logo-sabores.png" alt="imagem de fundo" width="50%">
+
+                    <textarea class="descricao" name="descricao" name="descricao" cols="30" rows="10">
+                        
+                    </textarea>
 
                     <div class="status">
 
@@ -93,25 +103,23 @@
                             <p>Status</p>
                         </div>
 
-                            <bottom type="submit" class="atividade"> Ativo</bottom>
-                            <bottom class="atividade"> Inativo</bottom>
+                        <bottom type="submit" class="atividade"> Ativo</bottom>
+                        <bottom class="atividade"> Inativo</bottom>
 
 
 
-                        </div>
+                    </div>
 
-                        <div class="botao">
+                    <div class="botao">
 
-                            <input class="botoes" type="submit" value="Salvar produto">
+                        <input class="botoes" type="submit" name="salvar-produto" value="Salvar produto">
 
-                            <input type="submit" class="botoes" value="Salvar Rascunho">
+                        <input type="submit" class="botoes" name="salvar-rescunho" value="Salvar Rascunho">
 
-                            <input class="botoes" type="reset" value="Cancelar">
-                        </div>
+                        <input class="botoes" type="reset" name="cancelar" value="Cancelar">
+                    </div>
 
-                        <!-- <div class="rodape">
-                            <p>rodapé</p>
-                        </div> -->
+                   
 
 
 
@@ -122,7 +130,7 @@
 
 
     </div>
-    
+
 
 </body>
 
