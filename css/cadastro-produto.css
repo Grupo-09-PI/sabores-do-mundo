@@ -250,7 +250,7 @@ select:focus{
         max-width: 60%;
         min-width: 45%;
         max-height: 45%;
-        min-height: 30%;
+        min-height: 35%;
         margin-top: 10px;
         padding-left: 20PX;
         padding-right: 20PX;
@@ -446,8 +446,8 @@ select:focus{
         .descricao{
             max-width: 90%;
             min-width: 80%;
-            min-height: 22%;
-            max-height: 30%;
+            min-height: 30%;
+            max-height: 40%;
             border: 1px solid;
             margin-bottom: 30%;
         }
