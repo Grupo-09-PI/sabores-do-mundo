@@ -21,28 +21,98 @@ div.foto-cliente h3 {
 
 }
 
-div.nav-painel > div{
-    margin-bottom: 0.3rem;
-}
-
-div.nav-painel > div button {
+div.nav-painel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
+div.nav-painel > div{
+    width: 80%;
+    margin: 0.2rem auto;
+    padding: 0.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(top, #FF6C00, #FBA27F);
+    background-image: -moz-linear-gradient(top, #FF6C00, #FBA27F);
+    background-image: -ms-linear-gradient(top, #FF6C00, #FBA27F);
+    background-image: -o-linear-gradient(top, #FF6C00, #FBA27F);
+    background-image: -webkit-gradient(to bottom, #FF6C00, #FBA27F);
+    
+}
+
+div.nav-painel > div:hover{
+    background-image: -webkit-linear-gradient(top, #FBA27F, #FF6C00);
+    background-image: -moz-linear-gradient(top, #FBA27F, #FF6C00);
+    background-image: -ms-linear-gradient(top, #FBA27F, #FF6C00);
+    background-image: -o-linear-gradient(top, #FBA27F, #FF6C00);
+    background-image: -webkit-gradient(to bottom, #FBA27F, #FF6C00);
+}
+
+div.nav-painel > div h5 {
+    margin: 0.3rem;
+    text-align: center;
+    color: white;
+   
+}
+
+div.nav-painel > div a {
+    text-decoration: none;
+}
 
 div.atendimento-painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 5rem;
+    gap: 1.5rem
 }
 
-
-div.atendimento-painel p {
-    text-align: center;
-    margin-top: 5rem;
+div#contatos {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 7.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
 }
 
-div.txt-nro-pedido {
-    border: 0.3rem solid blue;
+div#contatos p {
+    font-size: 14px;
 }
+
+div#chat-link {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0.2rem auto;
+    padding: 0.3rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(top, #FF914D, #FF6100);
+    background-image: -moz-linear-gradient(top, #FF914D, #FF6100);
+    background-image: -ms-linear-gradient(top, #FF914D, #FF6100);
+    background-image: -o-linear-gradient(top, #FF914D, #FF6100);
+    background-image: -webkit-gradient(to bottom, #FF914D, #FF6100);
+}
+
+div#chat-link:hover {
+    background-image: -webkit-linear-gradient(top, #FF6100, #FF914D);
+    background-image: -moz-linear-gradient(top, #FF6100, #FF914D);
+    background-image: -ms-linear-gradient(top, #FF6100, #FF914D);
+    background-image: -o-linear-gradient(top, #FF6100, #FF914D);
+    background-image: -webkit-gradient(to bottom, #FF6100, #FF914D);
+}
+
+div#chat-link a {
+    text-decoration: none;
+    color: white;
+
+}
+
 
 
 div.tabela-pedidos {
@@ -133,30 +203,55 @@ div.pedidos-clientes {
 div.nro-pedido-cliente {
     width: 30%;
     padding: 1rem;
+    align-self: center;
+    
+}
+
+div.nro-pedido-cliente h4 {
+    margin: 0 auto;
 
 }
 
 div.data-compra-cliente {
     width: 20%;
     padding: 1rem;
+    align-self: center;
+}
 
-
+div.data-compra-cliente h4 {
+    margin: 0 auto;
 }
 
 div.status-pagamento-cliente {
     width: 20%;
     padding: 1rem;
+    align-self: center;
+}
 
+div.status-pagamento-cliente h4 {
+    margin: 0 auto;
 }
 
 div.andamento-compra-cliente {
     width: 20%;
     padding: 1rem;
+    align-self: center;
 
+}
+
+div.andamento-compra-cliente h4 {
+    margin: 0 auto;
 }
 
 div.nota-fiscal-cliente {
     width: 10%;
     padding: 1rem;
 }
+
+div.nota-fiscal-cliente img{
+    width: 2rem;
+}
+
+
+
 
