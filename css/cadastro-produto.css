@@ -1,3 +1,12 @@
+*{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
 .cadastro-produtos{
     width: 100%;
     max-width: 1100px;
@@ -53,9 +62,10 @@ header.nav > nav > .divCarrinho img {
     padding-left:5px;
     font-style:italic;
     font-size:100%;
-    border:none;
+    border: none;
     height:100%;
     width:100%;
+    color: rgb(255, 83, 3);
   }
 
 
@@ -98,23 +108,30 @@ header.nav > nav > .divCarrinho img {
 
 }
 
+
+
+
 input::placeholder{
-    color:  rgb(255, 83, 3) ;
+    color: orangered;
+    font-weight: 900;
 }
 
 input::file-selector-button{
-    border: 2px  rgb(10, 43, 10);
+   
+    border: 0;
     border-radius: 30px;
     margin: 10px;
     color: rgb(255, 83, 3);
+    font-weight: 900;
    
     
 }
 
 input:focus,
 textarea:focus,
-select:focus,.divBusca{
+select:focus{
     border: 1px solid  rgb(255, 83, 3);
+    border-radius: 20px;
     outline: none;
     
 }
@@ -124,10 +141,10 @@ select:focus,.divBusca{
     
 
 .compactar{
-    width: 25% ;
+    width: 22% ;
     display: flex;
     margin-right: 23px;
-    box-shadow: 0px 20px 40px #2426721C;
+   
     color: rgb(255, 83, 3);
 }
 
@@ -145,7 +162,7 @@ select:focus,.divBusca{
     }
 
     .card-medio-longo{
-        width: 52%;
+        width: 50%;
         height: 20px;
         border: 2px  rgb(10, 43, 10);
         border-radius: 5px;
@@ -155,6 +172,7 @@ select:focus,.divBusca{
         align-items: center;
         box-shadow: 0px 20px 40px #2426721C;
         color: rgb(255, 83, 3);
+        
     }
 
     .card-medio{
@@ -211,42 +229,60 @@ select:focus,.divBusca{
     }
 
     .add{
-        width:40%;
+        width:100%;
         height: 28px;
         border: 2px  rgb(10, 43, 10);
         border-radius: 25px;
         display: flex;
+        display: inline-block;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
-        box-shadow: 0px 20px 40px #2426721C;
+       
         color: rgb(255, 83, 3);
+        padding-left:30%;
     }
 
     
 
     .descricao{
-        width: 95%;
-        height: 300px;
-        margin-top: 10px ;
+        width: 50%;
+        max-width: 60%;
+        min-width: 45%;
+        max-height: 45%;
+        min-height: 35%;
+        margin-top: 10px;
+        padding-left: 20PX;
+        padding-right: 20PX;
+        padding-top: 10PX;
         box-shadow: 0px 20px 40px #2426721C;
         border-style: none;
         color: rgb(255, 83, 3);
         display: flex;
         align-items: flex-start;
+        position: absolute;
+        margin-top: 180px;
+        background:  rgb(250, 249, 248,0.8);
+       
+         
+        
 
+    }
+
+    .plano-de-fundo{
+        margin-top: 100px;
     }
 
     
 
        .status{
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
         flex-wrap: wrap;
-        box-shadow: 0px 20px 40px #2426721C;
+        margin-top: 200px;
         color: rgb(255, 83, 3);
         
         
@@ -262,7 +298,7 @@ select:focus,.divBusca{
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0px 20px 40px #2426721C;
+       
         color: rgb(255, 83, 3);
     }
 
@@ -271,7 +307,7 @@ select:focus,.divBusca{
         height: 30px;
         border: 2px  rgb(10, 43, 10);
         border-radius: 25px;
-        margin: 3px;
+        margin: 20px 3px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -283,7 +319,7 @@ select:focus,.divBusca{
         width: 80%;
         display: flex;
         justify-content: space-around;
-        box-shadow: 0px 20px 40px #2426721C;
+       
         color: rgb(255, 83, 3);
         margin: 40px 0px;
         margin-bottom: 100px;
@@ -301,7 +337,19 @@ select:focus,.divBusca{
         align-items: center;
         box-shadow: 0px 20px 40px #2426721C;
         color: rgb(255, 83, 3);
+        background:  rgb(234, 192, 172, 0.4);
        
+    }
+
+    .botoes:hover{
+        background:  rgb(234, 192, 172, 0.8); 
+        transition: 0.4s;
+    }
+
+    .botoes:active{
+        background:  rgb(255, 83, 3);
+        transition: 0.3s;
+        color: white;
     }
 
     .rodape{
@@ -316,3 +364,121 @@ select:focus,.divBusca{
         box-shadow: 0px 20px 40px #2426721C;
         color: rgb(222, 159, 22);
     }
+
+    @media (max-width: 600px) {
+
+        #txtBusca,
+        .carrinho-conmpra,
+        .divBusca{
+            display: none;
+        }
+
+        .logo-header{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+       
+
+        
+        .cadastrando{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+           
+           
+            align-items: center;
+            
+            }
+        .compactar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+           }
+
+           .card{
+            height: 35px;
+            text-align: center;
+           }
+
+        .card-medio-longo{
+            width: 90%;
+            height: 35px;
+            text-align: center;
+        }
+
+        .card-medio{
+            width: 90%;
+            height: 35px;
+            text-align: center;
+            
+        }
+
+        .card-longo{
+            width: 90%;
+            margin: 0;
+            height: 35px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .add{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             width: 90%;
+            
+             height: 35px;
+             text-align: center;
+             margin: 10px 0;
+             padding: 0;
+             
+        }
+        input::file-selector-button{
+           display: flex;
+           margin: 0;
+           padding: 0;
+        }
+           
+          
+           
+          
+        .descricao{
+            max-width: 90%;
+            min-width: 80%;
+            min-height: 30%;
+            max-height: 40%;
+            border: 1px solid;
+            margin-bottom: 30%;
+        }
+
+        .plano-de-fundo{
+            width: 90%;
+           
+        }
+
+        .botao{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .botoes{
+            width: 100%;
+        }
+        .botoes:hover{
+            background:  rgb(234, 192, 172, 0.8); 
+            transition: 0.4s;
+        }
+    
+        .botoes:active{
+            background:  rgb(255, 83, 3);
+            transition: 0.3s;
+            color: white;
+        }
+    
+
+        
+          
+        
+        
+      }
