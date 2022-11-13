@@ -16,10 +16,6 @@ body * {
   font-family: 'Raleway', sans-serif;
 }
 
-.invisible {
-  display: none !important;
-}
-
 header.aviso-header {
   display: flex;
   flex-direction: row;

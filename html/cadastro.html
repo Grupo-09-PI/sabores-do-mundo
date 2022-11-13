@@ -65,9 +65,11 @@
                     <div>
                     <h3>Dados pessoais:</h3>
                     </div>
-                    <div class="invisible err-nome">*Preencha o nome correto</div>
-                    <div class="invisible err-cpf">*Preencha o cpf errado</div>
-                    <div class="invisible err-data-nascimento">*Preencha a data de nascimento</div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-nome">*Preencha o nome correto</div>
+                        <div class="invisible err-cpf">*Preencha o cpf errado</div>
+                        <div class="invisible err-data-nascimento">*Preencha a data de nascimento</div>
+                    </div>
                     <div>
                         <label for="nome"></label>
                         <input type="text" name="nome" id="nome" placeholder="Nome Completo">
@@ -84,9 +86,16 @@
                         <div>
                             <h3>Endereço:</h3>
                         </div>
+                        <div class="alerta-erros-validacao">
+                            <div class="invisible err-cep">*Preencha o cep corretamente</div>
+                        </div>
                         <div>
                             <label for="cep"></label>
                             <input type="text" id="cep" placeholder="CEP - XX.XXX-XX">
+                        </div>
+                        <div class="alerta-erros-validacao">
+                            <div class="invisible err-rua">*A rua/av deve ser preenchido</div>
+                            <div class="invisible err-numero">*Nroº</div>
                         </div>
                         <div class="dados-rua">
                             <div>
@@ -98,12 +107,16 @@
                                 <input type="text" id="complemento" placeholder="Complemento">
                                 
                             </div>
-                        <div>
+                        <div class="alerta-erros-validacao">
+                            <div class="invisible err-bairro">*Preencha o bairro</div>
+                            <div class="invisible err-cidade">*Preencha a cidade</div>
+                        </div>
+                        <div class="dados-rua-completo">
                             <label for="bairro"></label>
                             <input type="text" id="bairro" placeholder="Bairro">
                             <label for="cidade"></label>
                             <input type="text" id="cidade" placeholder="Cidade">
-                            <select name="estados-brasil">
+                            <select name="estados-brasil" id="estado">
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>

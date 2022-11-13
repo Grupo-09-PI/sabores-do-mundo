@@ -67,6 +67,19 @@ main > div > div.form form {
     flex-direction: column;
 }
 
+div.alerta-erros-validacao {
+    display: flex;
+    font-size: 12px;
+    color: red;
+    width: 100%;
+   }
+   
+   
+   .invisible {
+     display: none !important;
+   }
+
+
 input#cep{
     width: 35%;
 }
@@ -83,11 +96,18 @@ input#bairro{
     width: 35%;
 }
 
-input#cpf{
+input#nome,
+div.err-nome{
+    width: 70%;
+}
+
+input#cpf,
+div.err-cpf {
     width: 35%;
 }
 
-input#data-nascimento {
+input#data-nascimento,
+div.err-data-nascimento {
     width: 30%;
 }
 
