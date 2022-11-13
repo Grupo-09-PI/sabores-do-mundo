@@ -10,6 +10,7 @@
     <link rel="icon" href="../imagens/sabor-icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../javascript/validacoes.js" defer></script>
     <title>Cadastro</title>
 </head>
 <!--Start of Tawk.to Script-->
@@ -64,14 +65,18 @@
                     <div>
                     <h3>Dados pessoais:</h3>
                     </div>
+                    <div class="invisible err-nome">*Preencha o nome correto</div>
+                    <div class="invisible err-cpf">*Preencha o cpf errado</div>
+                    <div class="invisible err-data-nascimento">*Preencha a data de nascimento</div>
                     <div>
                         <label for="nome"></label>
-                        <input type="text" id="nome" placeholder="Nome Completo"required>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo">
                         <label for="cpf"></label>
-                        <input type="text" id="cpf" placeholder="CPF: 000.000.000-00"required>
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF: 000.000.000-00">
                         <label for="data-nascimento"></label>
-                        <input type="date" id="data-nascimento" placeholder="Data de nascimento">
+                        <input type="date" name="data-nascimento" id="data-nascimento" placeholder="Data de nascimento">
                     </div>
+                    
                 </div>
                 
                 <div>
@@ -137,9 +142,9 @@
                     </div>
                     <div>
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="E-mail"required>
+                        <input type="email" id="email" placeholder="E-mail">
                         <label for="telefone"></label>
-                        <input type="tel" id="telefone" placeholder="(XX) X XXXX-XXXX"required>
+                        <input type="tel" id="telefone" placeholder="(XX) X XXXX-XXXX">
                     </div>
                 </div>
                 <div class="criar-login">
@@ -148,13 +153,13 @@
                     </div>
                     <div>
                         <label for="login"></label>
-                        <input type="email" id="login" placeholder="Digite seu e-mail"required> 
+                        <input type="email" id="login" placeholder="Digite seu e-mail"> 
                     </div>
                     <div>
                         <label for="senha"></label>
-                        <input type="password" id="senha" placeholder="Digite sua senha"required>      
+                        <input type="password" id="senha" placeholder="Digite sua senha">      
                         <label for="confirmar-senha"></label>
-                        <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required>
+                        <input type="password" id="confirmarSenha" placeholder="Confirme sua senha">
                     </div>
                 </div>
             </div>
