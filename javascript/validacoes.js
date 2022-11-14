@@ -4,6 +4,7 @@ const inputsDadosPessoais = document.querySelectorAll('.dados-pessoais > div > i
 const inputCep = document.querySelectorAll('.dados-endereco > div > input');
 const inputDadosRua = document.querySelectorAll('.dados-endereco > div.dados-rua > div > input');
 const inputDadosRuaCompleto = document.querySelectorAll('.dados-endereco > div.dados-rua-completo > input');
+const inputEmail = document.querySelectorAll('.dados-contato > div > input')
 const senha = document.getElementById('senha');
 const confirmarSenha = document.getElementById('confirmar-senha');
 const strong =  /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/
@@ -28,16 +29,16 @@ formulario.addEventListener('submit', function (e){
     });
     inputDadosRua.forEach(input => {
         if(input.value == ''){
+            document.querySelector('.err-'+input.id).classList.remove('invisible')
             e.preventDefault();
-            document.querySelector('.err-'+input.id).classList.remove('invisible');
         } else {
             document.querySelector('.err-'+input.id).classList.add('invisible')
         }
     });
-    inputDadosRuaCompleto.forEach(input => {
+    inputEmail.forEach(input => {
         if(input.value == ''){
+            document.querySelector('.err-'+input.id).classList.remove('invisible')
             e.preventDefault();
-            document.querySelector('.err-'+input.id).classList.remove('invisible');
         } else {
             document.querySelector('.err-'+input.id).classList.add('invisible')
         }
@@ -47,8 +48,7 @@ formulario.addEventListener('submit', function (e){
         e.preventDefault();
         senha.focus();
     }
-    
-})
+});
 
 senha.oninput = function(){
     if(senha.value.match(strong)){
