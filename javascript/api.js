@@ -1,3 +1,5 @@
+
+/* API para puxar os estados e sigla) */
 const estados = document.getElementById('estados');
 
 fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome")
