@@ -91,7 +91,7 @@ div.err-rua{
 }
 
 div.err-numero {
-    width: 50%;
+    margin-left: 58%;
 }
 
 input#numero{
@@ -115,6 +115,14 @@ div.err-cpf {
 input#data-nascimento,
 div.err-data-nascimento {
     width: 30%;
+}
+
+div.err-email {
+    width: 50%;
+}
+
+div.err-senha {
+    width: 50%;
 }
 
 input#complemento{
