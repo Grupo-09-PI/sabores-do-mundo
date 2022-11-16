@@ -133,7 +133,7 @@ input#estado{
     width: 10%;
 }
 
-select {
+select#estados {
     background-color:transparent;
     align-self: center;
     margin-bottom: 1.4rem;
@@ -182,6 +182,8 @@ main > div > div.form input {
         height: 60px;
     
         }
+
+      
 
         div button:hover {
             color: black;

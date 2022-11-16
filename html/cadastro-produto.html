@@ -9,6 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro-produto.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script src="../javascript/validacoes.js" defer></script>
     <title>cadastro de produto</title>
 </head>
 
@@ -25,7 +27,7 @@
                 </div>
 
                 <div class="divBusca">
-                    <input  type="search" id="txtBusca" placeholder="Busque seu produto..." />
+                    <input type="search" id="txtBusca" placeholder="Busque seu produto..." />
                     <a href="#"><img src="../imagens/header-footer/lupa-.png" id="btnBusca" width="20rem" /></a>
                 </div>
 
@@ -47,18 +49,18 @@
                     <h1> CADASTRAR NOVO PRODUTO</h1>
                 </div>
 
-                <form  class="cadastrando">
-                   
+                <form class="cadastrando">
+
                     <div class="compactar">
 
-                        <input class="card" name="codigo" type="text" placeholder="Código" required>
-                        <input class="card" name="tipo" type="text" placeholder="Tipo" required>
+                        <input class="card" name="codigo" type="text" placeholder="Código" id="codigo" required>
+                        <input class="card" name="tipo" type="text" placeholder="Tipo" id="tipoProduto" required>
 
                     </div>
 
-                    <input class="card-medio-longo" type="text" id="produto" placeholder="Nome do produto" required>
+                    <input class="card-medio-longo" type="text" id="nomeProduto" placeholder="Nome do produto" required>
 
-                    <select class="card-medio" name="categoria" required>
+                    <select class="card-medio" name="categoria">
                         <option value="suica" selected disabled style="display:none;">Grupo</option>
                         <option value="bebida">Bebida</option>
                         <option value="salgado">Salgado</option>
@@ -67,9 +69,9 @@
                         <option value="massas">Massas</option>
                     </select>
 
-                    <input class="card-medio" type="text" id="produto" placeholder="Marca" required>
+                    <input class="card-medio" type="text" id="marcaProduto" placeholder="Marca" required>
 
-                    <select class="card-medio" name="categoria" required>
+                    <select class="card-medio" name="categoria">
                         <option value="suica" selected disabled style="display:none;">Categoria</option>
                         <option value="américa-latina">América-Latina</option>
                         <option value="Europa">Europa</option>
@@ -78,52 +80,41 @@
                         <option value="áfrica">África</option>
                     </select>
 
-                    
-                    <input class="card-medio" type="number" name="produto" placeholder="Estoque Minimo" required>
-                    <input class="card-medio" type="number" name="number" placeholder="Estoque Atual">
-                    <input class="card-medio" type="text" name="text" placeholder="SKU">
-                    <input class="card-longo" type="text" name="text-preco" placeholder="Preço">
-                    <input class="card-longo" type="text" name="text-custo" placeholder="Custo do Produto">
-                
+
+                    <input class="card-medio" type="number" name="produto" placeholder="Estoque Minimo" id="estoqueMinimo" required>
+                    <input class="card-medio" type="number" name="number" placeholder="Estoque Atual" id="estoqueAtual">
+                    <input class="card-medio" type="text" name="text" placeholder="SKU" id="sku" required>
+                    <input class="card-longo" type="text" name="text-preco" placeholder="Preço" id="priceProduto" required>
+                    <input class="card-longo" type="text" name="text-custo" placeholder="Custo do Produto" id="custoProduto">
+
 
                     <div class="novo-produto">
                     </div>
 
-                    <input type="file" class="add">
+                    <input type="file" class="add" id="uploadImage" required>
 
                     <img class="plano-de-fundo" src="../imagens/logo-sabores.png" alt="imagem de fundo" width="50%">
 
-                    <textarea class="descricao" name="descricao" name="descricao" cols="30" rows="10">
-                        
+                    <textarea class="descricao" name="descricao" name="descricao" cols="30" rows="10" id="descricaoProtudo" required>
+
                     </textarea>
 
                     <div class="status">
-
                         <div class="no-momento">
                             <p>Status</p>
                         </div>
 
+
                         <bottom type="submit" class="atividade"> Ativo</bottom>
                         <bottom class="atividade"> Inativo</bottom>
-
-
 
                     </div>
 
                     <div class="botao">
-
                         <input class="botoes" type="submit" name="salvar-produto" value="Salvar produto">
-
                         <input type="submit" class="botoes" name="salvar-rescunho" value="Salvar Rascunho">
-
                         <input class="botoes" type="reset" name="cancelar" value="Cancelar">
                     </div>
-
-                   
-
-
-
-
                 </form>
             </div>
         </section>

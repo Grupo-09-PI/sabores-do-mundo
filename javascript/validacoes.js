@@ -1,4 +1,3 @@
-
 const formulario = document.querySelector('.form form');
 const inputsAll = document.querySelectorAll('form input:not(#rua, #complemento, #bairro, #cidade)')
 const senha = document.getElementById('senha');
