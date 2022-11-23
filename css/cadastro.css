@@ -67,12 +67,31 @@ main > div > div.form form {
     flex-direction: column;
 }
 
+div.alerta-erros-validacao {
+    display: flex;
+    font-size: 12px;
+    color: red;
+    width: 100%;
+    align-items: flex-end;
+   }
+   
+   
+   .invisible {
+     display: none !important;
+   }
+
+
 input#cep{
     width: 35%;
 }
 
-input#rua{
+input#rua,
+div.err-rua{
     width: 70%;
+}
+
+div.err-numero {
+    margin-left: 58%;
 }
 
 input#numero{
@@ -83,12 +102,27 @@ input#bairro{
     width: 35%;
 }
 
-input#cpf{
+input#nome,
+div.err-nome{
+    width: 70%;
+}
+
+input#cpf,
+div.err-cpf {
     width: 35%;
 }
 
-input#data-nascimento {
+input#data-nascimento,
+div.err-data-nascimento {
     width: 30%;
+}
+
+div.err-email {
+    width: 50%;
+}
+
+div.err-senha {
+    width: 50%;
 }
 
 input#complemento{
@@ -107,7 +141,7 @@ input#estado{
     width: 10%;
 }
 
-select {
+select#estados {
     background-color:transparent;
     align-self: center;
     margin-bottom: 1.4rem;
@@ -156,6 +190,8 @@ main > div > div.form input {
         height: 60px;
     
         }
+
+      
 
         div button:hover {
             color: black;

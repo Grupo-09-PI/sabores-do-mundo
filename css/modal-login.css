@@ -83,9 +83,12 @@ div.botao-cadastro{
     margin-top: 1.5rem;
   }
 
-div.botao-cadastro button{
+div.botao-cadastro a{
     background-color: rgb(243, 233, 233);
-    font-size: 1.0rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.3rem;
     border: none;
     align-self: center;
     color: black;

@@ -10,6 +10,8 @@
     <link rel="icon" href="../imagens/sabor-icon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../javascript/validacoes.js" defer></script>
+    <script src="../javascript/api.js" defer></script>
     <title>Cadastro</title>
 </head>
 <!--Start of Tawk.to Script-->
@@ -50,9 +52,6 @@
             </div>
         </nav>
     </header>
-
-
-
     <main>
         <div class="div.cadastro">
             <div class="titulo-cadastro">
@@ -62,16 +61,22 @@
                 <form>
                 <div class="dados-pessoais">
                     <div>
-                    <h3>Dados pessoais:</h3>
+                    <h3>Dados pesisoais:</h3>
+                    </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-nome">*Preencha o nome correto</div>
+                        <div class="invisible err-cpf">*Preencha o cpf errado</div>
+                        <div class="invisible err-data-nascimento">*Preencha a data de nascimento</div>
                     </div>
                     <div>
                         <label for="nome"></label>
-                        <input type="text" id="nome" placeholder="Nome Completo"required>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo">
                         <label for="cpf"></label>
-                        <input type="text" id="cpf" placeholder="CPF: 000.000.000-00"required>
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF: 000.000.000-00">
                         <label for="data-nascimento"></label>
-                        <input type="date" id="data-nascimento" placeholder="Data de nascimento">
+                        <input type="date" name="data-nascimento" id="data-nascimento" placeholder="Data de nascimento">
                     </div>
+                    
                 </div>
                 
                 <div>
@@ -79,9 +84,16 @@
                         <div>
                             <h3>Endereço:</h3>
                         </div>
+                        <div class="alerta-erros-validacao">
+                            <div class="invisible err-cep">*Preencha o cep corretamente</div>
+                        </div>
                         <div>
                             <label for="cep"></label>
                             <input type="text" id="cep" placeholder="CEP - XX.XXX-XX">
+                        </div>
+                        <div class="alerta-erros-validacao">
+                            <div class="invisible err-rua"></div>
+                            <div class="invisible err-numero">*Nroº</div>
                         </div>
                         <div class="dados-rua">
                             <div>
@@ -93,40 +105,13 @@
                                 <input type="text" id="complemento" placeholder="Complemento">
                                 
                             </div>
-                        <div>
+                        
+                        <div class="dados-rua-completo">
                             <label for="bairro"></label>
                             <input type="text" id="bairro" placeholder="Bairro">
                             <label for="cidade"></label>
                             <input type="text" id="cidade" placeholder="Cidade">
-                            <select name="estados-brasil">
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </select>
+                            <select name="estados-brasil" id="estados"></select>
                         </div>
                         </div>
                     </div>
@@ -135,26 +120,40 @@
                     <div>
                         <h3>Dados de Contato:</h3>
                     </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-email">*Preencha o e-mail</div>
+                        <div class="invisible err-telefone">*Preencha o celular</div>
+                    </div>
                     <div>
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="E-mail"required>
+                        <input type="email" id="email" placeholder="E-mail">
                         <label for="telefone"></label>
-                        <input type="tel" id="telefone" placeholder="(XX) X XXXX-XXXX"required>
+                        <input type="tel" id="telefone" placeholder="(XX) X XXXX-XXXX">
                     </div>
                 </div>
                 <div class="criar-login">
                     <div>
                         <h3>Criar login</h3>
                     </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-login">*Preencha o e-mail</div>
+                        
+                    </div>
+                    
                     <div>
                         <label for="login"></label>
-                        <input type="email" id="login" placeholder="Digite seu e-mail"required> 
+                        <input type="email" id="login" placeholder="Digite seu e-mail"> 
                     </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-senha">*Preencha sua senha</div>
+                        <div class="invisible err-confirmarSenha">*Preencha sua senha</div>
+                    </div>
+                    
                     <div>
                         <label for="senha"></label>
-                        <input type="password" id="senha" placeholder="Digite sua senha"required>      
+                        <input type="password" id="senha" placeholder="Digite sua senha">      
                         <label for="confirmar-senha"></label>
-                        <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required>
+                        <input type="password" id="confirmarSenha" placeholder="Confirme sua senha">
                     </div>
                 </div>
             </div>
@@ -263,7 +262,7 @@
                     </div>
                     <div class="botao-cadastro-e-login">
                         <div class="botao-cadastro">
-                            <button>Cadastrar</button>
+                            <a href="../html/cadastro.html">Cadastrar</a>
                         </div>
                         <div class="botao-login">
                             <button type="submit">Login</button>      

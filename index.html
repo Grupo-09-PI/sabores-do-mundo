@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="./javascript/slider.js" defer></script>
     <script src="./javascript/modal-login.js" defer></script>
+    <script src="./javascript/hamburger.js" defer></script>
     <title>Sabor do Mundo</title>
     
 </head>
@@ -43,7 +44,12 @@
             <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
             <a href="#"><img src="imagens/header-footer/lupa-.png" id="btnBusca" alt="Buscar"/></a>
         </div>
+        
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./imagens/menu_white_36dp.svg" alt=""></button>
+        </div>
 
+        
         <nav>
             <div class="divMinhaConta">
                 <a href="#"><img src="imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
@@ -54,6 +60,28 @@
             </div>
         </nav>
     </header>
+    <div class="mobile-menu">
+
+        <div class="div-mobile-menu">
+            <div class="divMinhaConta nav-item">
+                <a href="#"><img src="imagens/header-footer/user-nav.png" id="ClassBtnMinhaConta" alt="minha-conta"/></a>
+            </div>
+            <div class="text-perfil-mobile nav-item">
+                <h3>Login</h3>
+            </div>
+        </div>
+
+        <div class="div-mobile-menu">
+            <div class="divCarrinho nav-item">
+                <a href="/html/carrinho.html"><img src="imagens/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+            </div>
+            <div class="text-carrinho-mobile nav-item">
+                <h3>Carrinho</h3>
+            </div>
+        </div>
+
+      
+    </div>
     <main>
        <section data-slide="slide" class="slide banner">
             <div class="slide-items banner-promo">
@@ -95,6 +123,35 @@
                 <a href="">EUROPEUS</a>
             </div>
         </section>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShowFiltro()"><img class="icon" src="./imagens/filtro-icon.png" alt=""><h3>Filtros</h3></button>
+        </div>
+        <div class="mobile-filtro">
+
+            <div class="div-mobile-filtro">
+                <div class="div-filtro-fixo" >
+                    <a href="html/listagem-de-produtos.html">TODOS OS PRODUTOS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">DOCES</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">SALGADOS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">TEMPEROS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">BEBIDAS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">ASIATICOS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">EUROPEUS</a>
+                </div>
+            </div>          
+        </div>
         <section class="listagem-produtos-home">
            <div class="div-listagem-produtos-home">
                 <div class="div-up-produtos-home">
@@ -543,7 +600,7 @@
                     </div>
                     <div class="botao-cadastro-e-login">
                         <div class="botao-cadastro">
-                            <button>Cadastrar</button>
+                            <a href="./html/cadastro.html">Cadastrar</a>
                         </div>
                         <div class="botao-login">
                             <button type="submit">Login</button>      
