@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/sabor-icon.png">
-    <% for( let index = 0; index < css.length; index++ ) { %>
-        <link rel="stylesheet" href="/stylesheets/<%=css[index]%>  ">
-    <% } %>    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+<body>
+    <header class="aviso-header">
+        <h5 class="frase-motion"> Parcele sua compra em até 6 x sem juros, entrega gratuita para compras a cima de R$200,00 </h5>
+    </header>
 
-    <% for( let index = 0; index < javascript.length; index++ ) { %>
-        <script src="/javascripts/<%=javascript[index]%> " defer></script>
-    <% } %>
-   
-    <title>Sabor do Mundo</title>
-    
-</head>
+    <header class="nav">   
+        <div class="logo-header" >
+            <a href="index.html"><img src="images/logo-sabores.png" alt="" class="logo"></a>
+        </div>
+
+        <div class="divBusca">
+            <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
+            <a href="#"><img src="images/header-footer/lupa-.png" id="btnBusca" alt="Buscar"/></a>
+        </div>
+        
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./images/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+        
+        <nav>
+            <div class="divMinhaConta">
+                <a href="#"><img src="images/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+            </div>
+            
+            <div class="divCarrinho">
+                <a href="/html/carrinho.html"><img src="images/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+            </div>
+        </nav>
+    </header>
