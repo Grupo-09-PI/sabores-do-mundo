@@ -10,9 +10,11 @@ var cadastroRouter = require('./src/routes/cadastro');
 var cadastroProdutoRouter = require('./src/routes/cadastroProduto');
 var carrinhoRouter = require('./src/routes/carrinho');
 var empresaRouter = require('./src/routes/empresa');
-var listagemDeProdutosRouter = require('./src/routes/listagem-de-produtos');
+var listagemDeProdutosRouter = require('./src/routes/listagemDeProdutos');
 var loginRouter = require('./src/routes/login');
 var painelUsuarioRouter = require('./src/routes/painel-usuario');
+var produtoRouter = require('./src/routes/produto');
+var telaObrigadoRouter = require('./src/routes/tela-obrigado');
 
 
 var app = express();
@@ -33,9 +35,11 @@ app.use('/cadastro', cadastroRouter);
 app.use('/cadastro-produto', cadastroProdutoRouter);
 app.use('/carrinho', carrinhoRouter);
 app.use('/empresa', empresaRouter);
-app.use('/listagem-de-produtos', listagemDeProdutosRouter);
+app.use('/listagemDeProdutos', listagemDeProdutosRouter);
 app.use('/login', loginRouter);
 app.use('/painel-usuario', painelUsuarioRouter);
+app.use('/produto', produtoRouter);
+app.use('/tela-obrigado', telaObrigadoRouter);
 
 
 

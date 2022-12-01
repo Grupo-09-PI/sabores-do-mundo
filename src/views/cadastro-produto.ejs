@@ -8,9 +8,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% for( let index = 0; index < css.length; index++ ) { %>
+        <link rel="stylesheet" href="/stylesheets/<%=css[index]%> ">
+    <% } %>
+    <script src="/javascripts/<%=javascript%> " defer></script>
     <link rel="stylesheet" href="../css/cadastro-produto.css">
     <link rel="stylesheet" href="../css/cadastro.css">
-    <script src="../javascript/validacoes.js" defer></script>
+    
     <title>cadastro de produto</title>
 </head>
 

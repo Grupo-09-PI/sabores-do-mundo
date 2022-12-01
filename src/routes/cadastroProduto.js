@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+const cadastroProdutoController = require('../controller/cadastroProdutoController')
+
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('cadastro-produto');
-});
+router.get('/', cadastroProdutoController.showIndex);
 
 module.exports = router;
