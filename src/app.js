@@ -4,30 +4,30 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./src/routes/index');
-var usersRouter = require('./src/routes/users');
-var cadastroRouter = require('./src/routes/cadastro');
-var cadastroProdutoRouter = require('./src/routes/cadastroProduto');
-var carrinhoRouter = require('./src/routes/carrinho');
-var empresaRouter = require('./src/routes/empresa');
-var listagemDeProdutosRouter = require('./src/routes/listagemDeProdutos');
-var loginRouter = require('./src/routes/login');
-var painelUsuarioRouter = require('./src/routes/painel-usuario');
-var produtoRouter = require('./src/routes/produto');
-var telaObrigadoRouter = require('./src/routes/tela-obrigado');
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var cadastroRouter = require('./routes/cadastro');
+var cadastroProdutoRouter = require('./routes/cadastroProduto');
+var carrinhoRouter = require('./routes/carrinho');
+var empresaRouter = require('./routes/empresa');
+var listagemDeProdutosRouter = require('./routes/listagemDeProdutos');
+var loginRouter = require('./routes/login');
+var painelUsuarioRouter = require('./routes/painel-usuario');
+var produtoRouter = require('./routes/produto');
+var telaObrigadoRouter = require('./routes/tela-obrigado');
 
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, './src/views'));
+app.set('views', path.join(__dirname, './views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

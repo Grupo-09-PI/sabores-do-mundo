@@ -94,8 +94,8 @@
             </div>          
         </div>
         <section class="listagem-produtos-home">
+            <% for(const produto of produtosIndex) { %> 
            <div class="div-listagem-produtos-home">
-                <% for(const produto of produtosIndex) { %> 
                 <div class="div-up-produtos-home">
                     <a href="/produto"><img src="images/<%=produto.categoria%>/<%=produto.imagem%>" alt=""></a>
                 </div>
@@ -104,7 +104,7 @@
                         <h5><%=produto.nome%> </h5>                    
                     </div>
                     <div class="descricao-produto-home">
-                        <p>produto.descricao</p>
+                        <p><%=produto.descricao%></p>
                     </div>
                     <div class="price-produto-listagem-produto">
                         <div class="de-por-price">
@@ -122,9 +122,9 @@
                             <h5>Comprar agora</h5>
                         </button>
                     </div>
-                </div>
-                <% } %> 
+                </div> 
            </div>
+           <% } %> 
         </section>
         <div class="div-h2-os-mais-vendidos">
             <h2 class="h2-os-mais-vendidos">Os mais vendidos</h2>
