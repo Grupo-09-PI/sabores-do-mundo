@@ -1,0 +1,57 @@
+<%- include('./partials/meta') %>
+<%- include('./partials/tawktoo') %>
+<%- include('./partials/header') %>
+
+<body>
+    <header class="aviso-header">
+        <h5 class="frase-motion"> Parcele sua compra em até 6 x sem juros, entrega gratuita para compras a cima de R$200,00 </h5>
+    </header>
+
+    <header class="nav">   
+        <div class="logo-header" >
+            <a href="../index.html"><img src="../imagens/logo-sabores.png" alt="" class="logo"></a>
+        </div>
+
+        <div class="divBusca">
+            <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
+            <a href="#"><img src="../imagens/header-footer/lupa-.png" id="btnBusca" alt="Buscar"/></a>
+        </div>
+
+        <nav>
+            <div class="divMinhaConta">
+                <a href="#"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+            </div>
+            
+            <div class="divCarrinho">
+                <a href="./carrinho.html"><img src="../imagens/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-login">
+            <div class="div-login">
+                <form>
+                    <div class="titulo-login">
+                        <h1> ACESSAR A CONTA</h1>
+                    </div>
+                    <div class="login-email-senha">
+                        <label for="email-cpf"></label>
+                        <input type="text" name="email-cpf" id="email-cpf" placeholder="E-mail ou CPF"> 
+
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha"> 
+                    </div>
+                    <div class="lembrar-senha">
+                        <input class="senha" type="checkbox" name="esquecer-a-senha">
+                        <label for="esquecer-a-senha">Lembrar senha</label>
+                    </div>
+                    <div class="botao-login">
+                        <button type="submit">Login</button>      
+                    </div>
+                                     
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <%- include('./partials/footer') %>

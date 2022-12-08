@@ -1,0 +1,145 @@
+<%- include('./partials/meta') %>
+<%- include('./partials/tawktoo') %>
+<%- include('./partials/header') %>
+
+<body>
+    <header class="aviso-header">
+        <h5 class="frase-motion"> Parcele sua compra em até 6 x sem juros, entrega gratuita para compras a cima de R$200,00 </h5>
+    </header>
+
+    <header class="nav">   
+        <div class="logo-header" >
+            <a href="../index.html"><img src="../imagens/logo-sabores.png" alt="" class="logo"></a>
+        </div>
+
+        <div class="divBusca">
+            <input type="search" id="txtBusca" placeholder="Busque seu produto..."/>
+            <a href="#"><img src="../imagens/header-footer/lupa-.png" id="btnBusca" alt="Buscar"/></a>
+        </div>
+
+        <nav>
+            <div class="divMinhaConta">
+                <a href="#"><img src="../imagens/header-footer/user-nav.png" id="btnMinhaConta" alt="minha-conta"/></a>
+            </div>
+            
+            <div class="divCarrinho">
+                <a href="./carrinho.html"><img src="../imagens/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="div.cadastro">
+            <div class="titulo-cadastro">
+                <h1>CADASTRO DE USUÁRIO</h1>
+            </div>
+            <div class="form" >
+                <form>
+                <div class="dados-pessoais">
+                    <div>
+                    <h3>Dados pesisoais:</h3>
+                    </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-nome">*Preencha o nome correto</div>
+                        <div class="invisible err-cpf">*Preencha o cpf errado</div>
+                        <div class="invisible err-data-nascimento">*Preencha a data de nascimento</div>
+                    </div>
+                    <div>
+                        <label for="nome"></label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                        <label for="cpf"></label>
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF: 000.000.000-00">
+                        <label for="data-nascimento"></label>
+                        <input type="date" name="data-nascimento" id="data-nascimento" placeholder="Data de nascimento">
+                    </div>
+                    
+                </div>
+                
+                <div>
+                    <div class="dados-endereco">
+                        <div>
+                            <h3>Endereço:</h3>
+                        </div>
+                        <div class="alerta-erros-validacao">
+                            <div class="invisible err-cep">*Preencha o cep corretamente</div>
+                        </div>
+                        <div>
+                            <label for="cep"></label>
+                            <input type="text" id="cep" placeholder="CEP - XX.XXX-XX">
+                        </div>
+                        <div class="alerta-erros-validacao">
+                            <div class="invisible err-rua"></div>
+                            <div class="invisible err-numero">*Nroº</div>
+                        </div>
+                        <div class="dados-rua">
+                            <div>
+                                <label for="rua"></label>
+                                <input type="text" id="rua" placeholder="Rua/Av">
+                                <label for="numero"></label>
+                                <input type="text" id="numero" placeholder="Nª">
+                                <label for="complemento"></label>
+                                <input type="text" id="complemento" placeholder="Complemento">
+                                
+                            </div>
+                        
+                        <div class="dados-rua-completo">
+                            <label for="bairro"></label>
+                            <input type="text" id="bairro" placeholder="Bairro">
+                            <label for="cidade"></label>
+                            <input type="text" id="cidade" placeholder="Cidade">
+                            <select name="estados-brasil" id="estados"></select>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dados-contatos">
+                    <div>
+                        <h3>Dados de Contato:</h3>
+                    </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-email">*Preencha o e-mail</div>
+                        <div class="invisible err-telefone">*Preencha o celular</div>
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="E-mail">
+                        <label for="telefone"></label>
+                        <input type="tel" id="telefone" placeholder="(XX) X XXXX-XXXX">
+                    </div>
+                </div>
+                <div class="criar-login">
+                    <div>
+                        <h3>Criar login</h3>
+                    </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-login">*Preencha o e-mail</div>
+                        
+                    </div>
+                    
+                    <div>
+                        <label for="login"></label>
+                        <input type="email" id="login" placeholder="Digite seu e-mail"> 
+                    </div>
+                    <div class="alerta-erros-validacao">
+                        <div class="invisible err-senha">*Preencha sua senha</div>
+                        <div class="invisible err-confirmarSenha">*Preencha sua senha</div>
+                    </div>
+                    
+                    <div>
+                        <label for="senha"></label>
+                        <input type="password" id="senha" placeholder="Digite sua senha">      
+                        <label for="confirmar-senha"></label>
+                        <input type="password" id="confirmarSenha" placeholder="Confirme sua senha">
+                    </div>
+                </div>
+            </div>
+            <div class="termos">
+                <input type="checkbox" name="aceitar-termos">
+                <label for="aceitar-termos">Aceite os termos</label>
+            </div>
+                <button type="submit">Criar Conta</button>
+                </form>
+        </div>
+
+    </main>
+
+<%- include('./partials/footer') %>

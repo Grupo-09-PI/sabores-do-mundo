@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/sabor-icon.png">
+    <% for( let index = 0; index < css.length; index++ ) { %>
+        <link rel="stylesheet" href="/stylesheets/<%=css[index]%>  ">
+    <% } %>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <% for( let index = 0; index < javascript.length; index++ ) { %>
+        <script src="/javascripts/<%=javascript[index]%> " defer></script>
+    <% } %>
+   
+    <title><%=tittle%></title>
+    
+</head>

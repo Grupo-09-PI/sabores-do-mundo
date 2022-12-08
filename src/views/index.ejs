@@ -1,0 +1,240 @@
+<%- include('./partials/meta') %>
+<%- include('./partials/tawktoo') %>
+<%- include('./partials/header') %>
+
+
+    <div class="mobile-menu">
+
+        <div class="div-mobile-menu">
+            <div class="divMinhaConta nav-item">
+                <a href="#"><img src="images/header-footer/user-nav.png" id="ClassBtnMinhaConta" alt="minha-conta"/></a>
+            </div>
+            <div class="text-perfil-mobile nav-item">
+                <h3>Login</h3>
+            </div>
+        </div>
+
+        <div class="div-mobile-menu">
+            <div class="divCarrinho nav-item">
+                <a href="/html/carrinho.html"><img src="images/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+            </div>
+            <div class="text-carrinho-mobile nav-item">
+                <h3>Carrinho</h3>
+            </div>
+        </div>
+    </div>
+    <main>
+       <section data-slide="slide" class="slide banner">
+            <div class="slide-items banner-promo">
+                <img src="./images/slider-home/Banner1.png" alt="Img 1">
+                <img src="./images/slider-home/Banner2.png" alt="Img 2">
+                <img src="./images/slider-home/Banner3.png" alt="Img 3">
+                <img src="./images/slider-home/Banner4.png" alt="Img 4">
+                <img src="./images/slider-home/Banner5.png" alt="Img 5">
+                <img src="./images/slider-home/Banner6.png" alt="Img 6">
+                <img src="./images/slider-home/Banner7.png" alt="Img 7">
+                <img src="./images/slider-home/Banner8.png" alt="Img 8">
+            </div>
+            <nav class="slide-nav">
+                <div class="slide-thumb"></div>
+                <button class="slide-prev" >Anterior</button>
+                <button class="slide-next" >Próximo</button>
+            </nav>
+        </section> 
+        <section class="filtro-fixo">
+            <div class="div-filtro-fixo" >
+                <a href="html/listagem-de-produtos.html">TODOS OS PRODUTOS</a>
+            </div>
+            <div class="div-filtro-fixo" >
+                <a href="">DOCES</a>
+            </div>
+            <div class="div-filtro-fixo" >
+                <a href="">SALGADOS</a>
+            </div>
+            <div class="div-filtro-fixo" >
+                <a href="">TEMPEROS</a>
+            </div>
+            <div class="div-filtro-fixo" >
+                <a href="">BEBIDAS</a>
+            </div>
+            <div class="div-filtro-fixo" >
+                <a href="">ASIATICOS</a>
+            </div>
+            <div class="div-filtro-fixo" >
+                <a href="">EUROPEUS</a>
+            </div>
+        </section>
+        <div class="mobile-menu-icon">
+            <button onclick="menuShowFiltro()"><img class="icon" src="./images/filtro-icon.png" alt=""><h3>Filtros</h3></button>
+        </div>
+        <div class="mobile-filtro">
+
+            <div class="div-mobile-filtro">
+                <div class="div-filtro-fixo" >
+                    <a href="html/listagem-de-produtos.html">TODOS OS PRODUTOS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">DOCES</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">SALGADOS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">TEMPEROS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">BEBIDAS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">ASIATICOS</a>
+                </div>
+                <div class="div-filtro-fixo" >
+                    <a href="">EUROPEUS</a>
+                </div>
+            </div>          
+        </div>
+        <section class="listagem-produtos-home">
+            <% for(const produto of produtosIndex) { %> 
+           <div class="div-listagem-produtos-home">
+                <div class="div-up-produtos-home">
+                    <a href="/produto"><img src="images/<%=produto.categoria%>/<%=produto.imagem%>" alt=""></a>
+                </div>
+                <div class="div-down-produtos-home">
+                    <div class="titulo-produto">
+                        <h5><%=produto.nome%></h5>                    
+                    </div>
+                    <div class="descricao-produto-home">
+                        <p><%=produto.descricao%></p>
+                    </div>
+                    <div class="price-produto-listagem-produto">
+                        <div class="de-por-price">
+                            <h3>De: R$ <%=produto.valorSemDesconto%> </h3>
+                        </div>
+                        <div class="price-real">
+                            <h3>Por: R$ <%=produto.valorVenda%></h3>
+                        </div>
+                    </div>
+                    <div class="cta-produtos" id="accessKey">
+                        <button class="add-carrinho" type="submit">
+                            <h5>Adicionar Carrinho</h5>
+                        </button>
+                        <button class="comprar-agora">
+                            <h5>Comprar agora</h5>
+                        </button>
+                    </div>
+                </div> 
+           </div>
+           <% } %> 
+        </section>
+        <div class="div-h2-os-mais-vendidos">
+            <h2 class="h2-os-mais-vendidos">Os mais vendidos</h2>
+        </div>
+        <section class="div-mais-vendidos">
+            <div class="conteiner-mais-vendidos">
+                <div class="div-lista-mais-vendidos">
+                    <div class="up-lista-mais-vendidos">
+                        <img src="images/Produtos-Coreia/curry-vermont.jpg" alt="">
+                    </div>
+                    <div class="down-lista-mais-vendidos">
+                        <h3 class="nome-produto-mais-vendido">Curry Vermont</h3>
+                    </div>
+                    <div class="cta-produtos-mais-vendidos">
+                        <div>
+                            <a href="#"><img src="images/header-footer/carrinho-compras.png" alt=""></a>
+                            <h3>R$ 14,90</h3>
+                        </div>    
+                    </div>
+                </div>
+                <div class="div-lista-mais-vendidos">
+                    <div class="up-lista-mais-vendidos">
+                        <img src="images/Produtos-Coreia/soju-de-morango-jinro-strawberry.jpg" alt="">
+                    </div>
+                    <div class="down-lista-mais-vendidos">
+                        <h3 class="nome-produto-mais-vendido">Soju sabor morango - 360ml</h3>
+                    </div>
+                    <div class="cta-produtos-mais-vendidos">
+                        <div>
+                            <a href="#"><img src="images/header-footer/carrinho-compras.png" alt=""></a>
+                            <h3>R$ 29,90</h3>
+                        </div>    
+                    </div>
+                </div>
+                <div class="div-lista-mais-vendidos">
+                    <div class="up-lista-mais-vendidos">
+                        <img src="images/Produtos-Franca/limonada rosa.jpeg" alt="">
+                    </div>
+                    <div class="down-lista-mais-vendidos">
+                        <h3 class="nome-produto-mais-vendido">Limonada Efferve</h3>
+                    </div>
+                    <div class="cta-produtos-mais-vendidos">
+                        <div>
+                            <a href="#"><img src="images/header-footer/carrinho-compras.png" alt=""></a>
+                            <h3>R$ 35,50</h3>
+                        </div>    
+                    </div>
+                </div>
+                <div class="div-lista-mais-vendidos">
+                    <div class="up-lista-mais-vendidos">
+                        <img src="images/Produtos-Franca/mostarda.jpeg" alt="">
+                    </div>
+                    <div class="down-lista-mais-vendidos">
+                        <h3 class="nome-produto-mais-vendido">Mostarda Dijon</h3>
+                    </div>
+                    <div class="cta-produtos-mais-vendidos">
+                        <div>
+                            <a href="#"><img src="images/header-footer/carrinho-compras.png" alt=""></a>
+                            <h3>R$ 14,99</h3>
+                        </div>    
+                    </div>
+                </div>
+                <div class="div-lista-mais-vendidos">
+                    <div class="up-lista-mais-vendidos">
+                        <img src="images/Produtos-Franca/Macarons.jpeg" alt="">
+                    </div>
+                    <div class="down-lista-mais-vendidos">
+                        <h3 class="nome-produto-mais-vendido">Macarons Chocolate</h3>
+                    </div>
+                    <div class="cta-produtos-mais-vendidos">
+                        <div>
+                            <a href="#"><img src="images/header-footer/carrinho-compras.png" alt=""></a>
+                            <h3>R$ 19,90</h3>
+                        </div>    
+                    </div>
+                </div>
+            </div>               
+        </section>
+
+        <section class="esteira-de-logos">
+            <div class="conteiner-logos">
+                <div class="logos-parceiros">
+                    <img src="images/logo-okf.png" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/logo-haitao.jfif" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/Produtos-Franca/minerva.jpg" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/logo-haitao.jfif" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/logo-okf.png" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/logo-haitao.jfif" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/logo-okf.png" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/logo-haitao.jfif" alt="">
+                </div>
+                <div class="logos-parceiros">
+                    <img src="images/logo-okf.png" alt="">
+                </div>          
+            </div>
+        </section>
+    </main>
+   
+    <%- include('./partials/footer') %>
