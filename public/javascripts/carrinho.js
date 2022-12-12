@@ -1,3 +1,4 @@
+
 const conteinerCarrinho = document.querySelector('.tabela-itens-carrinho');
 
 const carrinho = JSON.parse(localStorage.getItem('carrinho'));
