@@ -16,7 +16,7 @@
 
         <div class="div-mobile-menu">
             <div class="divCarrinho nav-item">
-                <a href="/html/carrinho.html"><img src="images/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+                <a href="carrinho"><img src="images/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
             </div>
             <div class="text-carrinho-mobile nav-item">
                 <h3>Carrinho</h3>
@@ -94,10 +94,10 @@
             </div>          
         </div>
         <section class="listagem-produtos-home">
-            <% for(const produto of produtosIndex) { %> 
-           <div class="div-listagem-produtos-home">
+            <% produtosIndex.forEach((produto, i) =>  { %> 
+           <div class="div-listagem-produtos-home" id="produto-<%=i%>" >
                 <div class="div-up-produtos-home">
-                    <a href="/produto"><img src="images/<%=produto.categoria%>/<%=produto.imagem%>" alt=""></a>
+                    <a href="/produto"><img id="imagemProduto" src="images/<%=produto.categoria%>/<%=produto.imagem%>" alt=""></a>
                 </div>
                 <div class="div-down-produtos-home">
                     <div class="titulo-produto">
@@ -111,11 +111,11 @@
                             <h3>De: R$ <%=produto.valorSemDesconto%> </h3>
                         </div>
                         <div class="price-real">
-                            <h3>Por: R$ <%=produto.valorVenda%></h3>
+                            <h3>Por:  <span id="valorProduto"> R$ <%=produto.valorVenda%></span> </h3>
                         </div>
                     </div>
                     <div class="cta-produtos">
-                        <button class="add-carrinho">
+                        <button id="btnAddCarrinho" class="add-carrinho addCarrinhoPrimary">
                             <h5>Adicionar Carrinho</h5>
                         </button>
                         <button class="comprar-agora">
@@ -124,7 +124,7 @@
                     </div>
                 </div> 
            </div>
-           <% } %> 
+           <% }) %> 
         </section>
         <div class="div-h2-os-mais-vendidos">
             <h2 class="h2-os-mais-vendidos">Os mais vendidos</h2>
