@@ -17,15 +17,17 @@ btnsAdd.forEach((btn, i) => {
         if (localStorage.getItem('carrinho') == null) {
             carrinho = [produto]
             localStorage.setItem('carrinho', JSON.stringify(carrinho))
-            return
+            return alert('Item Adicionado no carrinho com sucesso')
         }
         carrinho = JSON.parse(localStorage.getItem('carrinho'))
         if (!carrinho.find(item => item.id == produto.id)) {
+            alert('Item Adicionado no carrinho com sucesso')
             carrinho.push(produto)
             localStorage.setItem('carrinho', JSON.stringify(carrinho))
         } else {
             carrinho.forEach(item => {
                 if (item.id != produto.id) return
+                alert('Item Adicionado no carrinho com sucesso')
                 item.quantidade++
                 localStorage.setItem('carrinho', JSON.stringify(carrinho))
             })
