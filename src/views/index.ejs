@@ -101,7 +101,7 @@
                 </div>
                 <div class="div-down-produtos-home">
                     <div class="titulo-produto">
-                        <h5><%=produto.nome%> </h5>                    
+                        <h5><%=produto.nome%></h5>                    
                     </div>
                     <div class="descricao-produto-home">
                         <p><%=produto.descricao%></p>
@@ -114,8 +114,8 @@
                             <h3>Por:  <span id="valorProduto"> R$ <%=produto.valorVenda%></span> </h3>
                         </div>
                     </div>
-                    <div class="cta-produtos">
-                        <button id="btnAddCarrinho" class="add-carrinho addCarrinhoPrimary">
+                    <div class="cta-produtos" id="accessKey">
+                        <button class="add-carrinho" type="submit">
                             <h5>Adicionar Carrinho</h5>
                         </button>
                         <button class="comprar-agora">
