@@ -13,6 +13,9 @@ const carrinho = JSON.parse(localStorage.getItem('carrinho'));
 
 carrinho.forEach(item => {
 
+    const valorConvertido =  parseFloat(item.valor.replace('R$ ','').replace(',','.'))
+    const subtotal =  (valorConvertido * parseFloat(item.quantidade)).toFixed(2).toString().replace('.',',')
+
     conteinerCarrinho.innerHTML += `
     <div class="tabela-itens-carrinho">
                 <div class="linha-de-produto" id="first-produto">
@@ -29,7 +32,7 @@ carrinho.forEach(item => {
                         <input type="number" placeholder="Qtd" value="${item.quantidade}" > 
                     </div>
                     <div class="subtotal">
-                        <h4>${item.valor}</h4>
+                        <h4>${subtotal}</h4>
                     </div>
                     <div class="excluir">
                         <a href="#"><img src="../images/body-main/lixeira.png" alt=""></a>
