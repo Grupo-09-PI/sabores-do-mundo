@@ -16,7 +16,7 @@
 
         <div class="div-mobile-menu">
             <div class="divCarrinho nav-item">
-                <a href="/html/carrinho.html"><img src="images/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
+                <a href="carrinho"><img src="images/header-footer/carrinho-compras.png" id="btnCarrinho" alt="carrinho"/></a>
             </div>
             <div class="text-carrinho-mobile nav-item">
                 <h3>Carrinho</h3>
@@ -26,14 +26,14 @@
     <main>
        <section data-slide="slide" class="slide banner">
             <div class="slide-items banner-promo">
-                <img src="./images/slider-home/Banner1.png" alt="Img 1">
-                <img src="./images/slider-home/Banner2.png" alt="Img 2">
-                <img src="./images/slider-home/Banner3.png" alt="Img 3">
-                <img src="./images/slider-home/Banner4.png" alt="Img 4">
-                <img src="./images/slider-home/Banner5.png" alt="Img 5">
-                <img src="./images/slider-home/Banner6.png" alt="Img 6">
-                <img src="./images/slider-home/Banner7.png" alt="Img 7">
-                <img src="./images/slider-home/Banner8.png" alt="Img 8">
+                <img src="images/slider-home/Banner1.png" alt="Img 1">
+                <img src="images/slider-home/Banner2.png" alt="Img 2">
+                <img src="images/slider-home/Banner3.png" alt="Img 3">
+                <img src="images/slider-home/Banner4.png" alt="Img 4">
+                <img src="images/slider-home/Banner5.png" alt="Img 5">
+                <img src="images/slider-home/Banner6.png" alt="Img 6">
+                <img src="images/slider-home/Banner7.png" alt="Img 7">
+                <img src="images/slider-home/Banner8.png" alt="Img 8">
             </div>
             <nav class="slide-nav">
                 <div class="slide-thumb"></div>
@@ -43,7 +43,7 @@
         </section> 
         <section class="filtro-fixo">
             <div class="div-filtro-fixo" >
-                <a href="html/listagem-de-produtos.html">TODOS OS PRODUTOS</a>
+                <a href="listagem-de-produtos">TODOS OS PRODUTOS</a>
             </div>
             <div class="div-filtro-fixo" >
                 <a href="">DOCES</a>
@@ -71,7 +71,7 @@
 
             <div class="div-mobile-filtro">
                 <div class="div-filtro-fixo" >
-                    <a href="html/listagem-de-produtos.html">TODOS OS PRODUTOS</a>
+                    <a href="listagem-de-produtos">TODOS OS PRODUTOS</a>
                 </div>
                 <div class="div-filtro-fixo" >
                     <a href="">DOCES</a>
@@ -94,10 +94,10 @@
             </div>          
         </div>
         <section class="listagem-produtos-home">
-            <% for(const produto of produtosIndex) { %> 
-           <div class="div-listagem-produtos-home">
+            <% produtosIndex.forEach((produto, i) =>  { %> 
+           <div class="div-listagem-produtos-home" id="produto-<%=i%>" >
                 <div class="div-up-produtos-home">
-                    <a href="/produto"><img src="images/<%=produto.categoria%>/<%=produto.imagem%>" alt=""></a>
+                    <a href="/produto"><img id="imagemProduto" src="images/<%=produto.categoria%>/<%=produto.imagem%>" alt=""></a>
                 </div>
                 <div class="div-down-produtos-home">
                     <div class="titulo-produto">
@@ -111,7 +111,7 @@
                             <h3>De: R$ <%=produto.valorSemDesconto%> </h3>
                         </div>
                         <div class="price-real">
-                            <h3>Por: R$ <%=produto.valorVenda%></h3>
+                            <h3>Por:  <span id="valorProduto"> R$ <%=produto.valorVenda%></span> </h3>
                         </div>
                     </div>
                     <div class="cta-produtos" id="accessKey">
@@ -124,7 +124,7 @@
                     </div>
                 </div> 
            </div>
-           <% } %> 
+           <% }) %> 
         </section>
         <div class="div-h2-os-mais-vendidos">
             <h2 class="h2-os-mais-vendidos">Os mais vendidos</h2>

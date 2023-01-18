@@ -1,6 +1,5 @@
  .mainProduto{
     margin-top: 35px;
-
 }
 
 #categoria{
@@ -27,33 +26,28 @@
 #descricaoMain{
     /* box-shadow: 0rem 0rem .2rem .2rem gray; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: row;
+    width: 100%;
     /* background-color: aliceblue; */
 }
 
-#descricaoMain >img:first-child{
-    width: 600px;
-    height: 600px;
-    margin-top: 10vh;
-
-}
-
-#imagemproduto img:hover{
-    width: 750px;
-    height: 750px;
-    transition: 0.5s;
-}
-
 #descricaoProduto{
-    /* position: absolute; */
-    left: 900px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     box-shadow: 0rem 0rem .2rem .2rem gray;
-    width: 40vw;
-    margin-left: 15px;
-    padding: 15px;
     background: rgb(249, 250, 246);
+    padding: 1rem;
+}
+
+
+#imagemproduto {
+    width: 50%;
+}
+
+
+#imagemproduto img{
+    width: 100%;
 }
 
 #nomeDoProduto{
@@ -126,9 +120,7 @@
 #botoes{
     display: flex;
     justify-content: space-around;
-    width: 500px;
-    height: 60px;
-    margin: 15px;
+    align-items: center;
     /* border:solid 1px black; */
 }
 
