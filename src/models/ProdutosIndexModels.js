@@ -1,4 +1,4 @@
-const produtos = require('./produtos.json')
+const produtos = require('../database/produtos.json')
 
 module.exports = {
     index: () => {
