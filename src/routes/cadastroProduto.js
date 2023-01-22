@@ -6,4 +6,6 @@ const cadastroProdutoController = require('../controller/cadastroProdutoControll
 /* GET home page. */
 router.get('/', cadastroProdutoController.showIndex);
 
+router.post('/cadastro', cadastroProdutoController.criaServico)
+
 module.exports = router;
