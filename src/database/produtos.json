@@ -78,5 +78,14 @@
         "categoria": "Produtos-Japao",
         "descricao": "Arroz Japonês Grão Curto Tipo 1 - Hibari 5kg. Arroz Japonês importado tipo Premium, ideal para preparo de pratos da culinária japonesa e Sushi.",
         "imagem": "arroz-japonês.png"
+    },
+    {
+        "id": 9,
+        "nome": "Blemish",
+        "valorVenda": "89,90",
+        "valorSemDesconto": "59,90",
+        "categoria": "massas",
+        "descricao": "\r\n                    Teste",
+        "imagem": "DISPLAY 01.HEIC"
     }
 ]
