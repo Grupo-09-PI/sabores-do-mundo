@@ -6,4 +6,6 @@ const painelUsuarioController = require('../controller/painelUsuarioController')
 /* GET home page. */
 router.get('/', painelUsuarioController.showIndex);
 
+router.get('/admin', painelUsuarioController.showAdmin);
+
 module.exports = router;

@@ -18,5 +18,11 @@ module.exports = {
       }
       produtos.push(novoProduto)
       fs.writeFileSync( path.join(__dirname, '../database/produtos.json'), JSON.stringify(produtos, 4))
+    },
+    produtoId: (req) => {
+      console.log(req)
+     // produtos.filter(produto.id)
+
     }
+    
 }

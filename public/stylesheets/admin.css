@@ -1,0 +1,15 @@
+body * {
+    width: 100%;
+}
+
+.div-listagem-produtos-home {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+.crud {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
